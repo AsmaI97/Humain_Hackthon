@@ -9,7 +9,7 @@ Repository: https://github.com/AsmaI97/Humain_Hackthon
 ## Published results (live)
 
 Agent model `claude-sonnet-5-5`, extraction model `claude-haiku-5-5`, 2026-10-31.
-Source file: `results/eval/latest_dev_live.md`. This is five demo cases, not a 60-case evaluation.
+Source file: `results/eval/latest_dev_live.md`. These are five live cases, not a 60-case evaluation.
 The sealed split has not been run.
 
 | Case | Live outcome | Label |

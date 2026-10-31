@@ -1,8 +1,8 @@
-# AuthPilot live demo cases
+# AuthPilot live cases
 
 Run on 2026-10-31. Agent model `claude-sonnet-5-5`. Criterion extraction model `claude-haiku-5-5`.
 Each case was run in live mode. `dev/case_040` was then replayed from the cache with no further API calls.
-This is five demo cases, not the 60-case dev evaluation. The sealed split has not been run.
+These are five live cases, not the 60-case dev evaluation. The sealed split has not been run.
 
 | Case | What it tests | Status | Tool calls | Clinic requests | Appeals | Matches the label |
 | --- | --- | --- | --- | --- | --- | --- |

@@ -9,12 +9,7 @@ All patient data in this repository is synthetic. No real patient data is used a
 
 Repository: [https://github.com/AsmaI97/Humain_Hackthon](https://github.com/AsmaI97/Humain_Hackthon)
 
-- Pitch deck (open in a browser, arrow keys to move): [docs/slides.html](docs/slides.html)
-- Five-minute demo script with fallbacks and Q&A: [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md)
-- Backup storyboard of the demo (screenshots of every step): [docs/demo_backup/README.md](docs/demo_backup/README.md)
-- One-page results summary for the slides: [docs/results_summary.md](docs/results_summary.md)
-- Work log, decisions, known limits and the remaining plan: [docs/PROGRESS.md](docs/PROGRESS.md)
-- Original spec: [authpilot_cursor_prompt.md](authpilot_cursor_prompt.md)
+One-page results summary: [docs/results_summary.md](docs/results_summary.md)
 
 ## Status
 
@@ -27,12 +22,11 @@ Repository: [https://github.com/AsmaI97/Humain_Hackthon](https://github.com/Asma
 | 4 | Web app: landing page, workbench, escalation queue, results (multi-page Streamlit, custom theme) | Done |
 | 5 | Full evaluation: baselines, ablations, perturbations, unseen procedure, fault injection, coverage curve, regression check | Done (dev split, stub model) |
 | 6 | Packaging: locked dependencies, Dockerfile, clean-clone check, final README, one-page results summary | Done |
-| 7 | Demo and buffer: demo script, slide deck, backup storyboard, bug sweep | Done |
 | Stretch | Arabic: bilingual letters (English and Arabic) and an Arabic, right-to-left web app | Done |
-| Next | Full live evaluation on dev, then the sealed test split once; record the demo video | Needs you |
+| Next | Full live evaluation on the dev split, then the sealed test split once | Not run |
 
 The offline suite passes. `make test`, `make demo` and `make dashboard` run without an API key
-(the demo and the dashboard use the stub when `cache/llm_cache.jsonl` is absent). `make eval`
+(the sample cases and the dashboard use the stub when `cache/llm_cache.jsonl` is absent). `make eval`
 refuses stub mode: it needs `LLM_MODE=live`, or replay of a cache produced by that same live
 run. The published results below are live Claude runs. A full 60-case live evaluation has not
 been run. An older offline pipeline check is kept in `results/eval/` and is not the published
@@ -64,7 +58,7 @@ More screenshots are in [docs/screenshots](docs/screenshots).
 
 ## Quick start
 
-Requirements: Python 3.11 and `make`. No API key is needed for the offline demo. If `LLM_MODE`
+Requirements: Python 3.11 and `make`. No API key is needed for the offline sample cases. If `LLM_MODE`
 is unset, the code defaults to replay; `make demo` and `make dashboard` pick stub when the replay
 cache is empty, and replay when `cache/llm_cache.jsonl` exists.
 
@@ -79,9 +73,9 @@ make help           # every target
 | Target | What it does |
 | --- | --- |
 | `make test` | Offline test suite |
-| `make demo` | Two cases end to end: a gap filled by the clinic, then deny, appeal, approve. Replays a live cache if `cache/llm_cache.jsonl` exists, otherwise uses the stub |
-| `make record-demo` | Runs the demo in live mode and writes the replay cache (needs `ANTHROPIC_API_KEY`) |
-| `make eval` | Agent x3, baselines, ablations, perturbations, faults, coverage curve, regression check; writes `results/eval/`, `docs/results_summary.md` and `docs/slides.html` |
+| `make demo` | Two sample cases end to end. Replays a live cache if `cache/llm_cache.jsonl` exists, otherwise uses the stub |
+| `make live-sample` | Runs those two cases in live mode and writes the replay cache (needs `ANTHROPIC_API_KEY`) |
+| `make eval` | Agent x3, baselines, ablations, perturbations, faults, coverage curve, regression check; writes `results/eval/` and `docs/results_summary.md` |
 | `make eval-criteria` | Quicker criterion-level metrics only |
 | `make data` | Regenerates every synthetic case (deterministic) |
 | `make payer` | Runs the mock payer as an HTTP service on port 8100 |
@@ -111,8 +105,9 @@ To use Claude, copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY`. `LLM_M
 - `replay`: answers only from that cache. A missing entry raises `CacheMissError`. It never
   falls back to the stub or to the API.
 
-`make record-demo` is the live demo run. After it, `make demo` replays the cache offline.
-`LLM_MODE=live make eval` is the full dev evaluation. There is no `record` mode.
+`make live-sample` runs the two sample cases against Claude and saves every response for replay.
+After that, `make demo` repeats them offline. `LLM_MODE=live make eval` is the full dev evaluation.
+There is no `record` mode.
 
 ## Scenarios to try
 
@@ -140,7 +135,7 @@ Other cases worth opening:
 | Scenario | Case | What to expect |
 | --- | --- | --- |
 | All criteria met, on the drug instead of the MRI | `case_039` | Clean biologic request. Same approval path as `case_035`. |
-| Missing red-flag screening | `case_036` | The agent asks the clinic. On the recorded live run the addendum still left the criterion unclear, so the safety gate escalated instead of approving. |
+| Missing red-flag screening | `case_036` | The agent asks the clinic. On the live run the addendum still left the criterion unclear, so the safety gate escalated instead of approving. |
 | Contradictory records | `case_002` | Biologic. The methotrexate notes disagree. The agent should not pick a side. It escalates, and the case appears in the queue. |
 | Ambiguous, and the clinic cannot fill the gap | `case_034` | Lumbar MRI. A possible red-flag symptom is mentioned and never clarified. Expected result: escalate. |
 | Irrelevant extra note | `case_043` | Lumbar MRI with a distractor in the chart. The decision should still be approval. |
@@ -283,7 +278,7 @@ not the published accuracy, and the Results page labels those files as stub when
 
 ## Limitations
 
-- **No full live evaluation yet.** The published table is two live cases, not the 60-case dev
+- **No full live evaluation yet.** The published table is five live cases, not the 60-case dev
   split. The sealed split has not been run. Stub files under `results/eval/` measure the offline
   pipeline only.
 - **Synthetic data is simpler than real charts.** Templates are finite; real notes are longer,
@@ -308,8 +303,8 @@ not the published accuracy, and the Results page labels those files as stub when
 - `TypeError` or other odd errors in the web app right after changing code: restart the app; a
   running Streamlit server can keep old modules in memory.
 - `CacheMiss` in replay mode: the cache has no response for that exact request. Run that case
-  once with `LLM_MODE=live`, then switch back to `LLM_MODE=replay`. For the scripted demo with
-  no cache, use `LLM_MODE=stub`.
+  once with `LLM_MODE=live`, then switch back to `LLM_MODE=replay`. With an empty cache, use
+  `LLM_MODE=stub`.
 
 ## Repository layout
 
@@ -341,7 +336,7 @@ authpilot/
   data/                generators (dev, sealed, unseen), policies, generated cases
 tests/                 pytest suite (offline; one test is marked live and is skipped without a key)
 .streamlit/            web app theme
-docs/                  slides, demo script, demo backup, results summary, progress log, screenshots
+docs/                  results summary and screenshots of the web app
 cache/                 live responses for offline replay (local only; not committed)
 results/               saved evaluation runs
 Dockerfile             image for the web app, CLI, evaluation and tests

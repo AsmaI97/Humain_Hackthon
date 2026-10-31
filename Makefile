@@ -3,19 +3,19 @@ VENV := .venv
 PY ?= $(VENV)/bin/python
 IMAGE ?= authpilot
 
-# The demo replays a live cache when one exists, and uses the offline stub otherwise.
+# The sample cases replay a live cache when one exists, and use the offline stub otherwise.
 # LLM_MODE=live calls the API and writes the replay cache. Default for the app is replay.
 DEMO_MODE ?= $(or $(LLM_MODE),$(shell [ -s cache/llm_cache.jsonl ] && echo replay || echo stub))
 DEMO_CASES ?= dev/case_036 dev/case_040
 
-.PHONY: help setup data test demo record-demo dashboard payer eval eval-criteria summary compare check \
+.PHONY: help setup data test demo live-sample dashboard payer eval eval-criteria summary compare check \
         docker-build docker-run docker-test clean
 
 help:
 	@echo "make setup         create .venv and install the exact locked dependencies"
 	@echo "make test          run the test suite (offline)"
 	@echo "make demo          two cases end to end (replay cache if present, else offline stub)"
-	@echo "make record-demo   record the demo with Claude into cache/ (LLM_MODE=live, needs ANTHROPIC_API_KEY)"
+	@echo "make live-sample   run the two sample cases with Claude and write the replay cache"
 	@echo "make dashboard     web app at http://localhost:8501"
 	@echo "make eval          full evaluation on the dev split (refuses stub mode), then the summary"
 	@echo "make compare       compare the two latest saved evaluations (refuses stub mode)"
@@ -39,10 +39,10 @@ test:
 	$(PY) -m pytest
 
 demo:
-	@echo "demo LLM mode: $(DEMO_MODE)"
+	@echo "sample LLM mode: $(DEMO_MODE)"
 	@for c in $(DEMO_CASES); do LLM_MODE=$(DEMO_MODE) $(PY) -m authpilot.cli run $$c --approve --reviewer demo-reviewer || exit 1; echo; done
 
-record-demo:
+live-sample:
 	$(MAKE) demo DEMO_MODE=live
 
 dashboard:

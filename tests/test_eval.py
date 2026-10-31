@@ -225,7 +225,7 @@ def test_slides_are_built_from_a_saved_report_and_escape_text(tmp_path):
     report = run_all.evaluate("dev", runs=1, limit=3, skip={"faults", "ablations"}, log=lambda *_: None)
     report["meta"]["agent_model"] = "<script>x</script>"
     html = slides.build(report)
-    assert html.count('<section class="slide') == 13
+    assert html.count('<section class="slide') == 12
     assert "<script>x</script>" not in html and "&lt;script&gt;" in html
     assert "offline stub model" in html and "Headline results vs targets" in html
 

@@ -133,12 +133,6 @@ def build(report: dict) -> str:
             ("Safe under faults", "Retries, model fallback, retry queue, idempotent submissions."),
             ("Full audit trail", "Every tool call, model call, decision and human action, append-only."),
         ])),
-        _slide('<div class="eyebrow">Live demo</div><h2>Gap filled by the clinic; denial, appeal, approval</h2>'
-               '<div class="two"><ol><li>MRI order: red-flag screening missing</li><li>Agent asks the clinic, '
-               'gets the addendum, re-checks</li><li>Human approves the exact letter: approved</li>'
-               '<li>Biologic: denied for DAS28 (flowsheet), agent appeals with the quote</li><li>Approved on appeal</li>'
-               '<li>The same flow in Arabic: every letter has an Arabic version, covered by the same approval</li></ol>'
-               '<img src="screenshots/workbench_approved.jpg" alt="Workbench"></div>'),
         _slide('<div class="eyebrow">Evaluation</div><h2>Measured like a product, not a prototype</h2>' + _cards([
             ("Held-out data", "100 synthetic cases; 40 sealed with wording never seen in development."),
             ("Baselines and ablations", "Single prompt, keyword rules; no retrieval, citations, gap or appeal loop."),
