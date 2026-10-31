@@ -8,14 +8,17 @@ Repository: https://github.com/AsmaI97/Humain_Hackthon
 
 ## Published results (live)
 
-Agent model `claude-sonnet-5-5`, extraction model `claude-haiku-5-5`, 2026-10-31. Each case was
-run live and then replayed from the cache. This is not a 60-case evaluation. The sealed split has
-not been run.
+Agent model `claude-sonnet-5-5`, extraction model `claude-haiku-5-5`, 2026-10-31.
+Source file: `results/eval/latest_dev_live.md`. This is five demo cases, not a 60-case evaluation.
+The sealed split has not been run.
 
 | Case | Live outcome | Label |
 | --- | --- | --- |
-| `dev/case_040` | Denied, then approved on appeal | Expected final: approved. Matched. |
+| `dev/case_035` | Approved after one human approval | Expected final: approved. Matched. |
+| `dev/case_038` | Escalated. Red-flag screening was unclear, so it did not ask the clinic for the missing therapy note | Expected final: approved. The live model abstained. |
 | `dev/case_036` | Asked the clinic for the red-flag note, then escalated because the criterion stayed unclear | Expected final: approved. The live model abstained. |
+| `dev/case_040` | Denied, then approved on appeal | Expected final: approved. Matched. |
+| `dev/case_002` | Escalated on contradictory methotrexate records | Expected final: escalated. Matched. |
 
 ## Offline pipeline check (not the published accuracy)
 

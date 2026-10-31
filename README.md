@@ -130,7 +130,7 @@ open Escalation queue.
 | What you want to see | Sidebar case | What to expect |
 | --- | --- | --- |
 | All criteria met | `case_035` | Lumbar MRI. The chart already covers every criterion. The agent drafts the letter and waits for your approval, then the payer approves. |
-| Missing criteria | `case_038` | Lumbar MRI. Physical therapy is not in the chart. The agent asks the clinic, receives the note, checks again, and then waits for your approval. |
+| Missing criteria | `case_038` | Lumbar MRI. Physical therapy is missing from the chart. On the live run the agent did not ask the clinic: it marked red-flag screening unclear and escalated. |
 | Denied, then an appeal | `case_040` | Biologic (adalimumab). The first submission is denied because the disease-activity score lives only in a flowsheet. The agent drafts an appeal. Approve that letter too. The payer approves on appeal. |
 
 There is no case whose correct ending is a permanent denial. The denial you can watch is the first payer decision on `case_040`. Stop before approving the appeal if you only want to see the denial.
@@ -140,7 +140,7 @@ Other cases worth opening:
 | Scenario | Case | What to expect |
 | --- | --- | --- |
 | All criteria met, on the drug instead of the MRI | `case_039` | Clean biologic request. Same approval path as `case_035`. |
-| Missing red-flag screening | `case_036` | The agent asks the clinic. On the live run already recorded, the addendum still left the criterion unclear, so the safety gate escalated instead of approving. |
+| Missing red-flag screening | `case_036` | The agent asks the clinic. On the recorded live run the addendum still left the criterion unclear, so the safety gate escalated instead of approving. |
 | Contradictory records | `case_002` | Biologic. The methotrexate notes disagree. The agent should not pick a side. It escalates, and the case appears in the queue. |
 | Ambiguous, and the clinic cannot fill the gap | `case_034` | Lumbar MRI. A possible red-flag symptom is mentioned and never clarified. Expected result: escalate. |
 | Irrelevant extra note | `case_043` | Lumbar MRI with a distractor in the chart. The decision should still be approval. |
@@ -251,14 +251,16 @@ the dashboard.
 ## Published results (live)
 
 These are Claude runs on 2026-10-31. The agent model was `claude-sonnet-5-5`. Criterion extraction
-used `claude-haiku-5-5`. Each case was run live, then again in replay. Replay served every call
-from `cache/llm_cache.jsonl` and made no further API request. The sealed split has not been run,
-and `make eval` has not been run live, so this is not a 60-case accuracy table.
+used `claude-haiku-5-5`. The full write-up is [results/eval/latest_dev_live.md](results/eval/latest_dev_live.md).
+The sealed split has not been run, and `make eval` has not been run live, so this is not a 60-case accuracy table.
 
 | Case | Live outcome | Matches the label |
 | --- | --- | --- |
-| `dev/case_040` biologic, deny then appeal | First submission denied (`DAS28-SCORE`). Appeal approved by the payer. | Yes. Expected final status is approved. |
-| `dev/case_036` lumbar MRI, missing red-flag note | The agent asked the clinic. After the addendum, red-flag screening stayed unclear (confidence 0.72) and the safety gate escalated. | The label's final status is approved. The live model abstained instead. |
+| `dev/case_035` all MRI criteria met | Approved by the payer after one human approval. | Yes. |
+| `dev/case_038` missing physical-therapy note | Escalated. Red-flag screening was unclear (0.68), so the agent abstained before asking the clinic. | No. The label expects approval after the clinic replies. |
+| `dev/case_036` missing red-flag note | Asked the clinic, then escalated. The addendum still left red-flag screening unclear (0.72). | No. The label expects approval. |
+| `dev/case_040` biologic, deny then appeal | First submission denied (`DAS28-SCORE`). Appeal approved by the payer. | Yes. |
+| `dev/case_002` contradictory methotrexate records | Escalated instead of choosing one record. | Yes. |
 
 `results/eval/latest_dev_stub.md` is an older offline pipeline check from the stub model. It is
 not the published accuracy, and the Results page labels those files as stub when you open them.

@@ -5,18 +5,17 @@ then Workbench, **Run agent**.
 
 | Scenario | Case | Expect |
 | --- | --- | --- |
-| All criteria met | `case_035` | Letter, then you approve, then the payer approves |
-| Missing criteria | `case_038` | The agent asks the clinic, then waits for your approval |
-| Denied, then appeal | `case_040` | First submission denied, appeal letter, approve it, approved on appeal |
-| Contradictory records | `case_002` | Escalates. Open the queue. |
+| All criteria met | `case_035` | Letter, then you approve, then the payer approves. This is what the live run did. |
+| Missing criteria | `case_038` | On the live run the agent escalated: red-flag screening was unclear, so it never asked the clinic for the missing therapy note. |
+| Denied, then appeal | `case_040` | First submission denied, appeal letter, approve it, approved on appeal. This is what the live run did. |
+| Contradictory records | `case_002` | Escalates. Open the queue. This is what the live run did. |
 | Ambiguous, clinic cannot help | `case_034` | Escalates |
 | Irrelevant extra note | `case_043` | Still approved |
 | Unseen procedure | `unseen/case_000` (CLI only) | Escalates instead of inventing criteria |
 
-The timed walkthrough below uses the missing-document MRI and the denial. `case_036` is another
-missing-document MRI. On the recorded live run it escalated after the clinic replied, because
-red-flag screening stayed unclear. Use `case_038` when you want the missing-document case to
-reach the approval button.
+The timed walkthrough below is the stub path, where `case_036` reaches Approve. On the recorded
+live run, `case_036` asked the clinic and then escalated, and `case_038` escalated before the
+clinic request. Use `case_035` when you want a live case that reaches the approval button.
 
 ## Before going on stage (10 minutes earlier)
 

@@ -17,7 +17,9 @@ with st.container(key="panel_results"):
     ui.section_title(t("results_title"), level=1, anchor=True)
     st.write(t("results_intro"))
 
-    full = Path(config.RESULTS_DIR) / "eval" / f"latest_dev_{config.LLM_MODE}.md"
+    mode_report = Path(config.RESULTS_DIR) / "eval" / f"latest_dev_{config.LLM_MODE}.md"
+    live_report = Path(config.RESULTS_DIR) / "eval" / "latest_dev_live.md"
+    full = live_report if config.LLM_MODE != "stub" and live_report.exists() else mode_report
     with st.expander(t("full_eval"), expanded=full.exists()):
         if full.exists():
             st.markdown(f'<div dir="ltr">\n\n{full.read_text(encoding="utf-8")}\n\n</div>', unsafe_allow_html=True)
