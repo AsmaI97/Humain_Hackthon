@@ -1,0 +1,81 @@
+{
+  "case_id": "sealed_000",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Specifically denies incontinence, perineal numbness, night sweats or weight loss.",
+          "start": 197,
+          "end": 278
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_imaging_history",
+          "span_text": "Only plain films of the lumbar spine on file (2026-08-23); MRI never performed.",
+          "start": 111,
+          "end": 190
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "description": "No documentation of conservative therapy and its duration."
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "description": "No lower extremity neurological examination is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_progress_addendum",
+          "span_text": "11-week NSAID trial (diclofenac 75 mg twice daily) gave no lasting relief.",
+          "start": 114,
+          "end": 188
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-22",
+    "therapy_weeks": 11,
+    "therapy_type": "nsaid"
+  },
+  "notes": "case_type=missing; affected=mri.conservative_therapy,mri.neuro_exam; clinic_can_supply=mri.conservative_therapy"
+}

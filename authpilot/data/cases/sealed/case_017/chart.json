@@ -1,0 +1,5 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-10\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Sara Hamdan (PS0017)\n\nBackground:\n46-year-old female with 10 years of symmetric small-joint polyarthritis.\n\nFindings:\nTender joint count 5, swollen joint count 5. Today's DAS28 6.1 (high).\n\nImpression:\nSeropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_lab_results": "LAB REPORT\nDate: 2026-10-17\nAuthor: Clinical Laboratory\nPatient: Sara Hamdan (PS0017)\n\nValues:\nCRP 15.2 mg/L. Tuberculin skin test read at 0 mm on 2026-06-12. ESR 38 mm/h.\n",
+  "doc_03_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-18\nAuthor: Pharmacy\nPatient: Sara Hamdan (PS0017)\n\nFills:\nFolic acid 1 mg daily.\n"
+}

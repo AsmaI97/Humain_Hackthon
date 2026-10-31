@@ -1,0 +1,5 @@
+{
+  "doc_01_medication_history": "MEDICATION HISTORY\nDate: 2026-10-11\nAuthor: Pharmacy\nPatient: Hala Mansour (PD0028)\n\nMedications:\nFolic acid 1 mg daily.\n",
+  "doc_02_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-06\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Hala Mansour (PD0028)\n\nHistory:\n56-year-old female with 2 years of symmetric small-joint polyarthritis. Took methotrexate 20 mg every week for five months; disease still active.\n\nExam:\nTender joint count 12, swollen joint count 10.\n\nAssessment:\nRheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_03_lab_results": "LABORATORY RESULTS\nDate: 2026-10-06\nAuthor: Clinical Laboratory\nPatient: Hala Mansour (PD0028)\n\nResults:\nCRP 11.1 mg/L. Rheumatoid factor positive. QuantiFERON result negative, drawn 2026-06-03.\n"
+}

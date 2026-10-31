@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-14\nAuthor: Pharmacy\nPatient: Noor Nasser (PS0004)\n\nFills:\nFolic acid 1 mg daily.\n",
+  "doc_02_medication_list": "CURRENT MEDICATIONS\nDate: 2026-10-18\nAuthor: Pharmacy\nPatient: Noor Nasser (PS0004)\n\nMedications:\nAtorvastatin 20 mg nightly. Vitamin D 1000 IU daily.\n",
+  "doc_03_lab_results": "LAB REPORT\nDate: 2026-10-15\nAuthor: Clinical Laboratory\nPatient: Noor Nasser (PS0004)\n\nValues:\nCRP 20.5 mg/L. ESR 38 mm/h. Latent TB screen negative (2026-08-14, interferon-gamma release assay).\n",
+  "doc_04_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-18\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Noor Nasser (PS0004)\n\nBackground:\n33-year-old female with 3 years of symmetric small-joint polyarthritis. MTX discontinued after 9 wks owing to persistent nausea and elevated LFTs.\n\nFindings:\nTender joint count 11, swollen joint count 7. DAS28-ESR calculated at 5.3.\n\nImpression:\nImpression: seropositive RA (M05.79), confirmed at this rheumatology visit.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

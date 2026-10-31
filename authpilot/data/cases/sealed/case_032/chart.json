@@ -1,0 +1,6 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-07\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Nabil Zaid (PS0032)\n\nBackground:\n57-year-old male with 3 years of symmetric small-joint polyarthritis. Despite 4 months of weekly methotrexate at 15 mg, synovitis persists.\n\nFindings:\nTender joint count 7, swollen joint count 4. Activity remains uncontrolled.\n\nImpression:\nMeets ACR/EULAR criteria for RA (score 8/10) on rheumatology assessment.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-08\nAuthor: Pharmacy\nPatient: Nabil Zaid (PS0032)\n\nFills:\nPrednisone 5 mg daily.\n",
+  "doc_03_rheumatology_flowsheet": "DISEASE ACTIVITY FLOWSHEET\nDate: 2026-10-11\nAuthor: Rheumatology Clinic\nPatient: Nabil Zaid (PS0032)\n\nScores:\nDAS28 4.7 on the last flowsheet entry. Patient global assessment 5/10.\n",
+  "doc_04_lab_results": "LAB REPORT\nDate: 2026-10-08\nAuthor: Clinical Laboratory\nPatient: Nabil Zaid (PS0032)\n\nValues:\nCRP 32.9 mg/L. Anti-CCP antibodies positive. Tuberculin skin test read at 0 mm on 2025-12-11.\n"
+}

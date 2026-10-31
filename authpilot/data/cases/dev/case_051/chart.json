@@ -1,0 +1,7 @@
+{
+  "doc_01_patient_message": "PATIENT PORTAL MESSAGE\nDate: 2026-09-28\nAuthor: Patient Portal\nPatient: Yara Bakri (PD0051)\n\nMessage:\nPatient confirms that insurance details are unchanged.\n",
+  "doc_02_medication_history": "MEDICATION HISTORY\nDate: 2026-10-05\nAuthor: Pharmacy\nPatient: Yara Bakri (PD0051)\n\nMedications:\nFolic acid 1 mg daily.\n",
+  "doc_03_rheumatology_flowsheet": "RHEUMATOLOGY FLOWSHEET\nDate: 2026-10-02\nAuthor: Rheumatology Clinic\nPatient: Yara Bakri (PD0051)\n\nMeasures:\nDAS28-CRP 6.7 recorded at the most recent visit (high disease activity). Patient global assessment 9/10.\n",
+  "doc_04_lab_results": "LABORATORY RESULTS\nDate: 2026-10-04\nAuthor: Clinical Laboratory\nPatient: Yara Bakri (PD0051)\n\nResults:\nCRP 17.7 mg/L. QuantiFERON result negative, drawn 2026-06-30. Anti-CCP antibodies positive.\n",
+  "doc_05_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-09-27\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Yara Bakri (PD0051)\n\nHistory:\n53-year-old female with 2 years of symmetric small-joint polyarthritis. Methotrexate 25 mg weekly for 8 months with inadequate response.\n\nExam:\nTender joint count 9, swollen joint count 10. Disease activity remains high despite therapy.\n\nAssessment:\nDiagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

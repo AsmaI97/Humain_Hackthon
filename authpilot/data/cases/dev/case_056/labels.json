@@ -1,0 +1,73 @@
+{
+  "case_id": "dev_056",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria.",
+          "start": 388,
+          "end": 481
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Has been on methotrexate 17.5 mg weekly for six months with persistent synovitis.",
+          "start": 194,
+          "end": 275
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "Interferon-gamma release assay negative on 2026-06-12.",
+          "start": 149,
+          "end": 203
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_flowsheet",
+          "span_text": "DAS28-CRP 4.3 recorded at the most recent visit (moderate disease activity).",
+          "start": 111,
+          "end": 187
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "deny_then_appeal_approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "appeal_scenario"
+  ],
+  "facts": {
+    "order_date": "2026-10-18",
+    "mtx_months": 6,
+    "tb_months_ago": 4,
+    "das28": 4.3
+  },
+  "notes": "case_type=appeal"
+}

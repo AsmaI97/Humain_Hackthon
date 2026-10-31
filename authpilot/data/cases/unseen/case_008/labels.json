@@ -1,0 +1,63 @@
+{
+  "case_id": "unseen_008",
+  "split": "unseen",
+  "procedure": "glp1",
+  "criteria": [
+    {
+      "criterion_id": "glp.bmi",
+      "section_ref": "3.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_weight_visit",
+          "span_text": "Measured BMI today: 34.3.",
+          "start": 330,
+          "end": 355
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.lifestyle",
+      "section_ref": "3.2",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_01_weight_visit",
+          "span_text": "Has tried dieting on and off over the years.",
+          "start": 170,
+          "end": 214
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.mtc_screen",
+      "section_ref": "4.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_weight_visit",
+          "span_text": "No personal or family history of medullary thyroid carcinoma or MEN2.",
+          "start": 215,
+          "end": 284
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "glp.lifestyle",
+      "description": "Dieting is mentioned without a structured program or duration."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "ambiguous"
+  ],
+  "facts": {
+    "order_date": "2026-10-13",
+    "bmi": 34.3
+  },
+  "notes": "case_type=ambiguous"
+}

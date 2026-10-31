@@ -1,0 +1,59 @@
+{
+  "case_id": "unseen_001",
+  "split": "unseen",
+  "procedure": "glp1",
+  "criteria": [
+    {
+      "criterion_id": "glp.bmi",
+      "section_ref": "3.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_weight_visit",
+          "span_text": "BMI 38.9 kg/m2 recorded at today's visit.",
+          "start": 368,
+          "end": 409
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.lifestyle",
+      "section_ref": "3.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_nutrition_summary",
+          "span_text": "Enrolled in structured lifestyle intervention (diet and physical activity) for 11 months; weight plateaued.",
+          "start": 111,
+          "end": 218
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.mtc_screen",
+      "section_ref": "4.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_weight_visit",
+          "span_text": "Denies personal or family history of medullary thyroid cancer and multiple endocrine neoplasia type 2.",
+          "start": 220,
+          "end": 322
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "distractor"
+  ],
+  "facts": {
+    "order_date": "2026-10-08",
+    "bmi": 38.9,
+    "lifestyle_months": 11
+  },
+  "notes": "case_type=distractor"
+}

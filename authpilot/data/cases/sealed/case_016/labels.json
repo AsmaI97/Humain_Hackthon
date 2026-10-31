@@ -1,0 +1,77 @@
+{
+  "case_id": "sealed_016",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Seropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.",
+          "start": 376,
+          "end": 463
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Despite five months of weekly methotrexate at 20 mg, synovitis persists.",
+          "start": 194,
+          "end": 266
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_lab_results",
+          "span_text": "Tuberculin skin test read at 0 mm on 2026-05-08.",
+          "start": 110,
+          "end": 158
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Patient feels the arthritis is flaring.",
+          "start": 323,
+          "end": 362
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.disease_activity",
+      "description": "Disease activity is described without a DAS28 score."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "ambiguous"
+  ],
+  "facts": {
+    "order_date": "2026-10-06",
+    "mtx_months": 5,
+    "tb_months_ago": 5
+  },
+  "notes": "case_type=ambiguous; affected=bio.disease_activity"
+}

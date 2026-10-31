@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_04_rheumatology_addendum": "RHEUMATOLOGY ADDENDUM\nDate: 2026-10-18\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Dana Zaid (PD0005)\n\nExam:\nDAS28 score 5.3, consistent with high disease activity.\n"
+  },
+  "provides": {
+    "2.4": [
+      "doc_04_rheumatology_addendum"
+    ]
+  }
+}

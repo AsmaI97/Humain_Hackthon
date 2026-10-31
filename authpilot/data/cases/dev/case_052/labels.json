@@ -1,0 +1,94 @@
+{
+  "case_id": "dev_052",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_pt_note",
+          "span_text": "A 8-week course of physical therapy was completed without meaningful functional gain.",
+          "start": 127,
+          "end": 212
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Negative review for saddle anesthesia, urinary retention, fever and weight loss.",
+          "start": 238,
+          "end": 318
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "not_met",
+      "evidence": []
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.neuro_exam",
+      "description": "No lower extremity neurological examination is documented."
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "description": "No imaging history is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_progress_addendum",
+          "span_text": "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact.",
+          "start": 122,
+          "end": 215
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_05_imaging_history",
+          "span_text": "Lumbar radiographs only (2026-05-19); no prior MRI.",
+          "start": 104,
+          "end": 155
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-19",
+    "therapy_weeks": 8,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=missing; affected=mri.neuro_exam,mri.no_recent_imaging; clinic_can_supply=mri.neuro_exam,mri.no_recent_imaging"
+}

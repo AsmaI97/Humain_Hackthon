@@ -1,0 +1,83 @@
+{
+  "case_id": "sealed_038",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "Failed 7 wks of scheduled celecoxib 200 mg daily.",
+          "start": 200,
+          "end": 249
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "Cauda equina screen negative; afebrile, no history of malignancy.",
+          "start": 250,
+          "end": 315
+        },
+        {
+          "doc_id": "doc_03_nursing_triage",
+          "span_text": "Patient states two episodes of bladder leakage this week.",
+          "start": 98,
+          "end": 155
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "LE neuro: 5/5 throughout, DTRs symmetric, SLR negative bilaterally.",
+          "start": 413,
+          "end": 480
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_imaging_history",
+          "span_text": "Only plain films of the lumbar spine on file (2026-05-15); MRI never performed.",
+          "start": 110,
+          "end": 189
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.red_flags",
+      "description": "Records conflict on the presence of red-flag symptoms."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "contradictory"
+  ],
+  "facts": {
+    "order_date": "2026-10-19",
+    "therapy_weeks": 7,
+    "therapy_type": "nsaid"
+  },
+  "notes": "case_type=contradictory; affected=mri.red_flags"
+}

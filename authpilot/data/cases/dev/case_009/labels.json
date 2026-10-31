@@ -1,0 +1,71 @@
+{
+  "case_id": "dev_009",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology.",
+          "start": 372,
+          "end": 462
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Has been on methotrexate 17.5 mg weekly for 8 months with persistent synovitis.",
+          "start": 193,
+          "end": 272
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_lab_results",
+          "span_text": "QuantiFERON-TB Gold Plus: negative (collected 2025-11-01).",
+          "start": 133,
+          "end": 191
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Disease activity: DAS28-ESR 5.4.",
+          "start": 326,
+          "end": 358
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-05",
+    "mtx_months": 8,
+    "tb_months_ago": 11,
+    "das28": 5.4
+  },
+  "notes": "case_type=clean"
+}

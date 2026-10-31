@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_05_lab_results": "LAB REPORT\nDate: 2026-10-06\nAuthor: Clinical Laboratory\nPatient: Reem Nasser (PS0037)\n\nValues:\nIGRA (QFT-Plus) 2026-09-03: neg.\n"
+  },
+  "provides": {
+    "2.3": [
+      "doc_05_lab_results"
+    ]
+  }
+}

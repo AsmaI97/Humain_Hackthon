@@ -1,0 +1,83 @@
+{
+  "case_id": "sealed_014",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_pt_note",
+          "span_text": "Course of physiotherapy over twelve weeks ended with persistent radicular pain.",
+          "start": 113,
+          "end": 192
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_02_nursing_triage",
+          "span_text": "Patient states two episodes of bladder leakage this week.",
+          "start": 97,
+          "end": 154
+        },
+        {
+          "doc_id": "doc_04_progress_note",
+          "span_text": "Cauda equina screen negative; afebrile, no history of malignancy.",
+          "start": 196,
+          "end": 261
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_progress_note",
+          "span_text": "Motor, sensory and reflex testing of both legs documented as normal.",
+          "start": 342,
+          "end": 410
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_imaging_history",
+          "span_text": "No lumbar MRI found in the regional imaging exchange.",
+          "start": 109,
+          "end": 162
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.red_flags",
+      "description": "Records conflict on the presence of red-flag symptoms."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "contradictory"
+  ],
+  "facts": {
+    "order_date": "2026-10-07",
+    "therapy_weeks": 12,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=contradictory; affected=mri.red_flags"
+}

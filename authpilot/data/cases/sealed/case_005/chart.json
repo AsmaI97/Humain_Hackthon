@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-16\nAuthor: Pharmacy\nPatient: Ziad Qasim (PS0005)\n\nFills:\nFolic acid 1 mg daily.\n",
+  "doc_02_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-14\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Ziad Qasim (PS0005)\n\nBackground:\n48-year-old male with 2 years of symmetric small-joint polyarthritis. MTX discontinued after 9 wks owing to persistent nausea and elevated LFTs.\n\nFindings:\nTender joint count 9, swollen joint count 7. Joints look active; score not calculated today.\n\nImpression:\nSeropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_03_lab_results": "LAB REPORT\nDate: 2026-10-12\nAuthor: Clinical Laboratory\nPatient: Ziad Qasim (PS0005)\n\nValues:\nCRP 14.0 mg/L. Rheumatoid factor positive. Tuberculin skin test read at 0 mm on 2026-09-15.\n",
+  "doc_04_nursing_triage": "TRIAGE INTAKE\nDate: 2026-10-16\nAuthor: Triage Nurse\nPatient: Ziad Qasim (PS0005)\n\nIntake notes:\nBP 120/71, HR 63, temperature 36.8 C. Pain score 5/10.\n"
+}

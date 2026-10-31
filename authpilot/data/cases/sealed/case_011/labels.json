@@ -1,0 +1,83 @@
+{
+  "case_id": "sealed_011",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "12-week NSAID trial (diclofenac 75 mg twice daily) gave no lasting relief.",
+          "start": 317,
+          "end": 391
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_01_nursing_triage",
+          "span_text": "Patient states two episodes of bladder leakage this week.",
+          "start": 97,
+          "end": 154
+        },
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Cauda equina screen negative; afebrile, no history of malignancy.",
+          "start": 199,
+          "end": 264
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Motor, sensory and reflex testing of both legs documented as normal.",
+          "start": 437,
+          "end": 505
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "Only plain films of the lumbar spine on file (2026-04-16); MRI never performed.",
+          "start": 109,
+          "end": 188
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.red_flags",
+      "description": "Records conflict on the presence of red-flag symptoms."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "contradictory"
+  ],
+  "facts": {
+    "order_date": "2026-10-16",
+    "therapy_weeks": 12,
+    "therapy_type": "nsaid"
+  },
+  "notes": "case_type=contradictory; affected=mri.red_flags"
+}

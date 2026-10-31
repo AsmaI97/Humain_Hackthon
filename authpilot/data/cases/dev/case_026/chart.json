@@ -1,0 +1,6 @@
+{
+  "doc_01_lab_results": "LABORATORY RESULTS\nDate: 2026-09-21\nAuthor: Clinical Laboratory\nPatient: Ziad Zaid (PD0026)\n\nResults:\nCRP 8.4 mg/L. Rheumatoid factor positive. TB screening (IGRA) 2026-03-01: negative.\n",
+  "doc_02_medication_history": "MEDICATION HISTORY\nDate: 2026-10-01\nAuthor: Pharmacy\nPatient: Ziad Zaid (PD0026)\n\nMedications:\nPrednisone 5 mg daily.\n",
+  "doc_03_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-09-26\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Ziad Zaid (PD0026)\n\nHistory:\n50-year-old male with 5 years of symmetric small-joint polyarthritis. Failed methotrexate after 8 months at 15 mg weekly; joint counts unchanged.\n\nExam:\nTender joint count 5, swollen joint count 2. DAS28-CRP today: 3.6 (moderate disease activity).\n\nAssessment:\nRheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_04_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-09-29\nAuthor: Triage Nurse\nPatient: Ziad Zaid (PD0026)\n\nTriage:\nBP 122/88, HR 63, temperature 36.8 C. Pain score 8/10.\n"
+}

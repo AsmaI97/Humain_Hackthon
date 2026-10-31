@@ -1,0 +1,14 @@
+{
+  "documents": {
+    "doc_04_lab_results": "LABORATORY RESULTS\nDate: 2026-10-18\nAuthor: Clinical Laboratory\nPatient: Ziad Mansour (PD0007)\n\nResults:\nTB screening (IGRA) 2026-07-14: negative.\n",
+    "doc_05_rheumatology_addendum": "RHEUMATOLOGY ADDENDUM\nDate: 2026-10-18\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Ziad Mansour (PD0007)\n\nExam:\nDAS28-CRP today: 5.9 (high disease activity).\n"
+  },
+  "provides": {
+    "2.3": [
+      "doc_04_lab_results"
+    ],
+    "2.4": [
+      "doc_05_rheumatology_addendum"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "doc_01_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-09-30\nAuthor: Triage Nurse\nPatient: Lina Hamdan (PU0009)\n\nTriage:\nBP 114/81, HR 85, temperature 37.0 C. Pain score 7/10.\n",
+  "doc_02_weight_visit": "WEIGHT MANAGEMENT VISIT\nDate: 2026-09-28\nAuthor: Dr. Huda Rahman, Endocrinology\nPatient: Lina Hamdan (PU0009)\n\nHistory:\n64-year-old female seeking treatment for obesity. Patient has never joined a structured weight-management program. Denies personal or family history of medullary thyroid cancer and multiple endocrine neoplasia type 2.\n\nExam:\nBP 115/84, HR 91, temperature 36.6 C. BMI 34.5 kg/m2 recorded at today's visit.\n\nPlan:\nStart semaglutide 2.4 mg weekly with dose escalation, pending authorization.\n",
+  "doc_03_nutrition_summary": "NUTRITION PROGRAM SUMMARY\nDate: 2026-09-17\nAuthor: Registered Dietitian\nPatient: Lina Hamdan (PU0009)\n\nProgram:\nEnrolled in structured lifestyle intervention (diet and physical activity) for 7 months; weight plateaued.\n"
+}

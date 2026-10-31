@@ -1,0 +1,5 @@
+{
+  "doc_01_nursing_triage": "TRIAGE INTAKE\nDate: 2026-10-14\nAuthor: Triage Nurse\nPatient: Basil Bakri (PS0009)\n\nIntake notes:\nBP 129/85, HR 83, temperature 36.6 C. Pain score 3/10.\n",
+  "doc_02_progress_note": "CLINIC VISIT NOTE\nDate: 2026-10-11\nAuthor: Dr. Rana Sabbagh, Orthopedics\nPatient: Basil Bakri (PS0009)\n\nHPI:\n70-year-old male with chronic lower back pain with right-sided sciatica for 15 weeks. Non-smoker, drinks alcohol rarely. 6-week NSAID trial (diclofenac 75 mg twice daily) gave no lasting relief. Specifically denies incontinence, perineal numbness, night sweats or weight loss.\n\nExam:\nBP 136/83, HR 90, temperature 37.0 C. Motor, sensory and reflex testing of both legs documented as normal.\n\nImpression/Plan:\nWill obtain MRI of the lumbar spine without contrast to guide further management.\n",
+  "doc_03_imaging_history": "RADIOLOGY HISTORY\nDate: 2026-10-11\nAuthor: Radiology Records\nPatient: Basil Bakri (PS0009)\n\nStudies on file:\nMost recent lumbar MRI was 2022-04-01.\n"
+}

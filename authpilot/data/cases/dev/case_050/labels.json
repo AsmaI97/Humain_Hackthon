@@ -1,0 +1,71 @@
+{
+  "case_id": "dev_050",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology.",
+          "start": 415,
+          "end": 505
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Methotrexate 20 mg weekly was stopped after 7 weeks because of transaminase elevation (intolerance).",
+          "start": 192,
+          "end": 292
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_lab_results",
+          "span_text": "TB screening (IGRA) 2026-06-11: negative.",
+          "start": 120,
+          "end": 161
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "DAS28 score 6.1, consistent with high disease activity.",
+          "start": 346,
+          "end": 401
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-18",
+    "mtx_intolerance": true,
+    "tb_months_ago": 4,
+    "das28": 6.1
+  },
+  "notes": "case_type=clean"
+}

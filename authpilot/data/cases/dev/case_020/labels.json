@@ -1,0 +1,72 @@
+{
+  "case_id": "dev_020",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_pt_note",
+          "span_text": "Patient completed eight weeks of supervised physical therapy with minimal improvement in pain.",
+          "start": 127,
+          "end": 221
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Red flags screened and negative (no cauda equina symptoms, fever or weight loss).",
+          "start": 199,
+          "end": 280
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact.",
+          "start": 441,
+          "end": 534
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_imaging_history",
+          "span_text": "Lumbar radiographs only (2026-04-24); no prior MRI.",
+          "start": 104,
+          "end": 155
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "distractor"
+  ],
+  "facts": {
+    "order_date": "2026-10-28",
+    "therapy_weeks": 8,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=distractor; affected=mri.red_flags"
+}

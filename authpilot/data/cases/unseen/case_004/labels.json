@@ -1,0 +1,57 @@
+{
+  "case_id": "unseen_004",
+  "split": "unseen",
+  "procedure": "glp1",
+  "criteria": [
+    {
+      "criterion_id": "glp.bmi",
+      "section_ref": "3.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_weight_visit",
+          "span_text": "BMI 27.3 kg/m2; established hypertension treated with amlodipine.",
+          "start": 287,
+          "end": 352
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.lifestyle",
+      "section_ref": "3.2",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "glp.mtc_screen",
+      "section_ref": "4.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_weight_visit",
+          "span_text": "No personal or family history of medullary thyroid carcinoma or MEN2.",
+          "start": 172,
+          "end": 241
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "glp.lifestyle",
+      "description": "No diet and exercise program is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-09",
+    "bmi": 27.3,
+    "comorbidity": "hypertension"
+  },
+  "notes": "case_type=missing"
+}

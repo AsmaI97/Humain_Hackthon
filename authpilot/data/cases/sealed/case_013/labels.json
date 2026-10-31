@@ -1,0 +1,85 @@
+{
+  "case_id": "sealed_013",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Meets ACR/EULAR criteria for RA (score 8/10) on rheumatology assessment.",
+          "start": 366,
+          "end": 438
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "MTX discontinued after 8 wks owing to persistent nausea and elevated LFTs.",
+          "start": 196,
+          "end": 270
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Today's DAS28 6.5 (high).",
+          "start": 327,
+          "end": 352
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.tb_screening",
+      "description": "No tuberculosis screening result is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_lab_results",
+          "span_text": "IGRA (QFT-Plus) 2026-07-20: neg.",
+          "start": 96,
+          "end": 128
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-22",
+    "mtx_intolerance": true,
+    "das28": 6.5,
+    "tb_months_ago": 3
+  },
+  "notes": "case_type=missing; affected=bio.tb_screening; clinic_can_supply=bio.tb_screening"
+}

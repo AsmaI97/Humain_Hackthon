@@ -1,0 +1,5 @@
+{
+  "doc_01_lab_results": "LAB REPORT\nDate: 2026-10-13\nAuthor: Clinical Laboratory\nPatient: Mona Mansour (PS0013)\n\nValues:\nCRP 25.3 mg/L. Rheumatoid factor positive.\n",
+  "doc_02_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-18\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Mona Mansour (PS0013)\n\nBackground:\n33-year-old female with 6 years of symmetric small-joint polyarthritis. MTX discontinued after 8 wks owing to persistent nausea and elevated LFTs.\n\nFindings:\nTender joint count 8, swollen joint count 8. Today's DAS28 6.5 (high).\n\nImpression:\nMeets ACR/EULAR criteria for RA (score 8/10) on rheumatology assessment.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_03_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-17\nAuthor: Pharmacy\nPatient: Mona Mansour (PS0013)\n\nFills:\nPrednisone 5 mg daily.\n"
+}

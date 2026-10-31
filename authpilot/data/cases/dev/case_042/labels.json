@@ -1,0 +1,73 @@
+{
+  "case_id": "dev_042",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Has taken ibuprofen 600 mg three times daily for 6 weeks with no meaningful improvement.",
+          "start": 347,
+          "end": 435
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer.",
+          "start": 201,
+          "end": 288
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative.",
+          "start": 558,
+          "end": 664
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_imaging_history",
+          "span_text": "Last lumbar spine MRI: 2023-12-01 (35 months before this request).",
+          "start": 105,
+          "end": 171
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "distractor"
+  ],
+  "facts": {
+    "order_date": "2026-10-22",
+    "therapy_weeks": 6,
+    "therapy_type": "nsaid",
+    "last_mri_months_ago": 35
+  },
+  "notes": "case_type=distractor; affected=mri.neuro_exam"
+}

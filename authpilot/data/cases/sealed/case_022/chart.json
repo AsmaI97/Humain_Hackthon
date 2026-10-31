@@ -1,0 +1,6 @@
+{
+  "doc_01_progress_note": "CLINIC VISIT NOTE\nDate: 2026-10-04\nAuthor: Dr. Hisham Qadri, Orthopedics\nPatient: Layla Zaid (PS0022)\n\nHPI:\n36-year-old female with lumbar pain with intermittent radicular symptoms for 10 weeks. Works as an office administrator. Mentions some tingling around the inner thighs, could not characterize further.\n\nExam:\nBP 119/84, HR 84, temperature 36.8 C. Motor, sensory and reflex testing of both legs documented as normal.\n\nImpression/Plan:\nOrdering lumbar spine MRI without contrast given persistent radicular symptoms.\n",
+  "doc_02_pt_note": "PT DISCHARGE NOTE\nDate: 2026-10-07\nAuthor: Physical Therapy Department\nPatient: Layla Zaid (PS0022)\n\nDischarge:\nStatus post 12 weeks of formal rehabilitation without functional improvement. Home exercise program reviewed.\n",
+  "doc_03_imaging_history": "RADIOLOGY HISTORY\nDate: 2026-10-07\nAuthor: Radiology Records\nPatient: Layla Zaid (PS0022)\n\nStudies on file:\nNo lumbar MRI found in the regional imaging exchange.\n",
+  "doc_04_medication_list": "CURRENT MEDICATIONS\nDate: 2026-10-07\nAuthor: Pharmacy\nPatient: Layla Zaid (PS0022)\n\nMedications:\nVitamin D 1000 IU daily. Atorvastatin 20 mg nightly.\n"
+}

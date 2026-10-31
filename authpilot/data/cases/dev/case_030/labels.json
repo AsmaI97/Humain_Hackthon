@@ -1,0 +1,77 @@
+{
+  "case_id": "dev_030",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology.",
+          "start": 375,
+          "end": 465
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Tried methotrexate in the past; dose and duration not available.",
+          "start": 194,
+          "end": 258
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_lab_results",
+          "span_text": "QuantiFERON-TB Gold Plus: negative (collected 2026-06-12).",
+          "start": 118,
+          "end": 176
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "DAS28-CRP today: 4.7 (moderate disease activity).",
+          "start": 312,
+          "end": 361
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.mtx_failure",
+      "description": "Methotrexate is mentioned without dose, duration or outcome."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "ambiguous"
+  ],
+  "facts": {
+    "order_date": "2026-10-20",
+    "tb_months_ago": 4,
+    "das28": 4.7
+  },
+  "notes": "case_type=ambiguous; affected=bio.mtx_failure"
+}

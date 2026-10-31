@@ -1,0 +1,5 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-23\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Majed Qasim (PD0033)\n\nHistory:\n64-year-old male with 6 years of symmetric small-joint polyarthritis. Methotrexate 25 mg weekly for four months with inadequate response.\n\nExam:\nTender joint count 11, swollen joint count 3. DAS28-CRP 6.7 at today's visit.\n\nAssessment:\nAssessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_medication_history": "MEDICATION HISTORY\nDate: 2026-10-24\nAuthor: Pharmacy\nPatient: Majed Qasim (PD0033)\n\nMedications:\nPrednisone 5 mg daily.\n",
+  "doc_03_lab_results": "LABORATORY RESULTS\nDate: 2026-10-19\nAuthor: Clinical Laboratory\nPatient: Majed Qasim (PD0033)\n\nResults:\nCRP 28.8 mg/L. Interferon-gamma release assay negative on 2026-09-14. Rheumatoid factor positive.\n"
+}

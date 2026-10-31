@@ -1,0 +1,6 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-01\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Faisal Saleh (PD0039)\n\nHistory:\n53-year-old male with 5 years of symmetric small-joint polyarthritis. Methotrexate 15 mg weekly for five months with inadequate response.\n\nExam:\nTender joint count 8, swollen joint count 6. Disease activity: DAS28-ESR 4.8.\n\nAssessment:\nRheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_medication_history": "MEDICATION HISTORY\nDate: 2026-10-02\nAuthor: Pharmacy\nPatient: Faisal Saleh (PD0039)\n\nMedications:\nOmeprazole 20 mg daily.\n",
+  "doc_03_lab_results": "LABORATORY RESULTS\nDate: 2026-09-25\nAuthor: Clinical Laboratory\nPatient: Faisal Saleh (PD0039)\n\nResults:\nCRP 32.4 mg/L. QuantiFERON result negative, drawn 2026-07-03. ESR 38 mm/h.\n",
+  "doc_04_medication_list": "MEDICATION LIST\nDate: 2026-10-05\nAuthor: Pharmacy\nPatient: Faisal Saleh (PD0039)\n\nActive medications:\nVitamin D 1000 IU daily. Atorvastatin 20 mg nightly.\n"
+}

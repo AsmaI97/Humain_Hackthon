@@ -1,0 +1,9 @@
+{
+  "order_id": "ORD-D-0048",
+  "patient_id": "PD0048",
+  "payer_id": "payer_a",
+  "procedure_code": "72148",
+  "procedure_name": "MRI lumbar spine without contrast",
+  "ordering_provider": "Dr. Hisham Qadri, Orthopedics",
+  "request_date": "2026-10-03"
+}

@@ -1,0 +1,70 @@
+{
+  "case_id": "dev_018",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_pt_note",
+          "span_text": "Attended physical therapy twice weekly for 6 weeks; symptoms unchanged at discharge.",
+          "start": 128,
+          "end": 212
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss.",
+          "start": 238,
+          "end": 331
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Neuro: positive straight-leg raise on the left at 50 degrees, diminished sensation in the left L5 dermatome.",
+          "start": 382,
+          "end": 490
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "Lumbar radiographs only (2026-02-11); no prior MRI.",
+          "start": 105,
+          "end": 156
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-17",
+    "therapy_weeks": 6,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=clean"
+}

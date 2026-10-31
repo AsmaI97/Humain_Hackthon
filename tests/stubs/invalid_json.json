@@ -1,0 +1,16 @@
+{
+  "apply_to_tool": "record_criterion_result",
+  "response": {
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "fault_invalid_json",
+        "name": "record_criterion_result",
+        "input": "{not valid json"
+      }
+    ],
+    "stop_reason": "tool_use",
+    "model": "stub-heuristic-v1",
+    "usage": {"input_tokens": 1, "output_tokens": 1}
+  }
+}

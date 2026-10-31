@@ -1,0 +1,57 @@
+{
+  "case_id": "unseen_005",
+  "split": "unseen",
+  "procedure": "glp1",
+  "criteria": [
+    {
+      "criterion_id": "glp.bmi",
+      "section_ref": "3.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_weight_visit",
+          "span_text": "BMI 40.3 kg/m2 recorded at today's visit.",
+          "start": 320,
+          "end": 361
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.lifestyle",
+      "section_ref": "3.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_nutrition_summary",
+          "span_text": "Completed 10 months of a supervised reduced-calorie diet and exercise program with under 5% weight loss.",
+          "start": 112,
+          "end": 216
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.mtc_screen",
+      "section_ref": "4.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_weight_visit",
+          "span_text": "Denies personal or family history of medullary thyroid cancer and multiple endocrine neoplasia type 2.",
+          "start": 172,
+          "end": 274
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-28",
+    "bmi": 40.3,
+    "lifestyle_months": 10
+  },
+  "notes": "case_type=clean"
+}

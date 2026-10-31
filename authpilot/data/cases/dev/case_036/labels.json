@@ -1,0 +1,85 @@
+{
+  "case_id": "dev_036",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_pt_note",
+          "span_text": "A 8-week course of physical therapy was completed without meaningful functional gain.",
+          "start": 128,
+          "end": 213
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact.",
+          "start": 285,
+          "end": 378
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_imaging_history",
+          "span_text": "Last lumbar spine MRI: 2023-11-11 (35 months before this request).",
+          "start": 105,
+          "end": 171
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.red_flags",
+      "description": "Red-flag symptom screening is not documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_05_progress_addendum",
+          "span_text": "Negative review for saddle anesthesia, urinary retention, fever and weight loss.",
+          "start": 121,
+          "end": 201
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-01",
+    "therapy_weeks": 8,
+    "therapy_type": "physical_therapy",
+    "last_mri_months_ago": 35
+  },
+  "notes": "case_type=missing; affected=mri.red_flags; clinic_can_supply=mri.red_flags"
+}

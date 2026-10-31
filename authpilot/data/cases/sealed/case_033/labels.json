@@ -1,0 +1,70 @@
+{
+  "case_id": "sealed_033",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Impression: seropositive RA (M05.79), confirmed at this rheumatology visit.",
+          "start": 308,
+          "end": 383
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_lab_results",
+          "span_text": "IGRA (QFT-Plus) 2026-05-25: neg.",
+          "start": 111,
+          "end": 143
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Composite disease activity (DAS28) = 5.9.",
+          "start": 253,
+          "end": 294
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.mtx_failure",
+      "description": "No methotrexate trial is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-01",
+    "tb_months_ago": 4,
+    "das28": 5.9
+  },
+  "notes": "case_type=missing; affected=bio.mtx_failure"
+}

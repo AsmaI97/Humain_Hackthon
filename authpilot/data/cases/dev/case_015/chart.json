@@ -1,0 +1,5 @@
+{
+  "doc_01_medication_list": "MEDICATION LIST\nDate: 2026-10-22\nAuthor: Pharmacy\nPatient: Majed Bakri (PD0015)\n\nActive medications:\nLisinopril 10 mg daily. Vitamin D 1000 IU daily.\n",
+  "doc_02_imaging_history": "IMAGING HISTORY\nDate: 2026-10-19\nAuthor: Radiology Records\nPatient: Majed Bakri (PD0015)\n\nPrior studies:\nLumbar radiographs only (2026-07-17); no prior MRI.\n",
+  "doc_03_progress_note": "PROGRESS NOTE\nDate: 2026-10-18\nAuthor: Dr. Rana Sabbagh, Orthopedics\nPatient: Majed Bakri (PD0015)\n\nSubjective:\n56-year-old male with lumbar pain with intermittent radicular symptoms for 13 weeks. Reports occasional numbness in the groin area; unclear whether this is new. Lives with family and is independent in daily activities. Has taken ibuprofen 600 mg three times daily for 11 weeks with no meaningful improvement.\n\nObjective:\nBP 129/72, HR 69, temperature 36.6 C. Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact.\n\nAssessment and Plan:\nOrdering lumbar spine MRI without contrast given persistent radicular symptoms.\n"
+}

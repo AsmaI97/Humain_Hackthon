@@ -1,0 +1,7 @@
+{
+  "doc_01_medication_list": "CURRENT MEDICATIONS\nDate: 2026-09-20\nAuthor: Pharmacy\nPatient: Reem Qasim (PS0015)\n\nMedications:\nVitamin D 1000 IU daily. Atorvastatin 20 mg nightly.\n",
+  "doc_02_lab_results": "LAB REPORT\nDate: 2026-10-01\nAuthor: Clinical Laboratory\nPatient: Reem Qasim (PS0015)\n\nValues:\nCRP 39.5 mg/L. Latent TB screen negative (2026-06-05, interferon-gamma release assay). ESR 38 mm/h.\n",
+  "doc_03_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-04\nAuthor: Pharmacy\nPatient: Reem Qasim (PS0015)\n\nFills:\nPrednisone 5 mg daily.\n",
+  "doc_04_referral_note": "REFERRAL REQUEST\nDate: 2026-07-27\nAuthor: Dr. Omar Faris, Family Medicine\nPatient: Reem Qasim (PS0015)\n\nQuestion:\nJoint pain and morning stiffness, please evaluate for inflammatory arthritis.\n",
+  "doc_05_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-03\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Reem Qasim (PS0015)\n\nBackground:\n55-year-old female with 4 years of symmetric small-joint polyarthritis. Methotrexate titrated to 17.5 mg weekly; no meaningful improvement after six months.\n\nFindings:\nTender joint count 5, swollen joint count 3. DAS28-ESR calculated at 6.4.\n\nImpression:\nPlan discussed in detail.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

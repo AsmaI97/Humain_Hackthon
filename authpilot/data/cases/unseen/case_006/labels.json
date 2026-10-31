@@ -1,0 +1,56 @@
+{
+  "case_id": "unseen_006",
+  "split": "unseen",
+  "procedure": "glp1",
+  "criteria": [
+    {
+      "criterion_id": "glp.bmi",
+      "section_ref": "3.1",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "glp.lifestyle",
+      "section_ref": "3.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_nutrition_summary",
+          "span_text": "Enrolled in structured lifestyle intervention (diet and physical activity) for 9 months; weight plateaued.",
+          "start": 114,
+          "end": 220
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.mtc_screen",
+      "section_ref": "4.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_weight_visit",
+          "span_text": "No personal or family history of medullary thyroid carcinoma or MEN2.",
+          "start": 170,
+          "end": 239
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "glp.bmi",
+      "description": "No BMI is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-16",
+    "lifestyle_months": 9
+  },
+  "notes": "case_type=missing"
+}

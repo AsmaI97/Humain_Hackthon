@@ -1,0 +1,6 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-08\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Layla Hamdan (PD0058)\n\nHistory:\n33-year-old female with 5 years of symmetric small-joint polyarthritis. Failed methotrexate after 7 months at 15 mg weekly; joint counts unchanged.\n\nExam:\nTender joint count 8, swollen joint count 10. DAS28 score 6.4, consistent with high disease activity.\n\nAssessment:\nAssessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_lab_results": "LABORATORY RESULTS\nDate: 2026-10-14\nAuthor: Clinical Laboratory\nPatient: Layla Hamdan (PD0058)\n\nResults:\nCRP 12.1 mg/L. QuantiFERON result negative, drawn 2026-01-15. ESR 38 mm/h.\n",
+  "doc_03_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-10-13\nAuthor: Triage Nurse\nPatient: Layla Hamdan (PD0058)\n\nTriage:\nBP 125/81, HR 63, temperature 36.8 C. Pain score 8/10.\n",
+  "doc_04_medication_history": "MEDICATION HISTORY\nDate: 2026-10-16\nAuthor: Pharmacy\nPatient: Layla Hamdan (PD0058)\n\nMedications:\nOmeprazole 20 mg daily.\n"
+}

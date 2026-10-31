@@ -1,0 +1,6 @@
+{
+  "doc_01_progress_note": "CLINIC VISIT NOTE\nDate: 2026-10-12\nAuthor: Dr. Hisham Qadri, Orthopedics\nPatient: Basil Hamdan (PS0020)\n\nHPI:\n58-year-old male with low back pain radiating to the left leg for 11 weeks. Non-smoker, drinks alcohol rarely.\n\nExam:\nBP 123/90, HR 90, temperature 37.0 C. Motor, sensory and reflex testing of both legs documented as normal.\n\nImpression/Plan:\nOrdering lumbar spine MRI without contrast given persistent radicular symptoms.\n",
+  "doc_02_nursing_triage": "TRIAGE INTAKE\nDate: 2026-10-12\nAuthor: Triage Nurse\nPatient: Basil Hamdan (PS0020)\n\nIntake notes:\nBP 117/84, HR 75, temperature 36.8 C. Pain score 6/10.\n",
+  "doc_03_imaging_history": "RADIOLOGY HISTORY\nDate: 2026-10-12\nAuthor: Radiology Records\nPatient: Basil Hamdan (PS0020)\n\nStudies on file:\nNo lumbar MRI found in the regional imaging exchange.\n",
+  "doc_04_pt_note": "PT DISCHARGE NOTE\nDate: 2026-10-12\nAuthor: Physical Therapy Department\nPatient: Basil Hamdan (PS0020)\n\nDischarge:\nSupervised PT x 12 wks (24 sessions), plateaued without durable relief. Home exercise program reviewed.\n"
+}

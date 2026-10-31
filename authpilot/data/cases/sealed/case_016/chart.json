@@ -1,0 +1,5 @@
+{
+  "doc_01_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-06\nAuthor: Pharmacy\nPatient: Majed Fahad (PS0016)\n\nFills:\nOmeprazole 20 mg daily.\n",
+  "doc_02_lab_results": "LAB REPORT\nDate: 2026-09-28\nAuthor: Clinical Laboratory\nPatient: Majed Fahad (PS0016)\n\nValues:\nCRP 29.8 mg/L. Tuberculin skin test read at 0 mm on 2026-05-08. ESR 38 mm/h.\n",
+  "doc_03_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-03\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Majed Fahad (PS0016)\n\nBackground:\n60-year-old male with 5 years of symmetric small-joint polyarthritis. Despite five months of weekly methotrexate at 20 mg, synovitis persists.\n\nFindings:\nTender joint count 4, swollen joint count 7. Patient feels the arthritis is flaring.\n\nImpression:\nSeropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

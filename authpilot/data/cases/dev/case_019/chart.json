@@ -1,0 +1,5 @@
+{
+  "doc_01_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-10-23\nAuthor: Triage Nurse\nPatient: Noor Bakri (PD0019)\n\nTriage:\nBP 117/71, HR 70, temperature 37.0 C. Pain score 7/10.\n",
+  "doc_02_imaging_history": "IMAGING HISTORY\nDate: 2026-10-23\nAuthor: Radiology Records\nPatient: Noor Bakri (PD0019)\n\nPrior studies:\nNo prior lumbar spine imaging on record.\n",
+  "doc_03_progress_note": "PROGRESS NOTE\nDate: 2026-10-20\nAuthor: Dr. Hisham Qadri, Orthopedics\nPatient: Noor Bakri (PD0019)\n\nSubjective:\n71-year-old female with low back pain radiating to the left leg for 10 weeks. Family history: father treated for prostate cancer. Negative review for saddle anesthesia, urinary retention, fever and weight loss. Non-smoker, drinks alcohol rarely. Has taken meloxicam 15 mg daily for ten weeks with no meaningful improvement.\n\nObjective:\nBP 129/74, HR 88, temperature 37.0 C. Neuro: positive straight-leg raise on the left at 30 degrees, diminished sensation in the left L5 dermatome.\n\nAssessment and Plan:\nOrdering lumbar spine MRI without contrast given persistent radicular symptoms.\n"
+}

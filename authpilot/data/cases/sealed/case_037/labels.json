@@ -1,0 +1,85 @@
+{
+  "case_id": "sealed_037",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "Seropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.",
+          "start": 366,
+          "end": 453
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "Despite 4 months of weekly methotrexate at 17.5 mg, synovitis persists.",
+          "start": 195,
+          "end": 266
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "DAS28-ESR calculated at 6.5.",
+          "start": 324,
+          "end": 352
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.tb_screening",
+      "description": "No tuberculosis screening result is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_05_lab_results",
+          "span_text": "IGRA (QFT-Plus) 2026-09-03: neg.",
+          "start": 95,
+          "end": 127
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-06",
+    "mtx_months": 4,
+    "das28": 6.5,
+    "tb_months_ago": 1
+  },
+  "notes": "case_type=missing; affected=bio.tb_screening; clinic_can_supply=bio.tb_screening"
+}

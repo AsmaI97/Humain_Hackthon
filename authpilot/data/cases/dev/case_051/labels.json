@@ -1,0 +1,73 @@
+{
+  "case_id": "dev_051",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_05_rheumatology_consult",
+          "span_text": "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation.",
+          "start": 370,
+          "end": 466
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_05_rheumatology_consult",
+          "span_text": "Methotrexate 25 mg weekly for 8 months with inadequate response.",
+          "start": 192,
+          "end": 256
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_lab_results",
+          "span_text": "QuantiFERON result negative, drawn 2026-06-30.",
+          "start": 118,
+          "end": 164
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_flowsheet",
+          "span_text": "DAS28-CRP 6.7 recorded at the most recent visit (high disease activity).",
+          "start": 108,
+          "end": 180
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "deny_then_appeal_approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "appeal_scenario"
+  ],
+  "facts": {
+    "order_date": "2026-10-06",
+    "mtx_months": 8,
+    "tb_months_ago": 3,
+    "das28": 6.7
+  },
+  "notes": "case_type=appeal"
+}

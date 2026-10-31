@@ -1,0 +1,9 @@
+{
+  "apply_to_tool": "record_criterion_result",
+  "response": {
+    "content": [],
+    "stop_reason": "end_turn",
+    "model": "stub-heuristic-v1",
+    "usage": {"input_tokens": 1, "output_tokens": 0}
+  }
+}

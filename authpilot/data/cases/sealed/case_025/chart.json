@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-18\nAuthor: Pharmacy\nPatient: Karim Khalil (PS0025)\n\nFills:\nOmeprazole 20 mg daily.\n",
+  "doc_02_nursing_triage": "TRIAGE INTAKE\nDate: 2026-10-16\nAuthor: Triage Nurse\nPatient: Karim Khalil (PS0025)\n\nIntake notes:\nBP 113/74, HR 89, temperature 36.6 C. Pain score 5/10.\n",
+  "doc_03_lab_results": "LAB REPORT\nDate: 2026-10-10\nAuthor: Clinical Laboratory\nPatient: Karim Khalil (PS0025)\n\nValues:\nCRP 9.2 mg/L. Tuberculin skin test read at 0 mm on 2025-12-21. Rheumatoid factor positive.\n",
+  "doc_04_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-15\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Karim Khalil (PS0025)\n\nBackground:\n49-year-old male with 7 years of symmetric small-joint polyarthritis. MTX discontinued after 10 wks owing to persistent nausea and elevated LFTs.\n\nFindings:\nTender joint count 14, swollen joint count 9. Composite disease activity (DAS28) = 4.5.\n\nImpression:\nImpression: seropositive RA (M05.79), confirmed at this rheumatology visit.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

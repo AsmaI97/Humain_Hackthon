@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_list": "CURRENT MEDICATIONS\nDate: 2026-09-30\nAuthor: Pharmacy\nPatient: Sara Jaber (PS0001)\n\nMedications:\nVitamin D 1000 IU daily. Atorvastatin 20 mg nightly.\n",
+  "doc_02_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-04\nAuthor: Pharmacy\nPatient: Sara Jaber (PS0001)\n\nFills:\nFolic acid 1 mg daily.\n",
+  "doc_03_lab_results": "LAB REPORT\nDate: 2026-09-29\nAuthor: Clinical Laboratory\nPatient: Sara Jaber (PS0001)\n\nValues:\nCRP 14.9 mg/L. Rheumatoid factor positive. IGRA (QFT-Plus) 2026-03-29: neg.\n",
+  "doc_04_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-01\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Sara Jaber (PS0001)\n\nBackground:\n46-year-old female with 10 years of symmetric small-joint polyarthritis. Despite eight months of weekly methotrexate at 17.5 mg, synovitis persists.\n\nFindings:\nTender joint count 5, swollen joint count 7. Composite disease activity (DAS28) = 4.8.\n\nImpression:\nSeropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

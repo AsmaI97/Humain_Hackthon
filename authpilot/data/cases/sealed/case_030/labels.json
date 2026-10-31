@@ -1,0 +1,70 @@
+{
+  "case_id": "sealed_030",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "On celecoxib 200 mg daily for the past 9 weeks with minimal benefit.",
+          "start": 262,
+          "end": 330
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "Cauda equina screen negative; afebrile, no history of malignancy.",
+          "start": 196,
+          "end": 261
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "LE neuro: 5/5 throughout, DTRs symmetric, SLR negative bilaterally.",
+          "start": 411,
+          "end": 478
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_imaging_history",
+          "span_text": "Only plain films of the lumbar spine on file (2026-02-10); MRI never performed.",
+          "start": 109,
+          "end": 188
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-16",
+    "therapy_weeks": 9,
+    "therapy_type": "nsaid"
+  },
+  "notes": "case_type=clean"
+}

@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_04_progress_addendum": "PROGRESS NOTE ADDENDUM\nDate: 2026-10-28\nAuthor: Dr. Omar Faris, Family Medicine\nPatient: Lina Alnour (PD0038)\n\nSubjective:\nTrialed ibuprofen 600 mg three times daily for 8 weeks without adequate relief.\n"
+  },
+  "provides": {
+    "2.1": [
+      "doc_04_progress_addendum"
+    ]
+  }
+}

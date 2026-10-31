@@ -1,0 +1,7 @@
+{
+  "doc_01_rheumatology_flowsheet": "RHEUMATOLOGY FLOWSHEET\nDate: 2026-10-14\nAuthor: Rheumatology Clinic\nPatient: Karim Mansour (PD0056)\n\nMeasures:\nDAS28-CRP 4.3 recorded at the most recent visit (moderate disease activity). Patient global assessment 7/10.\n",
+  "doc_02_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-16\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Karim Mansour (PD0056)\n\nHistory:\n35-year-old male with 9 years of symmetric small-joint polyarthritis. Has been on methotrexate 17.5 mg weekly for six months with persistent synovitis.\n\nExam:\nTender joint count 7, swollen joint count 4. Disease activity remains high despite therapy.\n\nAssessment:\nRheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_03_lab_results": "LABORATORY RESULTS\nDate: 2026-10-11\nAuthor: Clinical Laboratory\nPatient: Karim Mansour (PD0056)\n\nResults:\nCRP 12.6 mg/L. Rheumatoid factor positive. Interferon-gamma release assay negative on 2026-06-12.\n",
+  "doc_04_medication_list": "MEDICATION LIST\nDate: 2026-10-12\nAuthor: Pharmacy\nPatient: Karim Mansour (PD0056)\n\nActive medications:\nLisinopril 10 mg daily. Atorvastatin 20 mg nightly.\n",
+  "doc_05_medication_history": "MEDICATION HISTORY\nDate: 2026-10-16\nAuthor: Pharmacy\nPatient: Karim Mansour (PD0056)\n\nMedications:\nFolic acid 1 mg daily.\n"
+}

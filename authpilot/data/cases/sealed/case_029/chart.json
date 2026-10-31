@@ -1,0 +1,6 @@
+{
+  "doc_01_lab_results": "LAB REPORT\nDate: 2026-09-30\nAuthor: Clinical Laboratory\nPatient: Yara Fahad (PS0029)\n\nValues:\nCRP 21.2 mg/L. Rheumatoid factor positive. Tuberculin skin test read at 0 mm on 2025-11-12.\n",
+  "doc_02_medication_list": "CURRENT MEDICATIONS\nDate: 2026-09-25\nAuthor: Pharmacy\nPatient: Yara Fahad (PS0029)\n\nMedications:\nLisinopril 10 mg daily. Atorvastatin 20 mg nightly.\n",
+  "doc_03_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-02\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Yara Fahad (PS0029)\n\nBackground:\n68-year-old female with 8 years of symmetric small-joint polyarthritis. Despite 9 months of weekly methotrexate at 15 mg, synovitis persists. DAS28 of 2.1 was recorded during remission two years ago.\n\nFindings:\nTender joint count 7, swollen joint count 6. Today's DAS28 4.3 (moderate).\n\nImpression:\nSeropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_04_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-07\nAuthor: Pharmacy\nPatient: Yara Fahad (PS0029)\n\nFills:\nFolic acid 1 mg daily.\n"
+}

@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_history": "MEDICATION HISTORY\nDate: 2026-10-27\nAuthor: Pharmacy\nPatient: Hala Bakri (PD0008)\n\nMedications:\nPrednisone 5 mg daily.\n",
+  "doc_02_lab_results": "LABORATORY RESULTS\nDate: 2026-10-21\nAuthor: Clinical Laboratory\nPatient: Hala Bakri (PD0008)\n\nResults:\nCRP 39.3 mg/L. Rheumatoid factor positive. Interferon-gamma release assay negative on 2026-09-20.\n",
+  "doc_03_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-10-26\nAuthor: Triage Nurse\nPatient: Hala Bakri (PD0008)\n\nTriage:\nBP 135/88, HR 66, temperature 37.0 C. Pain score 4/10.\n",
+  "doc_04_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-28\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Hala Bakri (PD0008)\n\nHistory:\n46-year-old female with 6 years of symmetric small-joint polyarthritis. Tried methotrexate in the past; dose and duration not available.\n\nExam:\nTender joint count 13, swollen joint count 6. DAS28-CRP 5.0 at today's visit.\n\nAssessment:\nAssessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

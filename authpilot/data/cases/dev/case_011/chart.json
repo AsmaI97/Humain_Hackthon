@@ -1,0 +1,6 @@
+{
+  "doc_01_referral_note": "REFERRAL NOTE\nDate: 2026-07-29\nAuthor: Dr. Omar Faris, Family Medicine\nPatient: Hadi Hamdan (PD0011)\n\nReason for referral:\nPossible inflammatory arthritis; referral to rheumatology placed.\n",
+  "doc_02_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-09-28\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Hadi Hamdan (PD0011)\n\nHistory:\n68-year-old male with 2 years of symmetric small-joint polyarthritis. Failed methotrexate after 6 months at 15 mg weekly; joint counts unchanged.\n\nExam:\nTender joint count 9, swollen joint count 3. DAS28 score 6.1, consistent with high disease activity.\n\nAssessment:\nFindings discussed with the patient.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_03_medication_history": "MEDICATION HISTORY\nDate: 2026-10-02\nAuthor: Pharmacy\nPatient: Hadi Hamdan (PD0011)\n\nMedications:\nFolic acid 1 mg daily.\n",
+  "doc_04_lab_results": "LABORATORY RESULTS\nDate: 2026-10-03\nAuthor: Clinical Laboratory\nPatient: Hadi Hamdan (PD0011)\n\nResults:\nCRP 28.8 mg/L. QuantiFERON result negative, drawn 2026-08-02. Anti-CCP antibodies positive.\n"
+}

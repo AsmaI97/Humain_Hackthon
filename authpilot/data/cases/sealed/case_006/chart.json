@@ -1,0 +1,6 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-21\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Ziad Khalil (PS0006)\n\nBackground:\n35-year-old male with 2 years of symmetric small-joint polyarthritis. Despite six months of weekly methotrexate at 17.5 mg, synovitis persists.\n\nFindings:\nTender joint count 6, swollen joint count 9. Composite disease activity (DAS28) = 5.0.\n\nImpression:\nMeets ACR/EULAR criteria for RA (score 8/10) on rheumatology assessment.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-20\nAuthor: Pharmacy\nPatient: Ziad Khalil (PS0006)\n\nFills:\nFolic acid 1 mg daily. Pharmacy fill history shows no methotrexate dispensed in the past 3 years.\n",
+  "doc_03_lab_results": "LAB REPORT\nDate: 2026-10-15\nAuthor: Clinical Laboratory\nPatient: Ziad Khalil (PS0006)\n\nValues:\nCRP 17.8 mg/L. Anti-CCP antibodies positive. Tuberculin skin test read at 0 mm on 2026-09-18.\n",
+  "doc_04_medication_list": "CURRENT MEDICATIONS\nDate: 2026-10-20\nAuthor: Pharmacy\nPatient: Ziad Khalil (PS0006)\n\nMedications:\nLisinopril 10 mg daily. Vitamin D 1000 IU daily.\n"
+}

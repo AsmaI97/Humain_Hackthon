@@ -1,0 +1,14 @@
+{
+  "documents": {
+    "doc_04_progress_addendum": "PROGRESS NOTE ADDENDUM\nDate: 2026-10-19\nAuthor: Dr. Lina Haddad, Family Medicine\nPatient: Amal Saleh (PD0052)\n\nObjective:\nNeuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact.\n",
+    "doc_05_imaging_history": "IMAGING HISTORY\nDate: 2026-10-14\nAuthor: Radiology Records\nPatient: Amal Saleh (PD0052)\n\nPrior studies:\nLumbar radiographs only (2026-05-19); no prior MRI.\n"
+  },
+  "provides": {
+    "2.3": [
+      "doc_04_progress_addendum"
+    ],
+    "2.4": [
+      "doc_05_imaging_history"
+    ]
+  }
+}

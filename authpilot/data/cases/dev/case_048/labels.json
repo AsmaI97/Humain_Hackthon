@@ -1,0 +1,83 @@
+{
+  "case_id": "dev_048",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_03_pt_note",
+          "span_text": "Patient reports no prior physical therapy for this episode of back pain.",
+          "start": 132,
+          "end": 204
+        },
+        {
+          "doc_id": "doc_04_progress_note",
+          "span_text": "Completed 6 weeks of physical therapy without improvement.",
+          "start": 198,
+          "end": 256
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_progress_note",
+          "span_text": "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss.",
+          "start": 257,
+          "end": 350
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_progress_note",
+          "span_text": "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative.",
+          "start": 436,
+          "end": 542
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "Last lumbar spine MRI: 2024-04-16 (30 months before this request).",
+          "start": 105,
+          "end": 171
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "description": "Records conflict on whether conservative therapy was completed."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "contradictory"
+  ],
+  "facts": {
+    "order_date": "2026-10-03",
+    "therapy_weeks": 6,
+    "last_mri_months_ago": 30
+  },
+  "notes": "case_type=contradictory; affected=mri.conservative_therapy"
+}

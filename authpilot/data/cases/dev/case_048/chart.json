@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_list": "MEDICATION LIST\nDate: 2026-09-16\nAuthor: Pharmacy\nPatient: Basil Bakri (PD0048)\n\nActive medications:\nLisinopril 10 mg daily. Vitamin D 1000 IU daily.\n",
+  "doc_02_imaging_history": "IMAGING HISTORY\nDate: 2026-10-03\nAuthor: Radiology Records\nPatient: Basil Bakri (PD0048)\n\nPrior studies:\nLast lumbar spine MRI: 2024-04-16 (30 months before this request).\n",
+  "doc_03_pt_note": "PHYSICAL THERAPY INITIAL EVALUATION\nDate: 2026-10-02\nAuthor: Physical Therapy Department\nPatient: Basil Bakri (PD0048)\n\nEvaluation:\nPatient reports no prior physical therapy for this episode of back pain. Lumbar flexion limited by pain.\n",
+  "doc_04_progress_note": "PROGRESS NOTE\nDate: 2026-10-01\nAuthor: Dr. Hisham Qadri, Orthopedics\nPatient: Basil Bakri (PD0048)\n\nSubjective:\n34-year-old male with chronic lower back pain with right-sided sciatica for 11 weeks. Completed 6 weeks of physical therapy without improvement. Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss. Non-smoker, drinks alcohol rarely.\n\nObjective:\nBP 124/71, HR 85, temperature 36.8 C. Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative.\n\nAssessment and Plan:\nWill obtain MRI of the lumbar spine without contrast to guide further management.\n"
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "dev_028",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria.",
+          "start": 335,
+          "end": 428
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Took methotrexate 20 mg every week for five months; disease still active.",
+          "start": 194,
+          "end": 267
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "QuantiFERON result negative, drawn 2026-06-03.",
+          "start": 148,
+          "end": 194
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "not_met",
+      "evidence": []
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.disease_activity",
+      "description": "No DAS28 score is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_addendum",
+          "span_text": "DAS28 score 4.4, consistent with moderate disease activity.",
+          "start": 115,
+          "end": 174
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-11",
+    "mtx_months": 5,
+    "tb_months_ago": 4,
+    "das28": 4.4
+  },
+  "notes": "case_type=missing; affected=bio.disease_activity; clinic_can_supply=bio.disease_activity"
+}

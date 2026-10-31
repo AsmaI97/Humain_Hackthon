@@ -1,0 +1,83 @@
+{
+  "case_id": "sealed_008",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "Reports finishing 12 weeks of PT before this visit.",
+          "start": 254,
+          "end": 305
+        },
+        {
+          "doc_id": "doc_03_pt_note",
+          "span_text": "First PT visit today; patient has never attended therapy for this back pain.",
+          "start": 113,
+          "end": 189
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "Specifically denies incontinence, perineal numbness, night sweats or weight loss.",
+          "start": 306,
+          "end": 387
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "Focused neurologic exam shows right EHL weakness 4/5 and an absent right ankle jerk.",
+          "start": 433,
+          "end": 517
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_imaging_history",
+          "span_text": "Most recent lumbar MRI was 2022-02-05.",
+          "start": 109,
+          "end": 147
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "description": "Records conflict on whether conservative therapy was completed."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "contradictory"
+  ],
+  "facts": {
+    "order_date": "2026-10-19",
+    "therapy_weeks": 12,
+    "last_mri_months_ago": 57
+  },
+  "notes": "case_type=contradictory; affected=mri.conservative_therapy"
+}

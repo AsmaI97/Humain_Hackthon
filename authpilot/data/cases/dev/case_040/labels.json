@@ -1,0 +1,73 @@
+{
+  "case_id": "dev_040",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation.",
+          "start": 409,
+          "end": 505
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Methotrexate 17.5 mg weekly was stopped after 6 weeks because of transaminase elevation (intolerance).",
+          "start": 194,
+          "end": 296
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_lab_results",
+          "span_text": "Interferon-gamma release assay negative on 2026-09-02.",
+          "start": 133,
+          "end": 187
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_flowsheet",
+          "span_text": "DAS28-CRP 5.5 recorded at the most recent visit (high disease activity).",
+          "start": 111,
+          "end": 183
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "deny_then_appeal_approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "appeal_scenario"
+  ],
+  "facts": {
+    "order_date": "2026-10-11",
+    "mtx_intolerance": true,
+    "tb_months_ago": 1,
+    "das28": 5.5
+  },
+  "notes": "case_type=appeal"
+}

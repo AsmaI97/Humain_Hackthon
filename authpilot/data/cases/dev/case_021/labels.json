@@ -1,0 +1,77 @@
+{
+  "case_id": "dev_021",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_pt_note",
+          "span_text": "Patient completed 9 weeks of supervised physical therapy with minimal improvement in pain.",
+          "start": 127,
+          "end": 217
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss.",
+          "start": 229,
+          "end": 322
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "Exam limited by pain; neurologic examination not completed.",
+          "start": 373,
+          "end": 432
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_imaging_history",
+          "span_text": "No prior lumbar spine imaging on record.",
+          "start": 104,
+          "end": 144
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.neuro_exam",
+      "description": "The neurological examination is documented as incomplete."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "ambiguous"
+  ],
+  "facts": {
+    "order_date": "2026-10-17",
+    "therapy_weeks": 9,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=ambiguous; affected=mri.neuro_exam"
+}

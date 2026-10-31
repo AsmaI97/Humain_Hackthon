@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_list": "MEDICATION LIST\nDate: 2026-10-16\nAuthor: Pharmacy\nPatient: Layla Bakri (PD0037)\n\nActive medications:\nVitamin D 1000 IU daily. Lisinopril 10 mg daily.\n",
+  "doc_02_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-18\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Layla Bakri (PD0037)\n\nHistory:\n72-year-old female with 10 years of symmetric small-joint polyarthritis. Took methotrexate 15 mg every week for 4 months; disease still active.\n\nExam:\nTender joint count 6, swollen joint count 7. Disease activity: DAS28-ESR 5.1.\n\nAssessment:\nRheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_03_lab_results": "LABORATORY RESULTS\nDate: 2026-10-15\nAuthor: Clinical Laboratory\nPatient: Layla Bakri (PD0037)\n\nResults:\nCRP 11.3 mg/L. TB screening (IGRA) 2025-11-18: negative. Anti-CCP antibodies positive.\n",
+  "doc_04_medication_history": "MEDICATION HISTORY\nDate: 2026-10-14\nAuthor: Pharmacy\nPatient: Layla Bakri (PD0037)\n\nMedications:\nPrednisone 5 mg daily. No prior conventional DMARD therapy on record.\n"
+}

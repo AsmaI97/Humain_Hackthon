@@ -1,0 +1,6 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-09-27\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Basil Khalil (PD0013)\n\nHistory:\n40-year-old male with 3 years of symmetric small-joint polyarthritis. Has been on methotrexate 17.5 mg weekly for three months with persistent synovitis.\n\nExam:\nTender joint count 11, swollen joint count 8. DAS28-CRP today: 6.7 (high disease activity).\n\nAssessment:\nRheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_patient_message": "PATIENT PORTAL MESSAGE\nDate: 2026-09-20\nAuthor: Patient Portal\nPatient: Basil Khalil (PD0013)\n\nMessage:\nPatient confirms that insurance details are unchanged.\n",
+  "doc_03_lab_results": "LABORATORY RESULTS\nDate: 2026-09-27\nAuthor: Clinical Laboratory\nPatient: Basil Khalil (PD0013)\n\nResults:\nCRP 31.5 mg/L. QuantiFERON result negative, drawn 2026-04-30. ESR 38 mm/h.\n",
+  "doc_04_medication_history": "MEDICATION HISTORY\nDate: 2026-10-02\nAuthor: Pharmacy\nPatient: Basil Khalil (PD0013)\n\nMedications:\nOmeprazole 20 mg daily. No prior conventional DMARD therapy on record.\n"
+}

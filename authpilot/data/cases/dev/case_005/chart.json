@@ -1,0 +1,5 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-14\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Dana Zaid (PD0005)\n\nHistory:\n48-year-old female with 2 years of symmetric small-joint polyarthritis. Took methotrexate 15 mg every week for nine months; disease still active.\n\nExam:\nTender joint count 14, swollen joint count 10.\n\nAssessment:\nRheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_lab_results": "LABORATORY RESULTS\nDate: 2026-10-15\nAuthor: Clinical Laboratory\nPatient: Dana Zaid (PD0005)\n\nResults:\nCRP 18.8 mg/L. Rheumatoid factor positive. Interferon-gamma release assay negative on 2026-09-15.\n",
+  "doc_03_medication_history": "MEDICATION HISTORY\nDate: 2026-10-17\nAuthor: Pharmacy\nPatient: Dana Zaid (PD0005)\n\nMedications:\nOmeprazole 20 mg daily.\n"
+}

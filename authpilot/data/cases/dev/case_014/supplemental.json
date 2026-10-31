@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_06_rheumatology_addendum": "RHEUMATOLOGY ADDENDUM\nDate: 2026-10-07\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Nabil Jaber (PD0014)\n\nHistory:\nTook methotrexate 17.5 mg every week for 6 months; disease still active.\n"
+  },
+  "provides": {
+    "2.2": [
+      "doc_06_rheumatology_addendum"
+    ]
+  }
+}

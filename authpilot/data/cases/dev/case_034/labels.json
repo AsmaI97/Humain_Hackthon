@@ -1,0 +1,77 @@
+{
+  "case_id": "dev_034",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_pt_note",
+          "span_text": "Patient completed 11 weeks of supervised physical therapy with minimal improvement in pain.",
+          "start": 129,
+          "end": 220
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Reports occasional numbness in the groin area; unclear whether this is new.",
+          "start": 188,
+          "end": 263
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact.",
+          "start": 349,
+          "end": 479
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_imaging_history",
+          "span_text": "Lumbar radiographs only (2026-05-01); no prior MRI.",
+          "start": 106,
+          "end": 157
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.red_flags",
+      "description": "A possible red-flag symptom is mentioned and needs clarification."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "ambiguous"
+  ],
+  "facts": {
+    "order_date": "2026-10-08",
+    "therapy_weeks": 11,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=ambiguous; affected=mri.red_flags"
+}

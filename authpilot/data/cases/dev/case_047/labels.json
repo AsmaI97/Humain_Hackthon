@@ -1,0 +1,84 @@
+{
+  "case_id": "dev_047",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Trialed meloxicam 15 mg daily for 6 weeks without adequate relief.",
+          "start": 250,
+          "end": 316
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer.",
+          "start": 317,
+          "end": 404
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "Lumbar radiographs only (2026-08-18); no prior MRI.",
+          "start": 103,
+          "end": 154
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.neuro_exam",
+      "description": "No lower extremity neurological examination is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_progress_addendum",
+          "span_text": "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact.",
+          "start": 121,
+          "end": 251
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-18",
+    "therapy_weeks": 6,
+    "therapy_type": "nsaid"
+  },
+  "notes": "case_type=missing; affected=mri.neuro_exam; clinic_can_supply=mri.neuro_exam"
+}

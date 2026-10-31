@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_history": "MEDICATION HISTORY\nDate: 2026-09-26\nAuthor: Pharmacy\nPatient: Tariq Bakri (PD0003)\n\nMedications:\nOmeprazole 20 mg daily.\n",
+  "doc_02_medication_list": "MEDICATION LIST\nDate: 2026-09-13\nAuthor: Pharmacy\nPatient: Tariq Bakri (PD0003)\n\nActive medications:\nAtorvastatin 20 mg nightly. Lisinopril 10 mg daily.\n",
+  "doc_03_lab_results": "LABORATORY RESULTS\nDate: 2026-09-26\nAuthor: Clinical Laboratory\nPatient: Tariq Bakri (PD0003)\n\nResults:\nCRP 8.6 mg/L. Anti-CCP antibodies positive. Interferon-gamma release assay negative on 2026-05-28.\n",
+  "doc_04_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-09-28\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Tariq Bakri (PD0003)\n\nHistory:\n63-year-old male with 7 years of symmetric small-joint polyarthritis. DAS28 was 2.4 during a period of remission in 2021. Took methotrexate 20 mg every week for seven months; disease still active.\n\nExam:\nTender joint count 8, swollen joint count 4. DAS28-CRP 4.7 at today's visit.\n\nAssessment:\nRheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

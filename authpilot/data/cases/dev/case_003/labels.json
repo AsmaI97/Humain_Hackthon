@@ -1,0 +1,73 @@
+{
+  "case_id": "dev_003",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology.",
+          "start": 416,
+          "end": 506
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "Took methotrexate 20 mg every week for seven months; disease still active.",
+          "start": 244,
+          "end": 318
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "Interferon-gamma release assay negative on 2026-05-28.",
+          "start": 148,
+          "end": 202
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "DAS28-CRP 4.7 at today's visit.",
+          "start": 371,
+          "end": 402
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "distractor"
+  ],
+  "facts": {
+    "order_date": "2026-10-01",
+    "mtx_months": 7,
+    "tb_months_ago": 4,
+    "das28": 4.7
+  },
+  "notes": "case_type=distractor; affected=bio.disease_activity"
+}

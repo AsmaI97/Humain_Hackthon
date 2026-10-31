@@ -1,0 +1,71 @@
+{
+  "case_id": "sealed_004",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "Impression: seropositive RA (M05.79), confirmed at this rheumatology visit.",
+          "start": 369,
+          "end": 444
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "MTX discontinued after 9 wks owing to persistent nausea and elevated LFTs.",
+          "start": 195,
+          "end": 269
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "Latent TB screen negative (2026-08-14, interferon-gamma release assay).",
+          "start": 123,
+          "end": 194
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "DAS28-ESR calculated at 5.3.",
+          "start": 327,
+          "end": 355
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-19",
+    "mtx_intolerance": true,
+    "tb_months_ago": 2,
+    "das28": 5.3
+  },
+  "notes": "case_type=clean"
+}

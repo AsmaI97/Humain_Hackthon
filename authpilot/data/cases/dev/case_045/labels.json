@@ -1,0 +1,77 @@
+{
+  "case_id": "dev_045",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology.",
+          "start": 366,
+          "end": 455
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Methotrexate 20 mg weekly for 5 months with inadequate response.",
+          "start": 192,
+          "end": 256
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "Interferon-gamma release assay negative on 2026-02-09.",
+          "start": 119,
+          "end": 173
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Disease remains active per patient report.",
+          "start": 310,
+          "end": 352
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.disease_activity",
+      "description": "Disease activity is described without a DAS28 score."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "ambiguous"
+  ],
+  "facts": {
+    "order_date": "2026-10-14",
+    "mtx_months": 5,
+    "tb_months_ago": 8
+  },
+  "notes": "case_type=ambiguous; affected=bio.disease_activity"
+}

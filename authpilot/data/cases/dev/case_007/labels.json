@@ -1,0 +1,95 @@
+{
+  "case_id": "dev_007",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria.",
+          "start": 365,
+          "end": 458
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Methotrexate 17.5 mg weekly was stopped after five weeks because of transaminase elevation (intolerance).",
+          "start": 193,
+          "end": 298
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "not_met",
+      "evidence": []
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.tb_screening",
+      "description": "No tuberculosis screening result is documented."
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "description": "No DAS28 score is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_lab_results",
+          "span_text": "TB screening (IGRA) 2026-07-14: negative.",
+          "start": 105,
+          "end": 146
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_05_rheumatology_addendum",
+          "span_text": "DAS28-CRP today: 5.9 (high disease activity).",
+          "start": 116,
+          "end": 161
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-18",
+    "mtx_intolerance": true,
+    "tb_months_ago": 3,
+    "das28": 5.9
+  },
+  "notes": "case_type=missing; affected=bio.tb_screening,bio.disease_activity; clinic_can_supply=bio.tb_screening,bio.disease_activity"
+}

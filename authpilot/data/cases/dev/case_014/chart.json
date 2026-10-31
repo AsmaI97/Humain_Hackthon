@@ -1,0 +1,7 @@
+{
+  "doc_01_referral_note": "REFERRAL NOTE\nDate: 2026-08-04\nAuthor: Dr. Omar Faris, Family Medicine\nPatient: Nabil Jaber (PD0014)\n\nReason for referral:\nPossible inflammatory arthritis; referral to rheumatology placed.\n",
+  "doc_02_lab_results": "LABORATORY RESULTS\nDate: 2026-10-05\nAuthor: Clinical Laboratory\nPatient: Nabil Jaber (PD0014)\n\nResults:\nCRP 22.3 mg/L. QuantiFERON-TB Gold Plus: negative (collected 2026-05-09). Anti-CCP antibodies positive.\n",
+  "doc_03_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-03\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Nabil Jaber (PD0014)\n\nHistory:\n43-year-old male with 2 years of symmetric small-joint polyarthritis.\n\nExam:\nTender joint count 5, swollen joint count 10. DAS28 score 6.2, consistent with high disease activity.\n\nAssessment:\nFindings discussed with the patient.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_04_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-10-07\nAuthor: Triage Nurse\nPatient: Nabil Jaber (PD0014)\n\nTriage:\nBP 137/70, HR 66, temperature 37.0 C. Pain score 4/10.\n",
+  "doc_05_medication_history": "MEDICATION HISTORY\nDate: 2026-10-05\nAuthor: Pharmacy\nPatient: Nabil Jaber (PD0014)\n\nMedications:\nFolic acid 1 mg daily.\n"
+}

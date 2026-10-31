@@ -1,0 +1,73 @@
+{
+  "case_id": "sealed_007",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Meets ACR/EULAR criteria for RA (score 8/10) on rheumatology assessment.",
+          "start": 407,
+          "end": 479
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Methotrexate titrated to 20 mg weekly; no meaningful improvement after 8 months.",
+          "start": 196,
+          "end": 276
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "Tuberculin skin test read at 0 mm on 2026-03-29.",
+          "start": 124,
+          "end": 172
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "DAS28-ESR calculated at 5.5.",
+          "start": 365,
+          "end": 393
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "distractor"
+  ],
+  "facts": {
+    "order_date": "2026-10-28",
+    "mtx_months": 8,
+    "tb_months_ago": 7,
+    "das28": 5.5
+  },
+  "notes": "case_type=distractor; affected=bio.tb_screening"
+}

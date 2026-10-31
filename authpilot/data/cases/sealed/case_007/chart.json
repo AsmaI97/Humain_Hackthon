@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-26\nAuthor: Pharmacy\nPatient: Reem Mansour (PS0007)\n\nFills:\nOmeprazole 20 mg daily.\n",
+  "doc_02_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-22\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Reem Mansour (PS0007)\n\nBackground:\n37-year-old female with 8 years of symmetric small-joint polyarthritis. Methotrexate titrated to 20 mg weekly; no meaningful improvement after 8 months. Grandfather had TB decades ago.\n\nFindings:\nTender joint count 6, swollen joint count 2. DAS28-ESR calculated at 5.5.\n\nImpression:\nMeets ACR/EULAR criteria for RA (score 8/10) on rheumatology assessment.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_03_lab_results": "LAB REPORT\nDate: 2026-10-19\nAuthor: Clinical Laboratory\nPatient: Reem Mansour (PS0007)\n\nValues:\nCRP 37.0 mg/L. ESR 38 mm/h. Tuberculin skin test read at 0 mm on 2026-03-29.\n",
+  "doc_04_patient_message": "SECURE MESSAGE\nDate: 2026-10-09\nAuthor: Patient Portal\nPatient: Reem Mansour (PS0007)\n\nBody:\nPatient requests a copy of the visit summary.\n"
+}

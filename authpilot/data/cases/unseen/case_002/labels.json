@@ -1,0 +1,58 @@
+{
+  "case_id": "unseen_002",
+  "split": "unseen",
+  "procedure": "glp1",
+  "criteria": [
+    {
+      "criterion_id": "glp.bmi",
+      "section_ref": "3.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_weight_visit",
+          "span_text": "BMI 27.3 kg/m2; established hypertension treated with amlodipine.",
+          "start": 214,
+          "end": 279
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.lifestyle",
+      "section_ref": "3.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_nutrition_summary",
+          "span_text": "Completed 10 months of a supervised reduced-calorie diet and exercise program with under 5% weight loss.",
+          "start": 113,
+          "end": 217
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.mtc_screen",
+      "section_ref": "4.1",
+      "status": "not_met",
+      "evidence": []
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "glp.mtc_screen",
+      "description": "Thyroid cancer history screening is not documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-29",
+    "bmi": 27.3,
+    "comorbidity": "hypertension",
+    "lifestyle_months": 10
+  },
+  "notes": "case_type=missing"
+}

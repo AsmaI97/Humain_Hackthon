@@ -1,0 +1,71 @@
+{
+  "case_id": "dev_039",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology.",
+          "start": 358,
+          "end": 448
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Methotrexate 15 mg weekly for five months with inadequate response.",
+          "start": 192,
+          "end": 259
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "QuantiFERON result negative, drawn 2026-07-03.",
+          "start": 120,
+          "end": 166
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Disease activity: DAS28-ESR 4.8.",
+          "start": 312,
+          "end": 344
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-05",
+    "mtx_months": 5,
+    "tb_months_ago": 3,
+    "das28": 4.8
+  },
+  "notes": "case_type=clean"
+}

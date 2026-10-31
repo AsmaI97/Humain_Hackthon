@@ -1,0 +1,71 @@
+{
+  "case_id": "sealed_026",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Meets ACR/EULAR criteria for RA (score 8/10) on rheumatology assessment.",
+          "start": 367,
+          "end": 439
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Despite four months of weekly methotrexate at 25 mg, synovitis persists.",
+          "start": 194,
+          "end": 266
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "IGRA (QFT-Plus) 2026-07-19: neg.",
+          "start": 136,
+          "end": 168
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Today's DAS28 4.2 (moderate).",
+          "start": 324,
+          "end": 353
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-24",
+    "mtx_months": 4,
+    "tb_months_ago": 3,
+    "das28": 4.2
+  },
+  "notes": "case_type=clean"
+}

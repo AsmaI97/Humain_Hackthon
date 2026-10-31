@@ -1,0 +1,72 @@
+{
+  "case_id": "sealed_031",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_pt_note",
+          "span_text": "Supervised PT x 9 wks (18 sessions), plateaued without durable relief.",
+          "start": 112,
+          "end": 182
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Cauda equina screen negative; afebrile, no history of malignancy.",
+          "start": 196,
+          "end": 261
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Motor, sensory and reflex testing of both legs documented as normal.",
+          "start": 416,
+          "end": 484
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "No lumbar MRI found in the regional imaging exchange.",
+          "start": 108,
+          "end": 161
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "distractor"
+  ],
+  "facts": {
+    "order_date": "2026-10-12",
+    "therapy_weeks": 9,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=distractor; affected=mri.no_recent_imaging"
+}

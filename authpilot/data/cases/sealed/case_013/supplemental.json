@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_04_lab_results": "LAB REPORT\nDate: 2026-10-22\nAuthor: Clinical Laboratory\nPatient: Mona Mansour (PS0013)\n\nValues:\nIGRA (QFT-Plus) 2026-07-20: neg.\n"
+  },
+  "provides": {
+    "2.3": [
+      "doc_04_lab_results"
+    ]
+  }
+}

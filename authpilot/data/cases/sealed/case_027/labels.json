@@ -1,0 +1,71 @@
+{
+  "case_id": "sealed_027",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Seropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.",
+          "start": 335,
+          "end": 422
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "MTX 17.5 mg/wk x 3 mo, inadequate response.",
+          "start": 192,
+          "end": 235
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_lab_results",
+          "span_text": "Tuberculin skin test read at 0 mm on 2026-05-09.",
+          "start": 137,
+          "end": 185
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "DAS28-ESR calculated at 5.0.",
+          "start": 293,
+          "end": 321
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-06",
+    "mtx_months": 3,
+    "tb_months_ago": 5,
+    "das28": 5.0
+  },
+  "notes": "case_type=clean"
+}

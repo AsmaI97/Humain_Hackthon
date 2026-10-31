@@ -1,0 +1,71 @@
+{
+  "case_id": "sealed_018",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Impression: seropositive RA (M05.79), confirmed at this rheumatology visit.",
+          "start": 348,
+          "end": 423
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "MTX 20 mg/wk x 5 mo, inadequate response.",
+          "start": 194,
+          "end": 235
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_lab_results",
+          "span_text": "Latent TB screen negative (2026-06-07, interferon-gamma release assay).",
+          "start": 139,
+          "end": 210
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Composite disease activity (DAS28) = 4.4.",
+          "start": 293,
+          "end": 334
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-11",
+    "mtx_months": 5,
+    "tb_months_ago": 4,
+    "das28": 4.4
+  },
+  "notes": "case_type=clean"
+}

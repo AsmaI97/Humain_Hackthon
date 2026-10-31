@@ -1,0 +1,5 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-18\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Amal Zaid (PS0026)\n\nBackground:\n70-year-old female with 4 years of symmetric small-joint polyarthritis. Despite four months of weekly methotrexate at 25 mg, synovitis persists.\n\nFindings:\nTender joint count 11, swollen joint count 8. Today's DAS28 4.2 (moderate).\n\nImpression:\nMeets ACR/EULAR criteria for RA (score 8/10) on rheumatology assessment.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-22\nAuthor: Pharmacy\nPatient: Amal Zaid (PS0026)\n\nFills:\nOmeprazole 20 mg daily.\n",
+  "doc_03_lab_results": "LAB REPORT\nDate: 2026-10-14\nAuthor: Clinical Laboratory\nPatient: Amal Zaid (PS0026)\n\nValues:\nCRP 20.1 mg/L. Rheumatoid factor positive. IGRA (QFT-Plus) 2026-07-19: neg.\n"
+}

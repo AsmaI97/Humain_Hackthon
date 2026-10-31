@@ -1,0 +1,6 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-09\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Basil Bakri (PS0023)\n\nBackground:\n52-year-old male with 8 years of symmetric small-joint polyarthritis. MTX 15 mg/wk x 4 mo, inadequate response.\n\nFindings:\nTender joint count 6, swollen joint count 6. DAS28-ESR calculated at 4.3.\n\nImpression:\nSeropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_patient_message": "SECURE MESSAGE\nDate: 2026-10-14\nAuthor: Patient Portal\nPatient: Basil Bakri (PS0023)\n\nBody:\nPatient asks whether the appointment can be moved to the morning.\n",
+  "doc_03_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-15\nAuthor: Pharmacy\nPatient: Basil Bakri (PS0023)\n\nFills:\nPrednisone 5 mg daily.\n",
+  "doc_04_lab_results": "LAB REPORT\nDate: 2026-10-09\nAuthor: Clinical Laboratory\nPatient: Basil Bakri (PS0023)\n\nValues:\nCRP 29.8 mg/L. Anti-CCP antibodies positive. Tuberculin skin test read at 0 mm on 2026-07-10.\n"
+}

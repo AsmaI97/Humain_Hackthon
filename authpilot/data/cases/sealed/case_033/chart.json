@@ -1,0 +1,5 @@
+{
+  "doc_01_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-09-26\nAuthor: Pharmacy\nPatient: Amal Mansour (PS0033)\n\nFills:\nFolic acid 1 mg daily.\n",
+  "doc_02_lab_results": "LAB REPORT\nDate: 2026-09-25\nAuthor: Clinical Laboratory\nPatient: Amal Mansour (PS0033)\n\nValues:\nCRP 32.8 mg/L. IGRA (QFT-Plus) 2026-05-25: neg. ESR 38 mm/h.\n",
+  "doc_03_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-09-23\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Amal Mansour (PS0033)\n\nBackground:\n65-year-old female with 10 years of symmetric small-joint polyarthritis.\n\nFindings:\nTender joint count 8, swollen joint count 3. Composite disease activity (DAS28) = 5.9.\n\nImpression:\nImpression: seropositive RA (M05.79), confirmed at this rheumatology visit.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

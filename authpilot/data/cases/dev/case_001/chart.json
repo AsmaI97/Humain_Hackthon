@@ -1,0 +1,6 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-24\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Dana Bakri (PD0001)\n\nHistory:\n33-year-old female with 2 years of symmetric small-joint polyarthritis. Methotrexate 17.5 mg weekly for 9 months with inadequate response.\n\nExam:\nTender joint count 7, swollen joint count 10. Disease activity: DAS28-ESR 5.0.\n\nAssessment:\nAssessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_patient_message": "PATIENT PORTAL MESSAGE\nDate: 2026-10-09\nAuthor: Patient Portal\nPatient: Dana Bakri (PD0001)\n\nMessage:\nPatient asks whether the appointment can be moved to the morning.\n",
+  "doc_03_lab_results": "LABORATORY RESULTS\nDate: 2026-10-19\nAuthor: Clinical Laboratory\nPatient: Dana Bakri (PD0001)\n\nResults:\nCRP 20.9 mg/L. ESR 38 mm/h. QuantiFERON-TB Gold Plus: negative (collected 2025-12-01).\n",
+  "doc_04_medication_history": "MEDICATION HISTORY\nDate: 2026-10-28\nAuthor: Pharmacy\nPatient: Dana Bakri (PD0001)\n\nMedications:\nPrednisone 5 mg daily.\n"
+}

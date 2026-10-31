@@ -1,0 +1,6 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-09\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Rami Nasser (PD0045)\n\nHistory:\n43-year-old male with 8 years of symmetric small-joint polyarthritis. Methotrexate 20 mg weekly for 5 months with inadequate response.\n\nExam:\nTender joint count 13, swollen joint count 4. Disease remains active per patient report.\n\nAssessment:\nAssessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-10-14\nAuthor: Triage Nurse\nPatient: Rami Nasser (PD0045)\n\nTriage:\nBP 133/84, HR 62, temperature 36.6 C. Pain score 7/10.\n",
+  "doc_03_lab_results": "LABORATORY RESULTS\nDate: 2026-10-05\nAuthor: Clinical Laboratory\nPatient: Rami Nasser (PD0045)\n\nResults:\nCRP 22.3 mg/L. Interferon-gamma release assay negative on 2026-02-09. Rheumatoid factor positive.\n",
+  "doc_04_medication_history": "MEDICATION HISTORY\nDate: 2026-10-14\nAuthor: Pharmacy\nPatient: Rami Nasser (PD0045)\n\nMedications:\nOmeprazole 20 mg daily.\n"
+}

@@ -1,0 +1,77 @@
+{
+  "case_id": "dev_015",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Has taken ibuprofen 600 mg three times daily for 11 weeks with no meaningful improvement.",
+          "start": 331,
+          "end": 420
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Reports occasional numbness in the groin area; unclear whether this is new.",
+          "start": 197,
+          "end": 272
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact.",
+          "start": 471,
+          "end": 564
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "Lumbar radiographs only (2026-07-17); no prior MRI.",
+          "start": 105,
+          "end": 156
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.red_flags",
+      "description": "A possible red-flag symptom is mentioned and needs clarification."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "ambiguous"
+  ],
+  "facts": {
+    "order_date": "2026-10-23",
+    "therapy_weeks": 11,
+    "therapy_type": "nsaid"
+  },
+  "notes": "case_type=ambiguous; affected=mri.red_flags"
+}

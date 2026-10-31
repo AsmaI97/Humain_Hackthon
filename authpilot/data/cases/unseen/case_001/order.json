@@ -1,0 +1,9 @@
+{
+  "order_id": "ORD-U-0001",
+  "patient_id": "PU0001",
+  "payer_id": "payer_a",
+  "procedure_code": "J3490",
+  "procedure_name": "Semaglutide 2.4 mg weekly injection for chronic weight management",
+  "ordering_provider": "Dr. Huda Rahman, Endocrinology",
+  "request_date": "2026-10-08"
+}

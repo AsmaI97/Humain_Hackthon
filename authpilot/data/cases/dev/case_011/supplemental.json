@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_05_rheumatology_addendum": "RHEUMATOLOGY ADDENDUM\nDate: 2026-10-07\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Hadi Hamdan (PD0011)\n\nAssessment:\nDiagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation.\n"
+  },
+  "provides": {
+    "2.1": [
+      "doc_05_rheumatology_addendum"
+    ]
+  }
+}

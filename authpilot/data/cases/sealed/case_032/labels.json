@@ -1,0 +1,73 @@
+{
+  "case_id": "sealed_032",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Meets ACR/EULAR criteria for RA (score 8/10) on rheumatology assessment.",
+          "start": 362,
+          "end": 434
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Despite 4 months of weekly methotrexate at 15 mg, synovitis persists.",
+          "start": 192,
+          "end": 261
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_lab_results",
+          "span_text": "Tuberculin skin test read at 0 mm on 2025-12-11.",
+          "start": 139,
+          "end": 187
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_flowsheet",
+          "span_text": "DAS28 4.7 on the last flowsheet entry.",
+          "start": 110,
+          "end": 148
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "deny_then_appeal_approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "appeal_scenario"
+  ],
+  "facts": {
+    "order_date": "2026-10-13",
+    "mtx_months": 4,
+    "tb_months_ago": 10,
+    "das28": 4.7
+  },
+  "notes": "case_type=appeal"
+}

@@ -1,0 +1,5 @@
+{
+  "doc_01_patient_message": "PATIENT PORTAL MESSAGE\nDate: 2026-10-05\nAuthor: Patient Portal\nPatient: Reem Alnour (PU0004)\n\nMessage:\nPatient requests a copy of the visit summary.\n",
+  "doc_02_weight_visit": "WEIGHT MANAGEMENT VISIT\nDate: 2026-10-03\nAuthor: Dr. Kamal Aziz, Obesity Medicine\nPatient: Reem Alnour (PU0004)\n\nHistory:\n51-year-old female seeking treatment for obesity. No personal or family history of medullary thyroid carcinoma or MEN2.\n\nExam:\nBP 124/73, HR 88, temperature 36.8 C. BMI 27.3 kg/m2; established hypertension treated with amlodipine.\n\nPlan:\nStart semaglutide 2.4 mg weekly with dose escalation, pending authorization.\n",
+  "doc_03_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-10-09\nAuthor: Triage Nurse\nPatient: Reem Alnour (PU0004)\n\nTriage:\nBP 139/85, HR 62, temperature 36.6 C. Pain score 7/10.\n"
+}

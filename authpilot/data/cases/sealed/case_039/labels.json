@@ -1,0 +1,70 @@
+{
+  "case_id": "sealed_039",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_pt_note",
+          "span_text": "Pt finished a 12-week rehab program; pain still 7/10 with sitting.",
+          "start": 113,
+          "end": 179
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "ROS: no B/B dysfunction, no saddle numbness, afebrile, weight stable.",
+          "start": 245,
+          "end": 314
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "LE neuro: 5/5 throughout, DTRs symmetric, SLR negative bilaterally.",
+          "start": 360,
+          "end": 427
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "Only plain films of the lumbar spine on file (2026-07-04); MRI never performed.",
+          "start": 109,
+          "end": 188
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-11",
+    "therapy_weeks": 12,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=clean"
+}

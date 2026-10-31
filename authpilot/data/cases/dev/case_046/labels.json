@@ -1,0 +1,75 @@
+{
+  "case_id": "dev_046",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Reports some physical therapy in the past; duration unknown.",
+          "start": 311,
+          "end": 371
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer.",
+          "start": 188,
+          "end": 275
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Neuro: positive straight-leg raise on the left at 40 degrees, diminished sensation in the left L5 dermatome.",
+          "start": 422,
+          "end": 530
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "No prior lumbar spine imaging on record.",
+          "start": 103,
+          "end": 143
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "description": "Conservative therapy is mentioned but its duration is not documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "ambiguous"
+  ],
+  "facts": {
+    "order_date": "2026-10-14"
+  },
+  "notes": "case_type=ambiguous; affected=mri.conservative_therapy"
+}

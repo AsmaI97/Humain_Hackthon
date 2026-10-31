@@ -1,0 +1,84 @@
+{
+  "case_id": "sealed_012",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_pt_note",
+          "span_text": "Status post ten weeks of formal rehabilitation without functional improvement.",
+          "start": 113,
+          "end": 191
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_progress_note",
+          "span_text": "Specifically denies incontinence, perineal numbness, night sweats or weight loss.",
+          "start": 198,
+          "end": 279
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_progress_note",
+          "span_text": "Focused neurologic exam shows left EHL weakness 4/5 and an absent left ankle jerk.",
+          "start": 383,
+          "end": 465
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "Imaging history: none on file.",
+          "start": 109,
+          "end": 139
+        },
+        {
+          "doc_id": "doc_03_outside_records",
+          "span_text": "Outside report: MRI L-spine 2026-01-25, mild disc bulge at L4-5.",
+          "start": 113,
+          "end": 177
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "description": "Records conflict on whether a lumbar MRI was done in the last 12 months."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "contradictory"
+  ],
+  "facts": {
+    "order_date": "2026-10-28",
+    "therapy_weeks": 10,
+    "therapy_type": "physical_therapy",
+    "last_mri_months_ago": 9
+  },
+  "notes": "case_type=contradictory; affected=mri.no_recent_imaging"
+}

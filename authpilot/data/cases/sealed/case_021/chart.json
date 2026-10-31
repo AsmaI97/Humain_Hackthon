@@ -1,0 +1,6 @@
+{
+  "doc_01_lab_results": "LAB REPORT\nDate: 2026-10-09\nAuthor: Clinical Laboratory\nPatient: Layla Saleh (PS0021)\n\nValues:\nCRP 9.2 mg/L. Rheumatoid factor positive. Tuberculin skin test read at 0 mm on 2026-03-14.\n",
+  "doc_02_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-10\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Layla Saleh (PS0021)\n\nBackground:\n48-year-old female with 10 years of symmetric small-joint polyarthritis. MTX discontinued after 5 wks owing to persistent nausea and elevated LFTs.\n\nFindings:\nTender joint count 7, swollen joint count 2. Activity remains uncontrolled.\n\nImpression:\nImpression: seropositive RA (M05.79), confirmed at this rheumatology visit.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_03_rheumatology_flowsheet": "DISEASE ACTIVITY FLOWSHEET\nDate: 2026-10-10\nAuthor: Rheumatology Clinic\nPatient: Layla Saleh (PS0021)\n\nScores:\nDAS28 6.7 on the last flowsheet entry. Patient global assessment 9/10.\n",
+  "doc_04_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-12\nAuthor: Pharmacy\nPatient: Layla Saleh (PS0021)\n\nFills:\nFolic acid 1 mg daily.\n"
+}

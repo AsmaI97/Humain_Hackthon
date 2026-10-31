@@ -1,0 +1,71 @@
+{
+  "case_id": "dev_033",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology.",
+          "start": 358,
+          "end": 447
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Methotrexate 25 mg weekly for four months with inadequate response.",
+          "start": 192,
+          "end": 259
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "Interferon-gamma release assay negative on 2026-09-14.",
+          "start": 119,
+          "end": 173
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "DAS28-CRP 6.7 at today's visit.",
+          "start": 313,
+          "end": 344
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-24",
+    "mtx_months": 4,
+    "tb_months_ago": 1,
+    "das28": 6.7
+  },
+  "notes": "case_type=clean"
+}

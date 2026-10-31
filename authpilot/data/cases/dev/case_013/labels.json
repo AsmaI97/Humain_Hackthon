@@ -1,0 +1,84 @@
+{
+  "case_id": "dev_013",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology.",
+          "start": 389,
+          "end": 479
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Has been on methotrexate 17.5 mg weekly for three months with persistent synovitis.",
+          "start": 193,
+          "end": 276
+        },
+        {
+          "doc_id": "doc_04_medication_history",
+          "span_text": "No prior conventional DMARD therapy on record.",
+          "start": 122,
+          "end": 168
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "QuantiFERON result negative, drawn 2026-04-30.",
+          "start": 120,
+          "end": 166
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "DAS28-CRP today: 6.7 (high disease activity).",
+          "start": 330,
+          "end": 375
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.mtx_failure",
+      "description": "Records conflict on whether methotrexate was ever prescribed."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "contradictory"
+  ],
+  "facts": {
+    "order_date": "2026-10-05",
+    "mtx_months": 3,
+    "tb_months_ago": 5,
+    "das28": 6.7
+  },
+  "notes": "case_type=contradictory; affected=bio.mtx_failure"
+}

@@ -1,0 +1,13 @@
+{
+  "documents": {
+    "doc_04_progress_addendum": "CLINIC NOTE ADDENDUM\nDate: 2026-10-19\nAuthor: Dr. Lina Haddad, Family Medicine\nPatient: Sara Khalil (PS0019)\n\nHPI:\nCauda equina screen negative; afebrile, no history of malignancy.\n\nExam:\nLE neuro: 5/5 throughout, DTRs symmetric, SLR negative bilaterally.\n"
+  },
+  "provides": {
+    "2.2": [
+      "doc_04_progress_addendum"
+    ],
+    "2.3": [
+      "doc_04_progress_addendum"
+    ]
+  }
+}

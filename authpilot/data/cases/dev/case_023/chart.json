@@ -1,0 +1,6 @@
+{
+  "doc_01_lab_results": "LABORATORY RESULTS\nDate: 2026-09-29\nAuthor: Clinical Laboratory\nPatient: Reem Nasser (PD0023)\n\nResults:\nCRP 28.1 mg/L. QuantiFERON result negative, drawn 2026-06-29. Rheumatoid factor positive.\n",
+  "doc_02_medication_history": "MEDICATION HISTORY\nDate: 2026-10-04\nAuthor: Pharmacy\nPatient: Reem Nasser (PD0023)\n\nMedications:\nFolic acid 1 mg daily.\n",
+  "doc_03_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-03\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Reem Nasser (PD0023)\n\nHistory:\n36-year-old female with 7 years of symmetric small-joint polyarthritis. Methotrexate 17.5 mg weekly for 5 months with inadequate response.\n\nExam:\nTender joint count 6, swollen joint count 6. DAS28-CRP 5.7 at today's visit.\n\nAssessment:\nRheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_04_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-10-03\nAuthor: Triage Nurse\nPatient: Reem Nasser (PD0023)\n\nTriage:\nBP 115/78, HR 65, temperature 36.6 C. Pain score 7/10.\n"
+}

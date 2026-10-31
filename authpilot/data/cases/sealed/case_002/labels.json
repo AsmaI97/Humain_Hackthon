@@ -1,0 +1,78 @@
+{
+  "case_id": "sealed_002",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Working diagnosis: early inflammatory arthritis, possibly RA.",
+          "start": 368,
+          "end": 429
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "MTX discontinued after 6 wks owing to persistent nausea and elevated LFTs.",
+          "start": 194,
+          "end": 268
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_lab_results",
+          "span_text": "Latent TB screen negative (2026-04-18, interferon-gamma release assay).",
+          "start": 109,
+          "end": 180
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Today's DAS28 4.5 (moderate).",
+          "start": 325,
+          "end": 354
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "description": "The rheumatology impression does not commit to rheumatoid arthritis."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "ambiguous"
+  ],
+  "facts": {
+    "order_date": "2026-10-18",
+    "mtx_intolerance": true,
+    "tb_months_ago": 6,
+    "das28": 4.5
+  },
+  "notes": "case_type=ambiguous; affected=bio.ra_diagnosis"
+}

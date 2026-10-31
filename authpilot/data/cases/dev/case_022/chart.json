@@ -1,0 +1,5 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-18\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Noor Qasim (PD0022)\n\nHistory:\n40-year-old female with 9 years of symmetric small-joint polyarthritis. Methotrexate 15 mg weekly for 4 months with inadequate response.\n\nExam:\nTender joint count 6, swollen joint count 3. Disease activity: DAS28-ESR 6.8.\n\nAssessment:\nAssessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_medication_history": "MEDICATION HISTORY\nDate: 2026-10-22\nAuthor: Pharmacy\nPatient: Noor Qasim (PD0022)\n\nMedications:\nOmeprazole 20 mg daily. No prior conventional DMARD therapy on record.\n",
+  "doc_03_lab_results": "LABORATORY RESULTS\nDate: 2026-10-20\nAuthor: Clinical Laboratory\nPatient: Noor Qasim (PD0022)\n\nResults:\nCRP 15.7 mg/L. Rheumatoid factor positive. QuantiFERON-TB Gold Plus: negative (collected 2025-11-26).\n"
+}

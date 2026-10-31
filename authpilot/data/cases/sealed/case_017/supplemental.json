@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_04_rheumatology_addendum": "RHEUMATOLOGY NOTE ADDENDUM\nDate: 2026-10-20\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Sara Hamdan (PS0017)\n\nBackground:\nMTX discontinued after 9 wks owing to persistent nausea and elevated LFTs.\n"
+  },
+  "provides": {
+    "2.2": [
+      "doc_04_rheumatology_addendum"
+    ]
+  }
+}

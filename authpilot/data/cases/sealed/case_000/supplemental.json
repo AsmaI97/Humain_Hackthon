@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_04_progress_addendum": "CLINIC NOTE ADDENDUM\nDate: 2026-10-22\nAuthor: Dr. Rana Sabbagh, Orthopedics\nPatient: Karim Darwish (PS0000)\n\nHPI:\n11-week NSAID trial (diclofenac 75 mg twice daily) gave no lasting relief.\n"
+  },
+  "provides": {
+    "2.1": [
+      "doc_04_progress_addendum"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "doc_01_patient_message": "PATIENT PORTAL MESSAGE\nDate: 2026-10-08\nAuthor: Patient Portal\nPatient: Nabil Zaid (PD0044)\n\nMessage:\nPatient requests a copy of the visit summary.\n",
+  "doc_02_progress_note": "PROGRESS NOTE\nDate: 2026-10-19\nAuthor: Dr. Omar Faris, Family Medicine\nPatient: Nabil Zaid (PD0044)\n\nSubjective:\n47-year-old male with lumbar pain with intermittent radicular symptoms for 16 weeks. Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss. Works in warehouse logistics with frequent lifting.\n\nObjective:\nBP 135/88, HR 82, temperature 36.8 C. Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact.\n\nAssessment and Plan:\nOrdering lumbar spine MRI without contrast given persistent radicular symptoms.\n",
+  "doc_03_pt_note": "PHYSICAL THERAPY DISCHARGE SUMMARY\nDate: 2026-10-14\nAuthor: Physical Therapy Department\nPatient: Nabil Zaid (PD0044)\n\nSummary:\nA 9-week course of physical therapy was completed without meaningful functional gain. Home exercise program reviewed.\n"
+}

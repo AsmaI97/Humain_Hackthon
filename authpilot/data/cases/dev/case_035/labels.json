@@ -1,0 +1,70 @@
+{
+  "case_id": "dev_035",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_pt_note",
+          "span_text": "Patient completed 8 weeks of supervised physical therapy with minimal improvement in pain.",
+          "start": 128,
+          "end": 218
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer.",
+          "start": 201,
+          "end": 288
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative.",
+          "start": 373,
+          "end": 479
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_imaging_history",
+          "span_text": "No prior lumbar spine imaging on record.",
+          "start": 105,
+          "end": 145
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-25",
+    "therapy_weeks": 8,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=clean"
+}

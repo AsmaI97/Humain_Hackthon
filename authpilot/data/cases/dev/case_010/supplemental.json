@@ -1,0 +1,14 @@
+{
+  "documents": {
+    "doc_04_pt_note": "PHYSICAL THERAPY DISCHARGE SUMMARY\nDate: 2026-10-13\nAuthor: Physical Therapy Department\nPatient: Nabil Khalil (PD0010)\n\nSummary:\nPatient completed eleven weeks of supervised physical therapy with minimal improvement in pain. Home exercise program reviewed.\n",
+    "doc_05_progress_addendum": "PROGRESS NOTE ADDENDUM\nDate: 2026-10-27\nAuthor: Dr. Hisham Qadri, Orthopedics\nPatient: Nabil Khalil (PD0010)\n\nSubjective:\nNo red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer.\n"
+  },
+  "provides": {
+    "2.1": [
+      "doc_04_pt_note"
+    ],
+    "2.2": [
+      "doc_05_progress_addendum"
+    ]
+  }
+}

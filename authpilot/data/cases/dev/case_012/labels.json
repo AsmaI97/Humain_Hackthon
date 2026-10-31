@@ -1,0 +1,71 @@
+{
+  "case_id": "dev_012",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_pt_note",
+          "span_text": "A 11-week course of physical therapy was completed without meaningful functional gain.",
+          "start": 127,
+          "end": 213
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss.",
+          "start": 248,
+          "end": 341
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative.",
+          "start": 392,
+          "end": 498
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_imaging_history",
+          "span_text": "Last lumbar spine MRI: 2022-11-11 (47 months before this request).",
+          "start": 104,
+          "end": 170
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-01",
+    "therapy_weeks": 11,
+    "therapy_type": "physical_therapy",
+    "last_mri_months_ago": 47
+  },
+  "notes": "case_type=clean"
+}

@@ -1,0 +1,5 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-09\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Reem Bakri (PD0002)\n\nHistory:\n44-year-old female with 3 years of symmetric small-joint polyarthritis. Failed methotrexate after six months at 25 mg weekly; joint counts unchanged.\n\nExam:\nTender joint count 10, swollen joint count 4. DAS28 score 3.7, consistent with moderate disease activity.\n\nAssessment:\nDiagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_lab_results": "LABORATORY RESULTS\nDate: 2026-10-01\nAuthor: Clinical Laboratory\nPatient: Reem Bakri (PD0002)\n\nResults:\nCRP 24.8 mg/L. ESR 38 mm/h. TB screening (IGRA) 2026-01-11: negative.\n",
+  "doc_03_medication_history": "MEDICATION HISTORY\nDate: 2026-10-09\nAuthor: Pharmacy\nPatient: Reem Bakri (PD0002)\n\nMedications:\nFolic acid 1 mg daily. No prior conventional DMARD therapy on record.\n"
+}

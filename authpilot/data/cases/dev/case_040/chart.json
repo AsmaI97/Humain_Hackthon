@@ -1,0 +1,6 @@
+{
+  "doc_01_rheumatology_flowsheet": "RHEUMATOLOGY FLOWSHEET\nDate: 2026-10-02\nAuthor: Rheumatology Clinic\nPatient: Faisal Nasser (PD0040)\n\nMeasures:\nDAS28-CRP 5.5 recorded at the most recent visit (high disease activity). Patient global assessment 9/10.\n",
+  "doc_02_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-03\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Faisal Nasser (PD0040)\n\nHistory:\n42-year-old male with 1 years of symmetric small-joint polyarthritis. Methotrexate 17.5 mg weekly was stopped after 6 weeks because of transaminase elevation (intolerance).\n\nExam:\nTender joint count 9, swollen joint count 9. Disease activity remains high despite therapy.\n\nAssessment:\nDiagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_03_medication_history": "MEDICATION HISTORY\nDate: 2026-10-09\nAuthor: Pharmacy\nPatient: Faisal Nasser (PD0040)\n\nMedications:\nPrednisone 5 mg daily.\n",
+  "doc_04_lab_results": "LABORATORY RESULTS\nDate: 2026-10-08\nAuthor: Clinical Laboratory\nPatient: Faisal Nasser (PD0040)\n\nResults:\nCRP 8.9 mg/L. ESR 38 mm/h. Interferon-gamma release assay negative on 2026-09-02.\n"
+}

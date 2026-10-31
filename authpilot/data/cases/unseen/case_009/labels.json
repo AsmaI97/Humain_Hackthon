@@ -1,0 +1,70 @@
+{
+  "case_id": "unseen_009",
+  "split": "unseen",
+  "procedure": "glp1",
+  "criteria": [
+    {
+      "criterion_id": "glp.bmi",
+      "section_ref": "3.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_weight_visit",
+          "span_text": "BMI 34.5 kg/m2 recorded at today's visit.",
+          "start": 383,
+          "end": 424
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.lifestyle",
+      "section_ref": "3.2",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_02_weight_visit",
+          "span_text": "Patient has never joined a structured weight-management program.",
+          "start": 170,
+          "end": 234
+        },
+        {
+          "doc_id": "doc_03_nutrition_summary",
+          "span_text": "Enrolled in structured lifestyle intervention (diet and physical activity) for 7 months; weight plateaued.",
+          "start": 112,
+          "end": 218
+        }
+      ]
+    },
+    {
+      "criterion_id": "glp.mtc_screen",
+      "section_ref": "4.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_weight_visit",
+          "span_text": "Denies personal or family history of medullary thyroid cancer and multiple endocrine neoplasia type 2.",
+          "start": 235,
+          "end": 337
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "glp.lifestyle",
+      "description": "Records conflict on participation in a weight-management program."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "contradictory"
+  ],
+  "facts": {
+    "order_date": "2026-10-01",
+    "bmi": 34.5,
+    "lifestyle_months": 7
+  },
+  "notes": "case_type=contradictory"
+}

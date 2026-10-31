@@ -1,0 +1,94 @@
+{
+  "case_id": "dev_029",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Has taken naproxen 500 mg twice daily for 6 weeks with no meaningful improvement.",
+          "start": 253,
+          "end": 334
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "No prior lumbar spine imaging on record.",
+          "start": 108,
+          "end": 148
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.red_flags",
+      "description": "Red-flag symptom screening is not documented."
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "description": "No lower extremity neurological examination is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_progress_addendum",
+          "span_text": "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss.",
+          "start": 124,
+          "end": 217
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_progress_addendum",
+          "span_text": "Neuro: positive straight-leg raise on the left at 50 degrees, diminished sensation in the left L5 dermatome.",
+          "start": 230,
+          "end": 338
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-03",
+    "therapy_weeks": 6,
+    "therapy_type": "nsaid"
+  },
+  "notes": "case_type=missing; affected=mri.red_flags,mri.neuro_exam; clinic_can_supply=mri.red_flags,mri.neuro_exam"
+}

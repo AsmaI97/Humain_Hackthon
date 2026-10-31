@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_history": "MEDICATION HISTORY\nDate: 2026-10-19\nAuthor: Pharmacy\nPatient: Sara Zaid (PD0027)\n\nMedications:\nFolic acid 1 mg daily. No prior conventional DMARD therapy on record.\n",
+  "doc_02_lab_results": "LABORATORY RESULTS\nDate: 2026-10-18\nAuthor: Clinical Laboratory\nPatient: Sara Zaid (PD0027)\n\nResults:\nCRP 30.0 mg/L. ESR 38 mm/h. Interferon-gamma release assay negative on 2026-08-21.\n",
+  "doc_03_medication_list": "MEDICATION LIST\nDate: 2026-10-14\nAuthor: Pharmacy\nPatient: Sara Zaid (PD0027)\n\nActive medications:\nVitamin D 1000 IU daily. Atorvastatin 20 mg nightly.\n",
+  "doc_04_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-12\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Sara Zaid (PD0027)\n\nHistory:\n58-year-old female with 10 years of symmetric small-joint polyarthritis. Has been on methotrexate 25 mg weekly for four months with persistent synovitis.\n\nExam:\nTender joint count 12, swollen joint count 10. Disease activity: DAS28-ESR 5.3.\n\nAssessment:\nAssessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

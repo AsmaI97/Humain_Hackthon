@@ -1,0 +1,70 @@
+{
+  "case_id": "dev_006",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Trialed ibuprofen 600 mg three times daily for ten weeks without adequate relief.",
+          "start": 346,
+          "end": 427
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer.",
+          "start": 200,
+          "end": 287
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact.",
+          "start": 478,
+          "end": 608
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "No prior lumbar spine imaging on record.",
+          "start": 105,
+          "end": 145
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-25",
+    "therapy_weeks": 10,
+    "therapy_type": "nsaid"
+  },
+  "notes": "case_type=clean"
+}

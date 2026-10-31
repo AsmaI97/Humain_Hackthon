@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_history": "MEDICATION HISTORY\nDate: 2026-09-30\nAuthor: Pharmacy\nPatient: Ziad Saleh (PD0054)\n\nMedications:\nPrednisone 5 mg daily.\n",
+  "doc_02_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-10-04\nAuthor: Triage Nurse\nPatient: Ziad Saleh (PD0054)\n\nTriage:\nBP 130/85, HR 71, temperature 37.0 C. Pain score 4/10.\n",
+  "doc_03_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-09-29\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Ziad Saleh (PD0054)\n\nHistory:\n61-year-old male with 5 years of symmetric small-joint polyarthritis. Methotrexate 20 mg weekly was stopped after 7 weeks because of transaminase elevation (intolerance).\n\nExam:\nTender joint count 12, swollen joint count 8. Disease activity: DAS28-ESR 6.0.\n\nAssessment:\nRheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_04_lab_results": "LABORATORY RESULTS\nDate: 2026-09-30\nAuthor: Clinical Laboratory\nPatient: Ziad Saleh (PD0054)\n\nResults:\nCRP 11.0 mg/L. Anti-CCP antibodies positive. TB screening (IGRA) 2025-12-29: negative.\n"
+}

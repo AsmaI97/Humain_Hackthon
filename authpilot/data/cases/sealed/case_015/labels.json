@@ -1,0 +1,85 @@
+{
+  "case_id": "sealed_015",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_05_rheumatology_consult",
+          "span_text": "Methotrexate titrated to 17.5 mg weekly; no meaningful improvement after six months.",
+          "start": 195,
+          "end": 279
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_lab_results",
+          "span_text": "Latent TB screen negative (2026-06-05, interferon-gamma release assay).",
+          "start": 109,
+          "end": 180
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_05_rheumatology_consult",
+          "span_text": "DAS28-ESR calculated at 6.4.",
+          "start": 336,
+          "end": 364
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "description": "No rheumatologist-confirmed rheumatoid arthritis diagnosis is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_06_rheumatology_addendum",
+          "span_text": "Seropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.",
+          "start": 125,
+          "end": 212
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-06",
+    "mtx_months": 6,
+    "tb_months_ago": 4,
+    "das28": 6.4
+  },
+  "notes": "case_type=missing; affected=bio.ra_diagnosis; clinic_can_supply=bio.ra_diagnosis"
+}

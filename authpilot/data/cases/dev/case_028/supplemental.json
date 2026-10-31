@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_04_rheumatology_addendum": "RHEUMATOLOGY ADDENDUM\nDate: 2026-10-11\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Hala Mansour (PD0028)\n\nExam:\nDAS28 score 4.4, consistent with moderate disease activity.\n"
+  },
+  "provides": {
+    "2.4": [
+      "doc_04_rheumatology_addendum"
+    ]
+  }
+}

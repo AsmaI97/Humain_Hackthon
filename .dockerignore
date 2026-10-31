@@ -1,0 +1,11 @@
+.git
+.venv
+.pydeps
+.env
+runtime
+**/__pycache__
+**/*.pyc
+.pytest_cache
+.cursor
+docs/screenshots
+*.pdf

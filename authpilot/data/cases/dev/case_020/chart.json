@@ -1,0 +1,6 @@
+{
+  "doc_01_pt_note": "PHYSICAL THERAPY DISCHARGE SUMMARY\nDate: 2026-10-18\nAuthor: Physical Therapy Department\nPatient: Rami Jaber (PD0020)\n\nSummary:\nPatient completed eight weeks of supervised physical therapy with minimal improvement in pain. Home exercise program reviewed.\n",
+  "doc_02_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-10-27\nAuthor: Triage Nurse\nPatient: Rami Jaber (PD0020)\n\nTriage:\nBP 137/89, HR 67, temperature 37.0 C. Pain score 8/10.\n",
+  "doc_03_progress_note": "PROGRESS NOTE\nDate: 2026-10-27\nAuthor: Dr. Omar Faris, Family Medicine\nPatient: Rami Jaber (PD0020)\n\nSubjective:\n63-year-old male with chronic lower back pain with right-sided sciatica for 17 weeks. Red flags screened and negative (no cauda equina symptoms, fever or weight loss). Family history: father treated for prostate cancer. Lives with family and is independent in daily activities.\n\nObjective:\nBP 142/73, HR 90, temperature 36.8 C. Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact.\n\nAssessment and Plan:\nPlan: MRI lumbar spine without contrast to evaluate for nerve root compression.\n",
+  "doc_04_imaging_history": "IMAGING HISTORY\nDate: 2026-10-24\nAuthor: Radiology Records\nPatient: Rami Jaber (PD0020)\n\nPrior studies:\nLumbar radiographs only (2026-04-24); no prior MRI.\n"
+}

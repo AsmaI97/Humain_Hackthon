@@ -1,0 +1,75 @@
+{
+  "case_id": "sealed_024",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Tried anti-inflammatories on and off without a consistent course.",
+          "start": 331,
+          "end": 396
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Specifically denies incontinence, perineal numbness, night sweats or weight loss.",
+          "start": 197,
+          "end": 278
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Motor, sensory and reflex testing of both legs documented as normal.",
+          "start": 442,
+          "end": 510
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_imaging_history",
+          "span_text": "Only plain films of the lumbar spine on file (2026-05-05); MRI never performed.",
+          "start": 111,
+          "end": 190
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "description": "Conservative therapy is mentioned but its duration is not documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "ambiguous"
+  ],
+  "facts": {
+    "order_date": "2026-10-06"
+  },
+  "notes": "case_type=ambiguous; affected=mri.conservative_therapy"
+}

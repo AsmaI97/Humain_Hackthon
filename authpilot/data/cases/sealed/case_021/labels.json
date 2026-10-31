@@ -1,0 +1,73 @@
+{
+  "case_id": "sealed_021",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "Impression: seropositive RA (M05.79), confirmed at this rheumatology visit.",
+          "start": 372,
+          "end": 447
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_rheumatology_consult",
+          "span_text": "MTX discontinued after 5 wks owing to persistent nausea and elevated LFTs.",
+          "start": 197,
+          "end": 271
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_lab_results",
+          "span_text": "Tuberculin skin test read at 0 mm on 2026-03-14.",
+          "start": 137,
+          "end": 185
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_flowsheet",
+          "span_text": "DAS28 6.7 on the last flowsheet entry.",
+          "start": 111,
+          "end": 149
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "deny_then_appeal_approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "appeal_scenario"
+  ],
+  "facts": {
+    "order_date": "2026-10-13",
+    "mtx_intolerance": true,
+    "tb_months_ago": 7,
+    "das28": 6.7
+  },
+  "notes": "case_type=appeal"
+}

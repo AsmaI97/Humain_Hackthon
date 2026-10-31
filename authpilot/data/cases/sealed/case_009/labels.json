@@ -1,0 +1,71 @@
+{
+  "case_id": "sealed_009",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "6-week NSAID trial (diclofenac 75 mg twice daily) gave no lasting relief.",
+          "start": 230,
+          "end": 303
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "Specifically denies incontinence, perineal numbness, night sweats or weight loss.",
+          "start": 304,
+          "end": 385
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_progress_note",
+          "span_text": "Motor, sensory and reflex testing of both legs documented as normal.",
+          "start": 431,
+          "end": 499
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_imaging_history",
+          "span_text": "Most recent lumbar MRI was 2022-04-01.",
+          "start": 109,
+          "end": 147
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-15",
+    "therapy_weeks": 6,
+    "therapy_type": "nsaid",
+    "last_mri_months_ago": 55
+  },
+  "notes": "case_type=clean"
+}

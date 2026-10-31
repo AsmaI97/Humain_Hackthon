@@ -1,0 +1,5 @@
+{
+  "doc_01_medication_list": "CURRENT MEDICATIONS\nDate: 2026-10-19\nAuthor: Pharmacy\nPatient: Karim Saleh (PS0034)\n\nMedications:\nAtorvastatin 20 mg nightly. Lisinopril 10 mg daily.\n",
+  "doc_02_imaging_history": "RADIOLOGY HISTORY\nDate: 2026-10-21\nAuthor: Radiology Records\nPatient: Karim Saleh (PS0034)\n\nStudies on file:\nOnly plain films of the lumbar spine on file (2026-04-23); MRI never performed.\n",
+  "doc_03_progress_note": "CLINIC VISIT NOTE\nDate: 2026-10-20\nAuthor: Dr. Omar Faris, Family Medicine\nPatient: Karim Saleh (PS0034)\n\nHPI:\n56-year-old male with chronic lower back pain with right-sided sciatica for 13 weeks. On diclofenac 75 mg twice daily for the past 7 weeks with minimal benefit. Works as an office administrator.\n\nExam:\nBP 142/74, HR 84, temperature 36.8 C. No exam performed at this telehealth visit.\n\nImpression/Plan:\nWill obtain MRI of the lumbar spine without contrast to guide further management.\n"
+}

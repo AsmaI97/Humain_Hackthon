@@ -1,0 +1,6 @@
+{
+  "doc_01_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-09-29\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Faisal Khalil (PD0032)\n\nHistory:\n56-year-old male with 1 years of symmetric small-joint polyarthritis. Took methotrexate 20 mg every week for 7 months; disease still active.\n\nExam:\nTender joint count 14, swollen joint count 8. Disease activity: DAS28-ESR 5.8.\n\nAssessment:\nDiagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_02_patient_message": "PATIENT PORTAL MESSAGE\nDate: 2026-10-03\nAuthor: Patient Portal\nPatient: Faisal Khalil (PD0032)\n\nMessage:\nPatient confirms that insurance details are unchanged.\n",
+  "doc_03_lab_results": "LABORATORY RESULTS\nDate: 2026-09-26\nAuthor: Clinical Laboratory\nPatient: Faisal Khalil (PD0032)\n\nResults:\nCRP 21.9 mg/L. ESR 38 mm/h. QuantiFERON result negative, drawn 2026-04-01.\n",
+  "doc_04_medication_history": "MEDICATION HISTORY\nDate: 2026-09-29\nAuthor: Pharmacy\nPatient: Faisal Khalil (PD0032)\n\nMedications:\nFolic acid 1 mg daily. No prior conventional DMARD therapy on record.\n"
+}

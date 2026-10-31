@@ -1,0 +1,9 @@
+{
+  "order_id": "ORD-D-0038",
+  "patient_id": "PD0038",
+  "payer_id": "payer_a",
+  "procedure_code": "72148",
+  "procedure_name": "MRI lumbar spine without contrast",
+  "ordering_provider": "Dr. Omar Faris, Family Medicine",
+  "request_date": "2026-10-28"
+}

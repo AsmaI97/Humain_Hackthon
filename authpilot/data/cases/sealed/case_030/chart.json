@@ -1,0 +1,5 @@
+{
+  "doc_01_patient_message": "SECURE MESSAGE\nDate: 2026-10-01\nAuthor: Patient Portal\nPatient: Karim Jaber (PS0030)\n\nBody:\nPatient requests a copy of the visit summary.\n",
+  "doc_02_progress_note": "CLINIC VISIT NOTE\nDate: 2026-10-09\nAuthor: Dr. Hisham Qadri, Orthopedics\nPatient: Karim Jaber (PS0030)\n\nHPI:\n65-year-old male with axial low back pain and numbness down the left leg for 12 weeks. Cauda equina screen negative; afebrile, no history of malignancy. On celecoxib 200 mg daily for the past 9 weeks with minimal benefit. Non-smoker, drinks alcohol rarely.\n\nExam:\nBP 112/80, HR 83, temperature 36.6 C. LE neuro: 5/5 throughout, DTRs symmetric, SLR negative bilaterally.\n\nImpression/Plan:\nWill obtain MRI of the lumbar spine without contrast to guide further management.\n",
+  "doc_03_imaging_history": "RADIOLOGY HISTORY\nDate: 2026-10-15\nAuthor: Radiology Records\nPatient: Karim Jaber (PS0030)\n\nStudies on file:\nOnly plain films of the lumbar spine on file (2026-02-10); MRI never performed.\n"
+}

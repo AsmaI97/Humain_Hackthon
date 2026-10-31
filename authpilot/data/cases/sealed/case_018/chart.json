@@ -1,0 +1,5 @@
+{
+  "doc_01_lab_results": "LAB REPORT\nDate: 2026-10-08\nAuthor: Clinical Laboratory\nPatient: Hadi Mansour (PS0018)\n\nValues:\nCRP 29.4 mg/L. Rheumatoid factor positive. Latent TB screen negative (2026-06-07, interferon-gamma release assay).\n",
+  "doc_02_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-07\nAuthor: Pharmacy\nPatient: Hadi Mansour (PS0018)\n\nFills:\nOmeprazole 20 mg daily.\n",
+  "doc_03_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-10\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Hadi Mansour (PS0018)\n\nBackground:\n51-year-old male with 4 years of symmetric small-joint polyarthritis. MTX 20 mg/wk x 5 mo, inadequate response.\n\nFindings:\nTender joint count 14, swollen joint count 9. Composite disease activity (DAS28) = 4.4.\n\nImpression:\nImpression: seropositive RA (M05.79), confirmed at this rheumatology visit.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

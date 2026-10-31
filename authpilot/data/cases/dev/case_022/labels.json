@@ -1,0 +1,84 @@
+{
+  "case_id": "dev_022",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology.",
+          "start": 355,
+          "end": 444
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Methotrexate 15 mg weekly for 4 months with inadequate response.",
+          "start": 192,
+          "end": 256
+        },
+        {
+          "doc_id": "doc_02_medication_history",
+          "span_text": "No prior conventional DMARD therapy on record.",
+          "start": 120,
+          "end": 166
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "QuantiFERON-TB Gold Plus: negative (collected 2025-11-26).",
+          "start": 146,
+          "end": 204
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Disease activity: DAS28-ESR 6.8.",
+          "start": 309,
+          "end": 341
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.mtx_failure",
+      "description": "Records conflict on whether methotrexate was ever prescribed."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "contradictory"
+  ],
+  "facts": {
+    "order_date": "2026-10-26",
+    "mtx_months": 4,
+    "tb_months_ago": 11,
+    "das28": 6.8
+  },
+  "notes": "case_type=contradictory; affected=bio.mtx_failure"
+}

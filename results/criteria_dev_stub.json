@@ -1,0 +1,4769 @@
+{
+  "meta": {
+    "split": "dev",
+    "seed": 1001,
+    "llm_mode": "stub",
+    "agent_model": "stub-heuristic-v1",
+    "cheap_model": "stub-heuristic-v1",
+    "prompt_version": "p3.0",
+    "run_at": "2026-10-30T19:09:14+00:00"
+  },
+  "summary": {
+    "cases": 60,
+    "criteria": 240,
+    "criterion_accuracy": 0.9917,
+    "per_status": {
+      "met": {
+        "precision": 0.9901,
+        "recall": 1.0,
+        "f1": 0.995,
+        "support": 201
+      },
+      "not_met": {
+        "precision": 1.0,
+        "recall": 0.9048,
+        "f1": 0.95,
+        "support": 21
+      },
+      "unclear": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 18
+      }
+    },
+    "false_met_rate": 0.0513,
+    "citation_validity": 1.0,
+    "evidence_support_rate": 1.0,
+    "invalid_output_rate": 0.0,
+    "accuracy_by_tag": {
+      "ambiguous": 1.0,
+      "appeal_scenario": 1.0,
+      "clean": 1.0,
+      "contradictory": 1.0,
+      "distractor": 1.0,
+      "missing": 0.9667
+    },
+    "confusion": {
+      "met->met": 201,
+      "unclear->unclear": 18,
+      "not_met->met": 2,
+      "not_met->not_met": 19
+    },
+    "mean_tokens_per_case": 2531.8,
+    "mean_latency_ms_per_case": 0.54
+  },
+  "worst_failures": [
+    {
+      "case_id": "dev_005",
+      "procedure": "biologic",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ],
+          "expected_evidence": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Took methotrexate 15 mg every week for nine months; disease still active."
+          ],
+          "expected_evidence": [
+            "Took methotrexate 15 mg every week for nine months; disease still active."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Interferon-gamma release assay negative on 2026-09-15."
+          ],
+          "expected_evidence": [
+            "Interferon-gamma release assay negative on 2026-09-15."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "not_met",
+          "predicted": "met",
+          "correct": false,
+          "evidence_supported": null,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Took methotrexate 15 mg every week for nine months; disease still active."
+          ],
+          "expected_evidence": []
+        }
+      ],
+      "errors": 1,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2054,
+      "output_tokens": 237,
+      "latency_ms": 0.43
+    },
+    {
+      "case_id": "dev_028",
+      "procedure": "biologic",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ],
+          "expected_evidence": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Took methotrexate 20 mg every week for five months; disease still active."
+          ],
+          "expected_evidence": [
+            "Took methotrexate 20 mg every week for five months; disease still active."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON result negative, drawn 2026-06-03."
+          ],
+          "expected_evidence": [
+            "QuantiFERON result negative, drawn 2026-06-03."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "not_met",
+          "predicted": "met",
+          "correct": false,
+          "evidence_supported": null,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Took methotrexate 20 mg every week for five months; disease still active."
+          ],
+          "expected_evidence": []
+        }
+      ],
+      "errors": 1,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2057,
+      "output_tokens": 236,
+      "latency_ms": 0.4
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "dev_000",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Attended physical therapy twice weekly for 6 weeks; symptoms unchanged at discharge."
+          ],
+          "expected_evidence": [
+            "Attended physical therapy twice weekly for 6 weeks; symptoms unchanged at discharge."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Red flags screened and negative (no cauda equina symptoms, fever or weight loss)."
+          ],
+          "expected_evidence": [
+            "Red flags screened and negative (no cauda equina symptoms, fever or weight loss)."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ],
+          "expected_evidence": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2278,
+      "output_tokens": 244,
+      "latency_ms": 1.21
+    },
+    {
+      "case_id": "dev_001",
+      "procedure": "biologic",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ],
+          "expected_evidence": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 17.5 mg weekly for 9 months with inadequate response."
+          ],
+          "expected_evidence": [
+            "Methotrexate 17.5 mg weekly for 9 months with inadequate response."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON-TB Gold Plus: negative (collected 2025-12-01)."
+          ],
+          "expected_evidence": [
+            "QuantiFERON-TB Gold Plus: negative (collected 2025-12-01)."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Disease activity: DAS28-ESR 5.0."
+          ],
+          "expected_evidence": [
+            "Disease activity: DAS28-ESR 5.0."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2300,
+      "output_tokens": 226,
+      "latency_ms": 0.71
+    },
+    {
+      "case_id": "dev_002",
+      "procedure": "biologic",
+      "tags": [
+        "contradictory"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation."
+          ],
+          "expected_evidence": [
+            "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The chart contains conflicting statements about this criterion.",
+          "cited": [
+            "Failed methotrexate after six months at 25 mg weekly; joint counts unchanged.",
+            "No prior conventional DMARD therapy on record."
+          ],
+          "expected_evidence": [
+            "Failed methotrexate after six months at 25 mg weekly; joint counts unchanged.",
+            "No prior conventional DMARD therapy on record."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "TB screening (IGRA) 2026-01-11: negative."
+          ],
+          "expected_evidence": [
+            "TB screening (IGRA) 2026-01-11: negative."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28 score 3.7, consistent with moderate disease activity."
+          ],
+          "expected_evidence": [
+            "DAS28 score 3.7, consistent with moderate disease activity."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 5,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2145,
+      "output_tokens": 265,
+      "latency_ms": 0.51
+    },
+    {
+      "case_id": "dev_003",
+      "procedure": "biologic",
+      "tags": [
+        "distractor"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ],
+          "expected_evidence": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Took methotrexate 20 mg every week for seven months; disease still active."
+          ],
+          "expected_evidence": [
+            "Took methotrexate 20 mg every week for seven months; disease still active."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Interferon-gamma release assay negative on 2026-05-28."
+          ],
+          "expected_evidence": [
+            "Interferon-gamma release assay negative on 2026-05-28."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Took methotrexate 20 mg every week for seven months; disease still active.",
+            "DAS28-CRP 4.7 at today's visit."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP 4.7 at today's visit."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 5,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2358,
+      "output_tokens": 259,
+      "latency_ms": 0.53
+    },
+    {
+      "case_id": "dev_004",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Has taken ibuprofen 600 mg three times daily for eleven weeks with no meaningful improvement."
+          ],
+          "expected_evidence": [
+            "Has taken ibuprofen 600 mg three times daily for eleven weeks with no meaningful improvement."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ],
+          "expected_evidence": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ],
+          "expected_evidence": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lumbar radiographs only (2026-01-27); no prior MRI."
+          ],
+          "expected_evidence": [
+            "Lumbar radiographs only (2026-01-27); no prior MRI."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2302,
+      "output_tokens": 251,
+      "latency_ms": 0.57
+    },
+    {
+      "case_id": "dev_005",
+      "procedure": "biologic",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ],
+          "expected_evidence": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Took methotrexate 15 mg every week for nine months; disease still active."
+          ],
+          "expected_evidence": [
+            "Took methotrexate 15 mg every week for nine months; disease still active."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Interferon-gamma release assay negative on 2026-09-15."
+          ],
+          "expected_evidence": [
+            "Interferon-gamma release assay negative on 2026-09-15."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "not_met",
+          "predicted": "met",
+          "correct": false,
+          "evidence_supported": null,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Took methotrexate 15 mg every week for nine months; disease still active."
+          ],
+          "expected_evidence": []
+        }
+      ],
+      "errors": 1,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2054,
+      "output_tokens": 237,
+      "latency_ms": 0.43
+    },
+    {
+      "case_id": "dev_006",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Trialed ibuprofen 600 mg three times daily for ten weeks without adequate relief."
+          ],
+          "expected_evidence": [
+            "Trialed ibuprofen 600 mg three times daily for ten weeks without adequate relief."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ],
+          "expected_evidence": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ],
+          "expected_evidence": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2325,
+      "output_tokens": 246,
+      "latency_ms": 0.61
+    },
+    {
+      "case_id": "dev_007",
+      "procedure": "biologic",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ],
+          "expected_evidence": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 17.5 mg weekly was stopped after five weeks because of transaminase elevation (intolerance)."
+          ],
+          "expected_evidence": [
+            "Methotrexate 17.5 mg weekly was stopped after five weeks because of transaminase elevation (intolerance)."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        }
+      ],
+      "errors": 0,
+      "citations_total": 2,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2042,
+      "output_tokens": 199,
+      "latency_ms": 0.38
+    },
+    {
+      "case_id": "dev_008",
+      "procedure": "biologic",
+      "tags": [
+        "ambiguous"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ],
+          "expected_evidence": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The documentation for this criterion is vague or incomplete.",
+          "cited": [
+            "Tried methotrexate in the past; dose and duration not available."
+          ],
+          "expected_evidence": [
+            "Tried methotrexate in the past; dose and duration not available."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Interferon-gamma release assay negative on 2026-09-20."
+          ],
+          "expected_evidence": [
+            "Interferon-gamma release assay negative on 2026-09-20."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28-CRP 5.0 at today's visit."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP 5.0 at today's visit."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2289,
+      "output_tokens": 229,
+      "latency_ms": 0.47
+    },
+    {
+      "case_id": "dev_009",
+      "procedure": "biologic",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ],
+          "expected_evidence": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Has been on methotrexate 17.5 mg weekly for 8 months with persistent synovitis."
+          ],
+          "expected_evidence": [
+            "Has been on methotrexate 17.5 mg weekly for 8 months with persistent synovitis."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON-TB Gold Plus: negative (collected 2025-11-01)."
+          ],
+          "expected_evidence": [
+            "QuantiFERON-TB Gold Plus: negative (collected 2025-11-01)."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Disease activity: DAS28-ESR 5.4."
+          ],
+          "expected_evidence": [
+            "Disease activity: DAS28-ESR 5.4."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2089,
+      "output_tokens": 230,
+      "latency_ms": 0.45
+    },
+    {
+      "case_id": "dev_010",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ],
+          "expected_evidence": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lumbar radiographs only (2026-06-19); no prior MRI."
+          ],
+          "expected_evidence": [
+            "Lumbar radiographs only (2026-06-19); no prior MRI."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 2,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2150,
+      "output_tokens": 182,
+      "latency_ms": 0.54
+    },
+    {
+      "case_id": "dev_011",
+      "procedure": "biologic",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Failed methotrexate after 6 months at 15 mg weekly; joint counts unchanged."
+          ],
+          "expected_evidence": [
+            "Failed methotrexate after 6 months at 15 mg weekly; joint counts unchanged."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON result negative, drawn 2026-08-02."
+          ],
+          "expected_evidence": [
+            "QuantiFERON result negative, drawn 2026-08-02."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28 score 6.1, consistent with high disease activity."
+          ],
+          "expected_evidence": [
+            "DAS28 score 6.1, consistent with high disease activity."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 3,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2304,
+      "output_tokens": 201,
+      "latency_ms": 0.45
+    },
+    {
+      "case_id": "dev_012",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "A 11-week course of physical therapy was completed without meaningful functional gain."
+          ],
+          "expected_evidence": [
+            "A 11-week course of physical therapy was completed without meaningful functional gain."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ],
+          "expected_evidence": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ],
+          "expected_evidence": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Last lumbar spine MRI: 2022-11-11 (47 months before this request)."
+          ],
+          "expected_evidence": [
+            "Last lumbar spine MRI: 2022-11-11 (47 months before this request)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2310,
+      "output_tokens": 247,
+      "latency_ms": 0.57
+    },
+    {
+      "case_id": "dev_013",
+      "procedure": "biologic",
+      "tags": [
+        "contradictory"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ],
+          "expected_evidence": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The chart contains conflicting statements about this criterion.",
+          "cited": [
+            "Has been on methotrexate 17.5 mg weekly for three months with persistent synovitis.",
+            "No prior conventional DMARD therapy on record."
+          ],
+          "expected_evidence": [
+            "Has been on methotrexate 17.5 mg weekly for three months with persistent synovitis.",
+            "No prior conventional DMARD therapy on record."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON result negative, drawn 2026-04-30."
+          ],
+          "expected_evidence": [
+            "QuantiFERON result negative, drawn 2026-04-30."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28-CRP today: 6.7 (high disease activity)."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP today: 6.7 (high disease activity)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 5,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2362,
+      "output_tokens": 261,
+      "latency_ms": 0.54
+    },
+    {
+      "case_id": "dev_014",
+      "procedure": "biologic",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON-TB Gold Plus: negative (collected 2026-05-09)."
+          ],
+          "expected_evidence": [
+            "QuantiFERON-TB Gold Plus: negative (collected 2026-05-09)."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28 score 6.2, consistent with high disease activity."
+          ],
+          "expected_evidence": [
+            "DAS28 score 6.2, consistent with high disease activity."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 2,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2452,
+      "output_tokens": 176,
+      "latency_ms": 0.46
+    },
+    {
+      "case_id": "dev_015",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "ambiguous"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Has taken ibuprofen 600 mg three times daily for 11 weeks with no meaningful improvement."
+          ],
+          "expected_evidence": [
+            "Has taken ibuprofen 600 mg three times daily for 11 weeks with no meaningful improvement."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The documentation for this criterion is vague or incomplete.",
+          "cited": [
+            "Reports occasional numbness in the groin area; unclear whether this is new."
+          ],
+          "expected_evidence": [
+            "Reports occasional numbness in the groin area; unclear whether this is new."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ],
+          "expected_evidence": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lumbar radiographs only (2026-07-17); no prior MRI."
+          ],
+          "expected_evidence": [
+            "Lumbar radiographs only (2026-07-17); no prior MRI."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2273,
+      "output_tokens": 241,
+      "latency_ms": 0.56
+    },
+    {
+      "case_id": "dev_016",
+      "procedure": "biologic",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation."
+          ],
+          "expected_evidence": [
+            "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 15 mg weekly was stopped after 5 weeks because of transaminase elevation (intolerance)."
+          ],
+          "expected_evidence": [
+            "Methotrexate 15 mg weekly was stopped after 5 weeks because of transaminase elevation (intolerance)."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        }
+      ],
+      "errors": 0,
+      "citations_total": 2,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2244,
+      "output_tokens": 199,
+      "latency_ms": 0.43
+    },
+    {
+      "case_id": "dev_017",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "distractor"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Trialed naproxen 500 mg twice daily for 9 weeks without adequate relief."
+          ],
+          "expected_evidence": [
+            "Trialed naproxen 500 mg twice daily for 9 weeks without adequate relief."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Red flags screened and negative (no cauda equina symptoms, fever or weight loss)."
+          ],
+          "expected_evidence": [
+            "Red flags screened and negative (no cauda equina symptoms, fever or weight loss)."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ],
+          "expected_evidence": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Imaging review: lumbar MRI last done 2023-09-28, 37 months ago."
+          ],
+          "expected_evidence": [
+            "Imaging review: lumbar MRI last done 2023-09-28, 37 months ago."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2360,
+      "output_tokens": 237,
+      "latency_ms": 0.61
+    },
+    {
+      "case_id": "dev_018",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Attended physical therapy twice weekly for 6 weeks; symptoms unchanged at discharge."
+          ],
+          "expected_evidence": [
+            "Attended physical therapy twice weekly for 6 weeks; symptoms unchanged at discharge."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ],
+          "expected_evidence": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: positive straight-leg raise on the left at 50 degrees, diminished sensation in the left L5 dermatome."
+          ],
+          "expected_evidence": [
+            "Neuro: positive straight-leg raise on the left at 50 degrees, diminished sensation in the left L5 dermatome."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lumbar radiographs only (2026-02-11); no prior MRI."
+          ],
+          "expected_evidence": [
+            "Lumbar radiographs only (2026-02-11); no prior MRI."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2288,
+      "output_tokens": 243,
+      "latency_ms": 0.56
+    },
+    {
+      "case_id": "dev_019",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "distractor"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Has taken meloxicam 15 mg daily for ten weeks with no meaningful improvement."
+          ],
+          "expected_evidence": [
+            "Has taken meloxicam 15 mg daily for ten weeks with no meaningful improvement."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Negative review for saddle anesthesia, urinary retention, fever and weight loss."
+          ],
+          "expected_evidence": [
+            "Negative review for saddle anesthesia, urinary retention, fever and weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: positive straight-leg raise on the left at 30 degrees, diminished sensation in the left L5 dermatome."
+          ],
+          "expected_evidence": [
+            "Neuro: positive straight-leg raise on the left at 30 degrees, diminished sensation in the left L5 dermatome."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2290,
+      "output_tokens": 237,
+      "latency_ms": 0.56
+    },
+    {
+      "case_id": "dev_020",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "distractor"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Patient completed eight weeks of supervised physical therapy with minimal improvement in pain."
+          ],
+          "expected_evidence": [
+            "Patient completed eight weeks of supervised physical therapy with minimal improvement in pain."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Red flags screened and negative (no cauda equina symptoms, fever or weight loss)."
+          ],
+          "expected_evidence": [
+            "Red flags screened and negative (no cauda equina symptoms, fever or weight loss)."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ],
+          "expected_evidence": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lumbar radiographs only (2026-04-24); no prior MRI."
+          ],
+          "expected_evidence": [
+            "Lumbar radiographs only (2026-04-24); no prior MRI."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2550,
+      "output_tokens": 238,
+      "latency_ms": 0.63
+    },
+    {
+      "case_id": "dev_021",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "ambiguous"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Patient completed 9 weeks of supervised physical therapy with minimal improvement in pain."
+          ],
+          "expected_evidence": [
+            "Patient completed 9 weeks of supervised physical therapy with minimal improvement in pain."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ],
+          "expected_evidence": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The documentation for this criterion is vague or incomplete.",
+          "cited": [
+            "Exam limited by pain; neurologic examination not completed."
+          ],
+          "expected_evidence": [
+            "Exam limited by pain; neurologic examination not completed."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2221,
+      "output_tokens": 234,
+      "latency_ms": 0.51
+    },
+    {
+      "case_id": "dev_022",
+      "procedure": "biologic",
+      "tags": [
+        "contradictory"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ],
+          "expected_evidence": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The chart contains conflicting statements about this criterion.",
+          "cited": [
+            "Methotrexate 15 mg weekly for 4 months with inadequate response.",
+            "No prior conventional DMARD therapy on record."
+          ],
+          "expected_evidence": [
+            "Methotrexate 15 mg weekly for 4 months with inadequate response.",
+            "No prior conventional DMARD therapy on record."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON-TB Gold Plus: negative (collected 2025-11-26)."
+          ],
+          "expected_evidence": [
+            "QuantiFERON-TB Gold Plus: negative (collected 2025-11-26)."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Disease activity: DAS28-ESR 6.8."
+          ],
+          "expected_evidence": [
+            "Disease activity: DAS28-ESR 6.8."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 5,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2129,
+      "output_tokens": 256,
+      "latency_ms": 0.47
+    },
+    {
+      "case_id": "dev_023",
+      "procedure": "biologic",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ],
+          "expected_evidence": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 17.5 mg weekly for 5 months with inadequate response."
+          ],
+          "expected_evidence": [
+            "Methotrexate 17.5 mg weekly for 5 months with inadequate response."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON result negative, drawn 2026-06-29."
+          ],
+          "expected_evidence": [
+            "QuantiFERON result negative, drawn 2026-06-29."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28-CRP 5.7 at today's visit."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP 5.7 at today's visit."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2292,
+      "output_tokens": 224,
+      "latency_ms": 0.45
+    },
+    {
+      "case_id": "dev_024",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Discharged from PT after twelve weeks (24 visits); pain persists at 6/10."
+          ],
+          "expected_evidence": [
+            "Discharged from PT after twelve weeks (24 visits); pain persists at 6/10."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ],
+          "expected_evidence": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: positive straight-leg raise on the right at 45 degrees, diminished sensation in the right L5 dermatome."
+          ],
+          "expected_evidence": [
+            "Neuro: positive straight-leg raise on the right at 45 degrees, diminished sensation in the right L5 dermatome."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2270,
+      "output_tokens": 239,
+      "latency_ms": 0.53
+    },
+    {
+      "case_id": "dev_025",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Discharged from PT after 8 weeks (16 visits); pain persists at 7/10."
+          ],
+          "expected_evidence": [
+            "Discharged from PT after 8 weeks (16 visits); pain persists at 7/10."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ],
+          "expected_evidence": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 3,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2146,
+      "output_tokens": 203,
+      "latency_ms": 0.48
+    },
+    {
+      "case_id": "dev_026",
+      "procedure": "biologic",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ],
+          "expected_evidence": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Failed methotrexate after 8 months at 15 mg weekly; joint counts unchanged."
+          ],
+          "expected_evidence": [
+            "Failed methotrexate after 8 months at 15 mg weekly; joint counts unchanged."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "TB screening (IGRA) 2026-03-01: negative."
+          ],
+          "expected_evidence": [
+            "TB screening (IGRA) 2026-03-01: negative."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28-CRP today: 3.6 (moderate disease activity)."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP today: 3.6 (moderate disease activity)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2301,
+      "output_tokens": 230,
+      "latency_ms": 0.51
+    },
+    {
+      "case_id": "dev_027",
+      "procedure": "biologic",
+      "tags": [
+        "contradictory"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ],
+          "expected_evidence": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The chart contains conflicting statements about this criterion.",
+          "cited": [
+            "Has been on methotrexate 25 mg weekly for four months with persistent synovitis.",
+            "No prior conventional DMARD therapy on record."
+          ],
+          "expected_evidence": [
+            "No prior conventional DMARD therapy on record.",
+            "Has been on methotrexate 25 mg weekly for four months with persistent synovitis."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Interferon-gamma release assay negative on 2026-08-21."
+          ],
+          "expected_evidence": [
+            "Interferon-gamma release assay negative on 2026-08-21."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Disease activity: DAS28-ESR 5.3."
+          ],
+          "expected_evidence": [
+            "Disease activity: DAS28-ESR 5.3."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 5,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2340,
+      "output_tokens": 259,
+      "latency_ms": 0.54
+    },
+    {
+      "case_id": "dev_028",
+      "procedure": "biologic",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ],
+          "expected_evidence": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Took methotrexate 20 mg every week for five months; disease still active."
+          ],
+          "expected_evidence": [
+            "Took methotrexate 20 mg every week for five months; disease still active."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON result negative, drawn 2026-06-03."
+          ],
+          "expected_evidence": [
+            "QuantiFERON result negative, drawn 2026-06-03."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "not_met",
+          "predicted": "met",
+          "correct": false,
+          "evidence_supported": null,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Took methotrexate 20 mg every week for five months; disease still active."
+          ],
+          "expected_evidence": []
+        }
+      ],
+      "errors": 1,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2057,
+      "output_tokens": 236,
+      "latency_ms": 0.4
+    },
+    {
+      "case_id": "dev_029",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Has taken naproxen 500 mg twice daily for 6 weeks with no meaningful improvement."
+          ],
+          "expected_evidence": [
+            "Has taken naproxen 500 mg twice daily for 6 weeks with no meaningful improvement."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 2,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2138,
+      "output_tokens": 177,
+      "latency_ms": 0.5
+    },
+    {
+      "case_id": "dev_030",
+      "procedure": "biologic",
+      "tags": [
+        "ambiguous"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ],
+          "expected_evidence": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The documentation for this criterion is vague or incomplete.",
+          "cited": [
+            "Tried methotrexate in the past; dose and duration not available."
+          ],
+          "expected_evidence": [
+            "Tried methotrexate in the past; dose and duration not available."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON-TB Gold Plus: negative (collected 2026-06-12)."
+          ],
+          "expected_evidence": [
+            "QuantiFERON-TB Gold Plus: negative (collected 2026-06-12)."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28-CRP today: 4.7 (moderate disease activity)."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP today: 4.7 (moderate disease activity)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2320,
+      "output_tokens": 234,
+      "latency_ms": 0.48
+    },
+    {
+      "case_id": "dev_031",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Has taken ibuprofen 600 mg three times daily for 6 weeks with no meaningful improvement."
+          ],
+          "expected_evidence": [
+            "Has taken ibuprofen 600 mg three times daily for 6 weeks with no meaningful improvement."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ],
+          "expected_evidence": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: positive straight-leg raise on the right at 45 degrees, diminished sensation in the right L5 dermatome."
+          ],
+          "expected_evidence": [
+            "Neuro: positive straight-leg raise on the right at 45 degrees, diminished sensation in the right L5 dermatome."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2298,
+      "output_tokens": 244,
+      "latency_ms": 0.55
+    },
+    {
+      "case_id": "dev_032",
+      "procedure": "biologic",
+      "tags": [
+        "contradictory"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation."
+          ],
+          "expected_evidence": [
+            "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The chart contains conflicting statements about this criterion.",
+          "cited": [
+            "Took methotrexate 20 mg every week for 7 months; disease still active.",
+            "No prior conventional DMARD therapy on record."
+          ],
+          "expected_evidence": [
+            "Took methotrexate 20 mg every week for 7 months; disease still active.",
+            "No prior conventional DMARD therapy on record."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON result negative, drawn 2026-04-01."
+          ],
+          "expected_evidence": [
+            "QuantiFERON result negative, drawn 2026-04-01."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Disease activity: DAS28-ESR 5.8."
+          ],
+          "expected_evidence": [
+            "Disease activity: DAS28-ESR 5.8."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 5,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2344,
+      "output_tokens": 257,
+      "latency_ms": 0.54
+    },
+    {
+      "case_id": "dev_033",
+      "procedure": "biologic",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ],
+          "expected_evidence": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 25 mg weekly for four months with inadequate response."
+          ],
+          "expected_evidence": [
+            "Methotrexate 25 mg weekly for four months with inadequate response."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Interferon-gamma release assay negative on 2026-09-14."
+          ],
+          "expected_evidence": [
+            "Interferon-gamma release assay negative on 2026-09-14."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28-CRP 6.7 at today's visit."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP 6.7 at today's visit."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2082,
+      "output_tokens": 226,
+      "latency_ms": 0.47
+    },
+    {
+      "case_id": "dev_034",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "ambiguous"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Patient completed 11 weeks of supervised physical therapy with minimal improvement in pain."
+          ],
+          "expected_evidence": [
+            "Patient completed 11 weeks of supervised physical therapy with minimal improvement in pain."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The documentation for this criterion is vague or incomplete.",
+          "cited": [
+            "Reports occasional numbness in the groin area; unclear whether this is new."
+          ],
+          "expected_evidence": [
+            "Reports occasional numbness in the groin area; unclear whether this is new."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ],
+          "expected_evidence": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lumbar radiographs only (2026-05-01); no prior MRI."
+          ],
+          "expected_evidence": [
+            "Lumbar radiographs only (2026-05-01); no prior MRI."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2286,
+      "output_tokens": 250,
+      "latency_ms": 0.55
+    },
+    {
+      "case_id": "dev_035",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Patient completed 8 weeks of supervised physical therapy with minimal improvement in pain."
+          ],
+          "expected_evidence": [
+            "Patient completed 8 weeks of supervised physical therapy with minimal improvement in pain."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ],
+          "expected_evidence": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ],
+          "expected_evidence": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2484,
+      "output_tokens": 241,
+      "latency_ms": 0.61
+    },
+    {
+      "case_id": "dev_036",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "A 8-week course of physical therapy was completed without meaningful functional gain."
+          ],
+          "expected_evidence": [
+            "A 8-week course of physical therapy was completed without meaningful functional gain."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ],
+          "expected_evidence": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Last lumbar spine MRI: 2023-11-11 (35 months before this request)."
+          ],
+          "expected_evidence": [
+            "Last lumbar spine MRI: 2023-11-11 (35 months before this request)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 3,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2402,
+      "output_tokens": 213,
+      "latency_ms": 0.53
+    },
+    {
+      "case_id": "dev_037",
+      "procedure": "biologic",
+      "tags": [
+        "contradictory"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ],
+          "expected_evidence": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The chart contains conflicting statements about this criterion.",
+          "cited": [
+            "Took methotrexate 15 mg every week for 4 months; disease still active.",
+            "No prior conventional DMARD therapy on record."
+          ],
+          "expected_evidence": [
+            "Took methotrexate 15 mg every week for 4 months; disease still active.",
+            "No prior conventional DMARD therapy on record."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "TB screening (IGRA) 2025-11-18: negative."
+          ],
+          "expected_evidence": [
+            "TB screening (IGRA) 2025-11-18: negative."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Disease activity: DAS28-ESR 5.1."
+          ],
+          "expected_evidence": [
+            "Disease activity: DAS28-ESR 5.1."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 5,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2340,
+      "output_tokens": 255,
+      "latency_ms": 0.52
+    },
+    {
+      "case_id": "dev_038",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ],
+          "expected_evidence": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ],
+          "expected_evidence": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 3,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2278,
+      "output_tokens": 220,
+      "latency_ms": 0.54
+    },
+    {
+      "case_id": "dev_039",
+      "procedure": "biologic",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ],
+          "expected_evidence": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 15 mg weekly for five months with inadequate response."
+          ],
+          "expected_evidence": [
+            "Methotrexate 15 mg weekly for five months with inadequate response."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON result negative, drawn 2026-07-03."
+          ],
+          "expected_evidence": [
+            "QuantiFERON result negative, drawn 2026-07-03."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Disease activity: DAS28-ESR 4.8."
+          ],
+          "expected_evidence": [
+            "Disease activity: DAS28-ESR 4.8."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2280,
+      "output_tokens": 224,
+      "latency_ms": 0.48
+    },
+    {
+      "case_id": "dev_040",
+      "procedure": "biologic",
+      "tags": [
+        "appeal_scenario"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation."
+          ],
+          "expected_evidence": [
+            "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 17.5 mg weekly was stopped after 6 weeks because of transaminase elevation (intolerance)."
+          ],
+          "expected_evidence": [
+            "Methotrexate 17.5 mg weekly was stopped after 6 weeks because of transaminase elevation (intolerance)."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Interferon-gamma release assay negative on 2026-09-02."
+          ],
+          "expected_evidence": [
+            "Interferon-gamma release assay negative on 2026-09-02."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28-CRP 5.5 recorded at the most recent visit (high disease activity)."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP 5.5 recorded at the most recent visit (high disease activity)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2413,
+      "output_tokens": 246,
+      "latency_ms": 0.53
+    },
+    {
+      "case_id": "dev_041",
+      "procedure": "biologic",
+      "tags": [
+        "ambiguous"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The documentation for this criterion is vague or incomplete.",
+          "cited": [
+            "Rheumatology impression: inflammatory polyarthritis, rheumatoid arthritis versus psoriatic arthritis."
+          ],
+          "expected_evidence": [
+            "Rheumatology impression: inflammatory polyarthritis, rheumatoid arthritis versus psoriatic arthritis."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 15 mg weekly was stopped after 9 weeks because of transaminase elevation (intolerance)."
+          ],
+          "expected_evidence": [
+            "Methotrexate 15 mg weekly was stopped after 9 weeks because of transaminase elevation (intolerance)."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Interferon-gamma release assay negative on 2026-06-26."
+          ],
+          "expected_evidence": [
+            "Interferon-gamma release assay negative on 2026-06-26."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28-CRP 4.4 at today's visit."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP 4.4 at today's visit."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2342,
+      "output_tokens": 242,
+      "latency_ms": 0.51
+    },
+    {
+      "case_id": "dev_042",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "distractor"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Has taken ibuprofen 600 mg three times daily for 6 weeks with no meaningful improvement."
+          ],
+          "expected_evidence": [
+            "Has taken ibuprofen 600 mg three times daily for 6 weeks with no meaningful improvement."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ],
+          "expected_evidence": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ],
+          "expected_evidence": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Last lumbar spine MRI: 2023-12-01 (35 months before this request)."
+          ],
+          "expected_evidence": [
+            "Last lumbar spine MRI: 2023-12-01 (35 months before this request)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2409,
+      "output_tokens": 248,
+      "latency_ms": 0.61
+    },
+    {
+      "case_id": "dev_043",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "distractor"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Discharged from PT after 11 weeks (22 visits); pain persists at 8/10."
+          ],
+          "expected_evidence": [
+            "Discharged from PT after 11 weeks (22 visits); pain persists at 8/10."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Negative review for saddle anesthesia, urinary retention, fever and weight loss."
+          ],
+          "expected_evidence": [
+            "Negative review for saddle anesthesia, urinary retention, fever and weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ],
+          "expected_evidence": [
+            "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2505,
+      "output_tokens": 230,
+      "latency_ms": 0.61
+    },
+    {
+      "case_id": "dev_044",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "A 9-week course of physical therapy was completed without meaningful functional gain."
+          ],
+          "expected_evidence": [
+            "A 9-week course of physical therapy was completed without meaningful functional gain."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ],
+          "expected_evidence": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ],
+          "expected_evidence": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        }
+      ],
+      "errors": 0,
+      "citations_total": 3,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2310,
+      "output_tokens": 229,
+      "latency_ms": 0.55
+    },
+    {
+      "case_id": "dev_045",
+      "procedure": "biologic",
+      "tags": [
+        "ambiguous"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ],
+          "expected_evidence": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 20 mg weekly for 5 months with inadequate response."
+          ],
+          "expected_evidence": [
+            "Methotrexate 20 mg weekly for 5 months with inadequate response."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Interferon-gamma release assay negative on 2026-02-09."
+          ],
+          "expected_evidence": [
+            "Interferon-gamma release assay negative on 2026-02-09."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The documentation for this criterion is vague or incomplete.",
+          "cited": [
+            "Disease remains active per patient report."
+          ],
+          "expected_evidence": [
+            "Disease remains active per patient report."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2304,
+      "output_tokens": 232,
+      "latency_ms": 0.44
+    },
+    {
+      "case_id": "dev_046",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "ambiguous"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The documentation for this criterion is vague or incomplete.",
+          "cited": [
+            "Reports some physical therapy in the past; duration unknown."
+          ],
+          "expected_evidence": [
+            "Reports some physical therapy in the past; duration unknown."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ],
+          "expected_evidence": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neuro: positive straight-leg raise on the left at 40 degrees, diminished sensation in the left L5 dermatome."
+          ],
+          "expected_evidence": [
+            "Neuro: positive straight-leg raise on the left at 40 degrees, diminished sensation in the left L5 dermatome."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No prior lumbar spine imaging on record."
+          ],
+          "expected_evidence": [
+            "No prior lumbar spine imaging on record."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2222,
+      "output_tokens": 240,
+      "latency_ms": 0.54
+    },
+    {
+      "case_id": "dev_047",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Trialed meloxicam 15 mg daily for 6 weeks without adequate relief."
+          ],
+          "expected_evidence": [
+            "Trialed meloxicam 15 mg daily for 6 weeks without adequate relief."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ],
+          "expected_evidence": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lumbar radiographs only (2026-08-18); no prior MRI."
+          ],
+          "expected_evidence": [
+            "Lumbar radiographs only (2026-08-18); no prior MRI."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 3,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2165,
+      "output_tokens": 205,
+      "latency_ms": 0.53
+    },
+    {
+      "case_id": "dev_048",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "contradictory"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The chart contains conflicting statements about this criterion.",
+          "cited": [
+            "Completed 6 weeks of physical therapy without improvement.",
+            "Patient reports no prior physical therapy for this episode of back pain."
+          ],
+          "expected_evidence": [
+            "Patient reports no prior physical therapy for this episode of back pain.",
+            "Completed 6 weeks of physical therapy without improvement."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ],
+          "expected_evidence": [
+            "Denies bowel or bladder incontinence, saddle anesthesia, fever, or unintentional weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ],
+          "expected_evidence": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Last lumbar spine MRI: 2024-04-16 (30 months before this request)."
+          ],
+          "expected_evidence": [
+            "Last lumbar spine MRI: 2024-04-16 (30 months before this request)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 5,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2558,
+      "output_tokens": 276,
+      "latency_ms": 0.62
+    },
+    {
+      "case_id": "dev_049",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Attended physical therapy twice weekly for 12 weeks; symptoms unchanged at discharge."
+          ],
+          "expected_evidence": [
+            "Attended physical therapy twice weekly for 12 weeks; symptoms unchanged at discharge."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ],
+          "expected_evidence": [
+            "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ],
+          "expected_evidence": [
+            "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        }
+      ],
+      "errors": 0,
+      "citations_total": 3,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2306,
+      "output_tokens": 228,
+      "latency_ms": 0.57
+    },
+    {
+      "case_id": "dev_050",
+      "procedure": "biologic",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ],
+          "expected_evidence": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 20 mg weekly was stopped after 7 weeks because of transaminase elevation (intolerance)."
+          ],
+          "expected_evidence": [
+            "Methotrexate 20 mg weekly was stopped after 7 weeks because of transaminase elevation (intolerance)."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "TB screening (IGRA) 2026-06-11: negative."
+          ],
+          "expected_evidence": [
+            "TB screening (IGRA) 2026-06-11: negative."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28 score 6.1, consistent with high disease activity."
+          ],
+          "expected_evidence": [
+            "DAS28 score 6.1, consistent with high disease activity."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2129,
+      "output_tokens": 237,
+      "latency_ms": 0.46
+    },
+    {
+      "case_id": "dev_051",
+      "procedure": "biologic",
+      "tags": [
+        "appeal_scenario"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation."
+          ],
+          "expected_evidence": [
+            "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 25 mg weekly for 8 months with inadequate response."
+          ],
+          "expected_evidence": [
+            "Methotrexate 25 mg weekly for 8 months with inadequate response."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON result negative, drawn 2026-06-30."
+          ],
+          "expected_evidence": [
+            "QuantiFERON result negative, drawn 2026-06-30."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28-CRP 6.7 recorded at the most recent visit (high disease activity)."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP 6.7 recorded at the most recent visit (high disease activity)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2594,
+      "output_tokens": 235,
+      "latency_ms": 0.57
+    },
+    {
+      "case_id": "dev_052",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "missing"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "A 8-week course of physical therapy was completed without meaningful functional gain."
+          ],
+          "expected_evidence": [
+            "A 8-week course of physical therapy was completed without meaningful functional gain."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Negative review for saddle anesthesia, urinary retention, fever and weight loss."
+          ],
+          "expected_evidence": [
+            "Negative review for saddle anesthesia, urinary retention, fever and weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "not_met",
+          "predicted": "not_met",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "No documentation for this criterion was found in the chart.",
+          "cited": [],
+          "expected_evidence": []
+        }
+      ],
+      "errors": 0,
+      "citations_total": 2,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2208,
+      "output_tokens": 186,
+      "latency_ms": 0.51
+    },
+    {
+      "case_id": "dev_053",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "ambiguous"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Discharged from PT after twelve weeks (24 visits); pain persists at 8/10."
+          ],
+          "expected_evidence": [
+            "Discharged from PT after twelve weeks (24 visits); pain persists at 8/10."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Negative review for saddle anesthesia, urinary retention, fever and weight loss."
+          ],
+          "expected_evidence": [
+            "Negative review for saddle anesthesia, urinary retention, fever and weight loss."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The documentation for this criterion is vague or incomplete.",
+          "cited": [
+            "Exam limited by pain; neurologic examination not completed."
+          ],
+          "expected_evidence": [
+            "Exam limited by pain; neurologic examination not completed."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Imaging review: lumbar MRI last done 2024-02-29, 32 months ago."
+          ],
+          "expected_evidence": [
+            "Imaging review: lumbar MRI last done 2024-02-29, 32 months ago."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2442,
+      "output_tokens": 232,
+      "latency_ms": 0.55
+    },
+    {
+      "case_id": "dev_054",
+      "procedure": "biologic",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ],
+          "expected_evidence": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Methotrexate 20 mg weekly was stopped after 7 weeks because of transaminase elevation (intolerance)."
+          ],
+          "expected_evidence": [
+            "Methotrexate 20 mg weekly was stopped after 7 weeks because of transaminase elevation (intolerance)."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "TB screening (IGRA) 2025-12-29: negative."
+          ],
+          "expected_evidence": [
+            "TB screening (IGRA) 2025-12-29: negative."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Disease activity: DAS28-ESR 6.0."
+          ],
+          "expected_evidence": [
+            "Disease activity: DAS28-ESR 6.0."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2317,
+      "output_tokens": 232,
+      "latency_ms": 0.49
+    },
+    {
+      "case_id": "dev_055",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Patient completed 6 weeks of supervised physical therapy with minimal improvement in pain."
+          ],
+          "expected_evidence": [
+            "Patient completed 6 weeks of supervised physical therapy with minimal improvement in pain."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Red flags screened and negative (no cauda equina symptoms, fever or weight loss)."
+          ],
+          "expected_evidence": [
+            "Red flags screened and negative (no cauda equina symptoms, fever or weight loss)."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ],
+          "expected_evidence": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Last lumbar spine MRI: 2022-01-19 (57 months before this request)."
+          ],
+          "expected_evidence": [
+            "Last lumbar spine MRI: 2022-01-19 (57 months before this request)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2312,
+      "output_tokens": 245,
+      "latency_ms": 0.56
+    },
+    {
+      "case_id": "dev_056",
+      "procedure": "biologic",
+      "tags": [
+        "appeal_scenario"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ],
+          "expected_evidence": [
+            "Rheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Has been on methotrexate 17.5 mg weekly for six months with persistent synovitis."
+          ],
+          "expected_evidence": [
+            "Has been on methotrexate 17.5 mg weekly for six months with persistent synovitis."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Interferon-gamma release assay negative on 2026-06-12."
+          ],
+          "expected_evidence": [
+            "Interferon-gamma release assay negative on 2026-06-12."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28-CRP 4.3 recorded at the most recent visit (moderate disease activity)."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP 4.3 recorded at the most recent visit (moderate disease activity)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2626,
+      "output_tokens": 241,
+      "latency_ms": 0.6
+    },
+    {
+      "case_id": "dev_057",
+      "procedure": "lumbar_mri",
+      "tags": [
+        "contradictory"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "mri.conservative_therapy",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The chart contains conflicting statements about this criterion.",
+          "cited": [
+            "Completed 6 weeks of physical therapy without improvement.",
+            "Patient reports no prior physical therapy for this episode of back pain."
+          ],
+          "expected_evidence": [
+            "Patient reports no prior physical therapy for this episode of back pain.",
+            "Completed 6 weeks of physical therapy without improvement."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "mri.red_flags",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Red flags screened and negative (no cauda equina symptoms, fever or weight loss)."
+          ],
+          "expected_evidence": [
+            "Red flags screened and negative (no cauda equina symptoms, fever or weight loss)."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "mri.neuro_exam",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ],
+          "expected_evidence": [
+            "Lower extremity neurologic examination: reflexes symmetric, no motor deficit, straight-leg raise negative."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "mri.no_recent_imaging",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Lumbar radiographs only (2026-05-09); no prior MRI."
+          ],
+          "expected_evidence": [
+            "Lumbar radiographs only (2026-05-09); no prior MRI."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 5,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2320,
+      "output_tokens": 269,
+      "latency_ms": 0.6
+    },
+    {
+      "case_id": "dev_058",
+      "procedure": "biologic",
+      "tags": [
+        "clean"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ],
+          "expected_evidence": [
+            "Assessment: seropositive rheumatoid arthritis (ICD-10 M05.79), confirmed by rheumatology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Failed methotrexate after 7 months at 15 mg weekly; joint counts unchanged."
+          ],
+          "expected_evidence": [
+            "Failed methotrexate after 7 months at 15 mg weekly; joint counts unchanged."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON result negative, drawn 2026-01-15."
+          ],
+          "expected_evidence": [
+            "QuantiFERON result negative, drawn 2026-01-15."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28 score 6.4, consistent with high disease activity."
+          ],
+          "expected_evidence": [
+            "DAS28 score 6.4, consistent with high disease activity."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 4,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2310,
+      "output_tokens": 232,
+      "latency_ms": 0.49
+    },
+    {
+      "case_id": "dev_059",
+      "procedure": "biologic",
+      "tags": [
+        "contradictory"
+      ],
+      "criteria": [
+        {
+          "section_ref": "2.1",
+          "criterion_id": "bio.ra_diagnosis",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ],
+          "expected_evidence": [
+            "Rheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology."
+          ]
+        },
+        {
+          "section_ref": "2.2",
+          "criterion_id": "bio.mtx_failure",
+          "expected": "unclear",
+          "predicted": "unclear",
+          "correct": true,
+          "evidence_supported": null,
+          "reasoning": "The chart contains conflicting statements about this criterion.",
+          "cited": [
+            "Methotrexate 25 mg weekly for 7 months with inadequate response.",
+            "No prior conventional DMARD therapy on record."
+          ],
+          "expected_evidence": [
+            "No prior conventional DMARD therapy on record.",
+            "Methotrexate 25 mg weekly for 7 months with inadequate response."
+          ]
+        },
+        {
+          "section_ref": "2.3",
+          "criterion_id": "bio.tb_screening",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "QuantiFERON result negative, drawn 2026-04-04."
+          ],
+          "expected_evidence": [
+            "QuantiFERON result negative, drawn 2026-04-04."
+          ]
+        },
+        {
+          "section_ref": "2.4",
+          "criterion_id": "bio.disease_activity",
+          "expected": "met",
+          "predicted": "met",
+          "correct": true,
+          "evidence_supported": true,
+          "reasoning": "The chart explicitly documents this criterion.",
+          "cited": [
+            "DAS28-CRP today: 5.1 (moderate disease activity)."
+          ],
+          "expected_evidence": [
+            "DAS28-CRP today: 5.1 (moderate disease activity)."
+          ]
+        }
+      ],
+      "errors": 0,
+      "citations_total": 5,
+      "citations_invalid": 0,
+      "attempts": 4,
+      "invalid_outputs": 0,
+      "input_tokens": 2332,
+      "output_tokens": 257,
+      "latency_ms": 0.5
+    }
+  ]
+}

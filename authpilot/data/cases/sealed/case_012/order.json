@@ -1,0 +1,9 @@
+{
+  "order_id": "ORD-S-0012",
+  "patient_id": "PS0012",
+  "payer_id": "payer_a",
+  "procedure_code": "72148",
+  "procedure_name": "MRI lumbar spine without contrast",
+  "ordering_provider": "Dr. Lina Haddad, Family Medicine",
+  "request_date": "2026-10-28"
+}

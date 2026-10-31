@@ -1,0 +1,84 @@
+{
+  "case_id": "sealed_020",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_pt_note",
+          "span_text": "Supervised PT x 12 wks (24 sessions), plateaued without durable relief.",
+          "start": 114,
+          "end": 185
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Motor, sensory and reflex testing of both legs documented as normal.",
+          "start": 266,
+          "end": 334
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_imaging_history",
+          "span_text": "No lumbar MRI found in the regional imaging exchange.",
+          "start": 110,
+          "end": 163
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.red_flags",
+      "description": "Red-flag symptom screening is not documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_05_progress_addendum",
+          "span_text": "Cauda equina screen negative; afebrile, no history of malignancy.",
+          "start": 113,
+          "end": 178
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-15",
+    "therapy_weeks": 12,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=missing; affected=mri.red_flags; clinic_can_supply=mri.red_flags"
+}

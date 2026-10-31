@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_history": "MEDICATION HISTORY\nDate: 2026-09-26\nAuthor: Pharmacy\nPatient: Hala Fahad (PD0059)\n\nMedications:\nOmeprazole 20 mg daily. No prior conventional DMARD therapy on record.\n",
+  "doc_02_nursing_triage": "NURSING TRIAGE NOTE\nDate: 2026-09-28\nAuthor: Triage Nurse\nPatient: Hala Fahad (PD0059)\n\nTriage:\nBP 127/89, HR 85, temperature 37.0 C. Pain score 5/10.\n",
+  "doc_03_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-09-23\nAuthor: Dr. Nadia Karam, Rheumatology\nPatient: Hala Fahad (PD0059)\n\nHistory:\n38-year-old female with 6 years of symmetric small-joint polyarthritis. Methotrexate 25 mg weekly for 7 months with inadequate response.\n\nExam:\nTender joint count 9, swollen joint count 4. DAS28-CRP today: 5.1 (moderate disease activity).\n\nAssessment:\nRheumatoid arthritis, seropositive, confirmed by rheumatology on examination and serology.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_04_lab_results": "LABORATORY RESULTS\nDate: 2026-09-29\nAuthor: Clinical Laboratory\nPatient: Hala Fahad (PD0059)\n\nResults:\nCRP 18.4 mg/L. QuantiFERON result negative, drawn 2026-04-04. ESR 38 mm/h.\n"
+}

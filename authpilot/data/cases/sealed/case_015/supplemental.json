@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_06_rheumatology_addendum": "RHEUMATOLOGY NOTE ADDENDUM\nDate: 2026-10-06\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Reem Qasim (PS0015)\n\nImpression:\nSeropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.\n"
+  },
+  "provides": {
+    "2.1": [
+      "doc_06_rheumatology_addendum"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_04_imaging_history": "IMAGING HISTORY\nDate: 2026-10-24\nAuthor: Radiology Records\nPatient: Nabil Zaid (PD0044)\n\nPrior studies:\nNo prior lumbar spine imaging on record.\n"
+  },
+  "provides": {
+    "2.4": [
+      "doc_04_imaging_history"
+    ]
+  }
+}

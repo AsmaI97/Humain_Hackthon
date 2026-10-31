@@ -1,0 +1,9 @@
+{
+  "order_id": "ORD-S-0027",
+  "patient_id": "PS0027",
+  "payer_id": "payer_a",
+  "procedure_code": "J0135",
+  "procedure_name": "Adalimumab 40 mg subcutaneous injection",
+  "ordering_provider": "Dr. Nadia Karam, Rheumatology",
+  "request_date": "2026-10-06"
+}

@@ -1,0 +1,73 @@
+{
+  "case_id": "sealed_029",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Seropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.",
+          "start": 421,
+          "end": 508
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Despite 9 months of weekly methotrexate at 15 mg, synovitis persists.",
+          "start": 194,
+          "end": 263
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_lab_results",
+          "span_text": "Tuberculin skin test read at 0 mm on 2025-11-12.",
+          "start": 137,
+          "end": 185
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Today's DAS28 4.3 (moderate).",
+          "start": 378,
+          "end": 407
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "distractor"
+  ],
+  "facts": {
+    "order_date": "2026-10-08",
+    "mtx_months": 9,
+    "tb_months_ago": 11,
+    "das28": 4.3
+  },
+  "notes": "case_type=distractor; affected=bio.disease_activity"
+}

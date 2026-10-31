@@ -1,0 +1,5 @@
+{
+  "doc_01_medication_history": "MEDICATION HISTORY\nDate: 2026-10-14\nAuthor: Pharmacy\nPatient: Ziad Mansour (PD0007)\n\nMedications:\nFolic acid 1 mg daily.\n",
+  "doc_02_lab_results": "LABORATORY RESULTS\nDate: 2026-10-09\nAuthor: Clinical Laboratory\nPatient: Ziad Mansour (PD0007)\n\nResults:\nCRP 27.6 mg/L. Anti-CCP antibodies positive.\n",
+  "doc_03_rheumatology_consult": "RHEUMATOLOGY CONSULTATION\nDate: 2026-10-17\nAuthor: Dr. Youssef Amin, Rheumatology\nPatient: Ziad Mansour (PD0007)\n\nHistory:\n54-year-old male with 9 years of symmetric small-joint polyarthritis. Methotrexate 17.5 mg weekly was stopped after five weeks because of transaminase elevation (intolerance).\n\nExam:\nTender joint count 14, swollen joint count 9.\n\nAssessment:\nRheumatology impression: rheumatoid arthritis meeting 2010 ACR/EULAR classification criteria.\n\nPlan:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n"
+}

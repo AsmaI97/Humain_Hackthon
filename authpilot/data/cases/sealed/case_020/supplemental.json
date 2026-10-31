@@ -1,0 +1,10 @@
+{
+  "documents": {
+    "doc_05_progress_addendum": "CLINIC NOTE ADDENDUM\nDate: 2026-10-15\nAuthor: Dr. Hisham Qadri, Orthopedics\nPatient: Basil Hamdan (PS0020)\n\nHPI:\nCauda equina screen negative; afebrile, no history of malignancy.\n"
+  },
+  "provides": {
+    "2.2": [
+      "doc_05_progress_addendum"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "case_id": "dev_010",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact.",
+          "start": 282,
+          "end": 375
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "Lumbar radiographs only (2026-06-19); no prior MRI.",
+          "start": 106,
+          "end": 157
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "description": "No documentation of conservative therapy and its duration."
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "description": "Red-flag symptom screening is not documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_pt_note",
+          "span_text": "Patient completed eleven weeks of supervised physical therapy with minimal improvement in pain.",
+          "start": 129,
+          "end": 224
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_05_progress_addendum",
+          "span_text": "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer.",
+          "start": 122,
+          "end": 209
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-27",
+    "therapy_weeks": 11,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=missing; affected=mri.conservative_therapy,mri.red_flags; clinic_can_supply=mri.conservative_therapy,mri.red_flags"
+}

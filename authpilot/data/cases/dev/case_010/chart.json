@@ -1,0 +1,5 @@
+{
+  "doc_01_medication_list": "MEDICATION LIST\nDate: 2026-10-21\nAuthor: Pharmacy\nPatient: Nabil Khalil (PD0010)\n\nActive medications:\nVitamin D 1000 IU daily. Atorvastatin 20 mg nightly.\n",
+  "doc_02_imaging_history": "IMAGING HISTORY\nDate: 2026-10-22\nAuthor: Radiology Records\nPatient: Nabil Khalil (PD0010)\n\nPrior studies:\nLumbar radiographs only (2026-06-19); no prior MRI.\n",
+  "doc_03_progress_note": "PROGRESS NOTE\nDate: 2026-10-23\nAuthor: Dr. Hisham Qadri, Orthopedics\nPatient: Nabil Khalil (PD0010)\n\nSubjective:\n54-year-old male with lumbar pain with intermittent radicular symptoms for 16 weeks. Works as an office administrator.\n\nObjective:\nBP 115/87, HR 89, temperature 37.0 C. Neuro: patellar reflexes 2+ bilaterally, dorsiflexion strength 5/5, sensation grossly intact.\n\nAssessment and Plan:\nWill obtain MRI of the lumbar spine without contrast to guide further management. Consider a course of physical therapy if symptoms persist.\n"
+}

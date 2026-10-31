@@ -1,0 +1,84 @@
+{
+  "case_id": "dev_049",
+  "split": "dev",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_pt_note",
+          "span_text": "Attended physical therapy twice weekly for 12 weeks; symptoms unchanged at discharge.",
+          "start": 129,
+          "end": 214
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "No red-flag symptoms: no saddle anesthesia, no urinary retention, no history of cancer.",
+          "start": 247,
+          "end": 334
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_progress_note",
+          "span_text": "Neurological exam: strength 5/5 in bilateral lower extremities, patellar and Achilles reflexes 2+ and symmetric, sensation intact.",
+          "start": 385,
+          "end": 515
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "not_met",
+      "evidence": []
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "description": "No imaging history is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "approved",
+  "supplemental": [
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_imaging_history",
+          "span_text": "No prior lumbar spine imaging on record.",
+          "start": 106,
+          "end": 146
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-10",
+    "therapy_weeks": 12,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=missing; affected=mri.no_recent_imaging; clinic_can_supply=mri.no_recent_imaging"
+}

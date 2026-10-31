@@ -1,0 +1,71 @@
+{
+  "case_id": "sealed_001",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "Seropositive erosive rheumatoid arthritis, diagnosis established by rheumatology today.",
+          "start": 382,
+          "end": 469
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "Despite eight months of weekly methotrexate at 17.5 mg, synovitis persists.",
+          "start": 195,
+          "end": 270
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "IGRA (QFT-Plus) 2026-03-29: neg.",
+          "start": 137,
+          "end": 169
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_rheumatology_consult",
+          "span_text": "Composite disease activity (DAS28) = 4.8.",
+          "start": 327,
+          "end": 368
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [],
+  "facts": {
+    "order_date": "2026-10-05",
+    "mtx_months": 8,
+    "tb_months_ago": 6,
+    "das28": 4.8
+  },
+  "notes": "case_type=clean"
+}

@@ -1,0 +1,70 @@
+{
+  "case_id": "sealed_010",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_pt_note",
+          "span_text": "Course of physiotherapy over eleven weeks ended with persistent radicular pain.",
+          "start": 112,
+          "end": 191
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "ROS: no B/B dysfunction, no saddle numbness, afebrile, weight stable.",
+          "start": 189,
+          "end": 258
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_02_imaging_history",
+          "span_text": "No lumbar MRI found in the regional imaging exchange.",
+          "start": 108,
+          "end": 161
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "mri.neuro_exam",
+      "description": "No lower extremity neurological examination is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-03",
+    "therapy_weeks": 11,
+    "therapy_type": "physical_therapy"
+  },
+  "notes": "case_type=missing; affected=mri.neuro_exam"
+}

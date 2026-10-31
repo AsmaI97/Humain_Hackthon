@@ -1,0 +1,81 @@
+{
+  "case_id": "dev_016",
+  "split": "dev",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Diagnosis: rheumatoid arthritis, RF and anti-CCP positive, confirmed on rheumatology evaluation.",
+          "start": 358,
+          "end": 454
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_rheumatology_consult",
+          "span_text": "Methotrexate 15 mg weekly was stopped after 5 weeks because of transaminase elevation (intolerance).",
+          "start": 192,
+          "end": 292
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "not_met",
+      "evidence": []
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "not_met",
+      "evidence": []
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.tb_screening",
+      "description": "No tuberculosis screening result is documented."
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "description": "No DAS28 score is documented."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_05_lab_results",
+          "span_text": "QuantiFERON result negative, drawn 2026-09-19.",
+          "start": 103,
+          "end": 149
+        }
+      ]
+    }
+  ],
+  "hard_case_tags": [
+    "missing"
+  ],
+  "facts": {
+    "order_date": "2026-10-20",
+    "mtx_intolerance": true,
+    "tb_months_ago": 1
+  },
+  "notes": "case_type=missing; affected=bio.tb_screening,bio.disease_activity; clinic_can_supply=bio.tb_screening"
+}

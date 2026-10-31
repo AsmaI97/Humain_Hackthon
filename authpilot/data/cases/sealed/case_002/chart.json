@@ -1,0 +1,6 @@
+{
+  "doc_01_medication_history": "PHARMACY FILL HISTORY\nDate: 2026-10-15\nAuthor: Pharmacy\nPatient: Sara Saleh (PS0002)\n\nFills:\nOmeprazole 20 mg daily.\n",
+  "doc_02_lab_results": "LAB REPORT\nDate: 2026-10-09\nAuthor: Clinical Laboratory\nPatient: Sara Saleh (PS0002)\n\nValues:\nCRP 28.3 mg/L. Latent TB screen negative (2026-04-18, interferon-gamma release assay). ESR 38 mm/h.\n",
+  "doc_03_rheumatology_consult": "RHEUMATOLOGY CLINIC NOTE\nDate: 2026-10-17\nAuthor: Dr. Salma Idris, Rheumatology\nPatient: Sara Saleh (PS0002)\n\nBackground:\n52-year-old female with 8 years of symmetric small-joint polyarthritis. MTX discontinued after 6 wks owing to persistent nausea and elevated LFTs.\n\nFindings:\nTender joint count 9, swollen joint count 5. Today's DAS28 4.5 (moderate).\n\nImpression:\nWorking diagnosis: early inflammatory arthritis, possibly RA.\n\nNext steps:\nStart adalimumab 40 mg subcutaneously every other week pending prior authorization.\n",
+  "doc_04_patient_message": "SECURE MESSAGE\nDate: 2026-10-04\nAuthor: Patient Portal\nPatient: Sara Saleh (PS0002)\n\nBody:\nPatient asks whether the appointment can be moved to the morning.\n"
+}

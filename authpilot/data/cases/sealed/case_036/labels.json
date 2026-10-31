@@ -1,0 +1,73 @@
+{
+  "case_id": "sealed_036",
+  "split": "sealed",
+  "procedure": "lumbar_mri",
+  "criteria": [
+    {
+      "criterion_id": "mri.conservative_therapy",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_04_pt_note",
+          "span_text": "Pt finished a 9-week rehab program; pain still 7/10 with sitting.",
+          "start": 113,
+          "end": 178
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.red_flags",
+      "section_ref": "2.2",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Specifically denies incontinence, perineal numbness, night sweats or weight loss.",
+          "start": 248,
+          "end": 329
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.neuro_exam",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_progress_note",
+          "span_text": "Focused neurologic exam shows right EHL weakness 4/5 and an absent right ankle jerk.",
+          "start": 410,
+          "end": 494
+        }
+      ]
+    },
+    {
+      "criterion_id": "mri.no_recent_imaging",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_imaging_history",
+          "span_text": "Most recent lumbar MRI was 2022-10-30.",
+          "start": 109,
+          "end": 147
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [],
+  "expected_outcome": "approve",
+  "expected_final": "approved",
+  "supplemental": [],
+  "hard_case_tags": [
+    "distractor"
+  ],
+  "facts": {
+    "order_date": "2026-10-12",
+    "therapy_weeks": 9,
+    "therapy_type": "physical_therapy",
+    "last_mri_months_ago": 48
+  },
+  "notes": "case_type=distractor; affected=mri.no_recent_imaging"
+}

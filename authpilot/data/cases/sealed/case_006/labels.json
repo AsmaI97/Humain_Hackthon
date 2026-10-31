@@ -1,0 +1,84 @@
+{
+  "case_id": "sealed_006",
+  "split": "sealed",
+  "procedure": "biologic",
+  "criteria": [
+    {
+      "criterion_id": "bio.ra_diagnosis",
+      "section_ref": "2.1",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Meets ACR/EULAR criteria for RA (score 8/10) on rheumatology assessment.",
+          "start": 378,
+          "end": 450
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.mtx_failure",
+      "section_ref": "2.2",
+      "status": "unclear",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Despite six months of weekly methotrexate at 17.5 mg, synovitis persists.",
+          "start": 193,
+          "end": 266
+        },
+        {
+          "doc_id": "doc_02_medication_history",
+          "span_text": "Pharmacy fill history shows no methotrexate dispensed in the past 3 years.",
+          "start": 117,
+          "end": 191
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.tb_screening",
+      "section_ref": "2.3",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_03_lab_results",
+          "span_text": "Tuberculin skin test read at 0 mm on 2026-09-18.",
+          "start": 140,
+          "end": 188
+        }
+      ]
+    },
+    {
+      "criterion_id": "bio.disease_activity",
+      "section_ref": "2.4",
+      "status": "met",
+      "evidence": [
+        {
+          "doc_id": "doc_01_rheumatology_consult",
+          "span_text": "Composite disease activity (DAS28) = 5.0.",
+          "start": 323,
+          "end": 364
+        }
+      ]
+    }
+  ],
+  "planted_gaps": [
+    {
+      "criterion_id": "bio.mtx_failure",
+      "description": "Records conflict on whether methotrexate was ever prescribed."
+    }
+  ],
+  "expected_outcome": "needs_evidence",
+  "expected_final": "escalated",
+  "supplemental": [],
+  "hard_case_tags": [
+    "contradictory"
+  ],
+  "facts": {
+    "order_date": "2026-10-22",
+    "mtx_months": 6,
+    "tb_months_ago": 1,
+    "das28": 5.0
+  },
+  "notes": "case_type=contradictory; affected=bio.mtx_failure"
+}
