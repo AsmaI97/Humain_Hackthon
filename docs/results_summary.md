@@ -4,11 +4,25 @@ AuthPilot is an AI agent that owns prior authorization end to end: it checks eve
 criterion against the chart with verbatim evidence, asks the clinic for what is missing, drafts the
 letter, waits for one human approval, submits, and appeals denials.
 
-Source: `dev` split, 3 runs per case, mode `stub`, agent model `stub-heuristic-v1`, prompt `p3.0`, data seed 1001, eval seed 4004, run at 2026-10-30T19:09:24+00:00. Reproduce with `make eval`.
+Repository: https://github.com/AsmaI97/Humain_Hackthon
 
-> **Read with care:** these numbers come from the offline stub model, a keyword heuristic written
-> alongside the case templates. They prove the pipeline and the safety mechanisms work; they are not
-> the agent's accuracy. Targets are defined for the sealed test set, which has not been run.
+## Published results (live)
+
+Agent model `claude-sonnet-5-5`, extraction model `claude-haiku-5-5`, 2026-10-31. Each case was
+run live and then replayed from the cache. This is not a 60-case evaluation. The sealed split has
+not been run.
+
+| Case | Live outcome | Label |
+| --- | --- | --- |
+| `dev/case_040` | Denied, then approved on appeal | Expected final: approved. Matched. |
+| `dev/case_036` | Asked the clinic for the red-flag note, then escalated because the criterion stayed unclear | Expected final: approved. The live model abstained. |
+
+## Offline pipeline check (not the published accuracy)
+
+Source: `dev` split, 3 runs per case, mode `stub`, agent model `stub-heuristic-v1`, prompt `p3.0`, data seed 1001, eval seed 4004, run at 2026-10-30T19:09:24+00:00.
+
+> These numbers come from the offline stub model, a keyword heuristic written alongside the case
+> templates. They are not the published result.
 
 ## Headline results vs proposal targets
 

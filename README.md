@@ -7,6 +7,8 @@ to approve it, submits it to a (mock) payer, and drafts an appeal if the request
 
 All patient data in this repository is synthetic. No real patient data is used anywhere.
 
+Repository: [https://github.com/AsmaI97/Humain_Hackthon](https://github.com/AsmaI97/Humain_Hackthon)
+
 - Pitch deck (open in a browser, arrow keys to move): [docs/slides.html](docs/slides.html)
 - Five-minute demo script with fallbacks and Q&A: [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md)
 - Backup storyboard of the demo (screenshots of every step): [docs/demo_backup/README.md](docs/demo_backup/README.md)
@@ -32,8 +34,9 @@ All patient data in this repository is synthetic. No real patient data is used a
 The offline suite passes. `make test`, `make demo` and `make dashboard` run without an API key
 (the demo and the dashboard use the stub when `cache/llm_cache.jsonl` is absent). `make eval`
 refuses stub mode: it needs `LLM_MODE=live`, or replay of a cache produced by that same live
-run. The results table below is the stub evaluation, not Claude. Two demo cases have also been
-run live and then replayed from the cache; see Limitations.
+run. The published results below are live Claude runs. A full 60-case live evaluation has not
+been run. An older offline pipeline check is kept in `results/eval/` and is not the published
+accuracy.
 
 ## The web app
 
@@ -102,14 +105,46 @@ python -m authpilot.cli resume dev_036                 # continue a case queued 
 
 To use Claude, copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY`. `LLM_MODE` is one of:
 
-- `stub`: scripted offline model. No key. This is the path behind the results table and the
-  five-minute script.
+- `stub`: scripted offline model. No key. Use it to rehearse the screens without spending credits.
+  It is not the published result.
 - `live`: calls Anthropic and appends every response to `cache/llm_cache.jsonl`.
 - `replay`: answers only from that cache. A missing entry raises `CacheMissError`. It never
   falls back to the stub or to the API.
 
 `make record-demo` is the live demo run. After it, `make demo` replays the cache offline.
 `LLM_MODE=live make eval` is the full dev evaluation. There is no `record` mode.
+
+## Scenarios to try
+
+Start the app in live mode so a case that is not already in the cache is actually sent to Claude.
+`make dashboard` on its own replays the cache when one exists, and a new case then stops with a cache miss.
+
+```
+LLM_MODE=live make dashboard
+```
+
+Open http://localhost:8501, go to Workbench, pick the case in the sidebar, and press **Run agent**.
+When a letter is waiting, type your name and press **Approve and submit**. If the case escalates,
+open Escalation queue.
+
+| What you want to see | Sidebar case | What to expect |
+| --- | --- | --- |
+| All criteria met | `case_035` | Lumbar MRI. The chart already covers every criterion. The agent drafts the letter and waits for your approval, then the payer approves. |
+| Missing criteria | `case_038` | Lumbar MRI. Physical therapy is not in the chart. The agent asks the clinic, receives the note, checks again, and then waits for your approval. |
+| Denied, then an appeal | `case_040` | Biologic (adalimumab). The first submission is denied because the disease-activity score lives only in a flowsheet. The agent drafts an appeal. Approve that letter too. The payer approves on appeal. |
+
+There is no case whose correct ending is a permanent denial. The denial you can watch is the first payer decision on `case_040`. Stop before approving the appeal if you only want to see the denial.
+
+Other cases worth opening:
+
+| Scenario | Case | What to expect |
+| --- | --- | --- |
+| All criteria met, on the drug instead of the MRI | `case_039` | Clean biologic request. Same approval path as `case_035`. |
+| Missing red-flag screening | `case_036` | The agent asks the clinic. On the live run already recorded, the addendum still left the criterion unclear, so the safety gate escalated instead of approving. |
+| Contradictory records | `case_002` | Biologic. The methotrexate notes disagree. The agent should not pick a side. It escalates, and the case appears in the queue. |
+| Ambiguous, and the clinic cannot fill the gap | `case_034` | Lumbar MRI. A possible red-flag symptom is mentioned and never clarified. Expected result: escalate. |
+| Irrelevant extra note | `case_043` | Lumbar MRI with a distractor in the chart. The decision should still be approval. |
+| A procedure the agent was not built for | `unseen/case_000` | Semaglutide (J3490). It is not in the sidebar. From the project folder: `LLM_MODE=live python -m authpilot.cli run unseen/case_000`. Expected result: escalate, rather than invent criteria. |
 
 ## How it works
 
@@ -213,40 +248,20 @@ offsets are recorded while the text is written, so every label span is exact by 
 The sealed split is for the final test only. It is never used for tuning and is not shown in
 the dashboard.
 
-## Results so far (stub model, dev split only)
+## Published results (live)
 
-`make eval` runs the full evaluation and writes [results/eval/latest_dev_stub.md](results/eval/latest_dev_stub.md)
-(also shown on the web app's Results page). These numbers come from `LLM_MODE=stub`, a keyword
-heuristic written by the same people who wrote the case templates. They show the evaluation
-pipeline works and expose the stub's weaknesses; they are not a measure of the agent's accuracy.
-Real numbers need a run with Claude. The sealed split has not been run.
+These are Claude runs on 2026-10-31. The agent model was `claude-sonnet-5-5`. Criterion extraction
+used `claude-haiku-5-5`. Each case was run live, then again in replay. Replay served every call
+from `cache/llm_cache.jsonl` and made no further API request. The sealed split has not been run,
+and `make eval` has not been run live, so this is not a 60-case accuracy table.
 
-Main results (60 dev cases, 3 runs each, 95% bootstrap intervals):
+| Case | Live outcome | Matches the label |
+| --- | --- | --- |
+| `dev/case_040` biologic, deny then appeal | First submission denied (`DAS28-SCORE`). Appeal approved by the payer. | Yes. Expected final status is approved. |
+| `dev/case_036` lumbar MRI, missing red-flag note | The agent asked the clinic. After the addendum, red-flag screening stayed unclear (confidence 0.72) and the safety gate escalated. | The label's final status is approved. The live model abstained instead. |
 
-| Variant | Criterion acc | False-met | Gap recall | Decision acc | Final outcome acc | Denial recovery | Tokens/case |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Agent | 0.992 [0.979, 1.000] | 0.051 | 0.949 | 0.967 | 0.967 [0.917, 1.000] | 0.60 | 5,093 |
-| Single-prompt baseline | 0.992 | 0.051 | 0.949 | 0.967 | - | - | 1,416 |
-| Keyword baseline | 0.887 | 0.692 | 0.308 | 0.600 | - | - | 0 |
-| No retrieval | 0.992 | 0.051 | 0.949 | 0.967 | 0.967 | 0.60 | 7,653 |
-| No gap loop | 0.992 | 0.051 | 0.949 | 0.967 | 0.800 | 0.60 | 4,092 |
-| No appeal loop | 0.992 | 0.051 | 0.949 | 0.967 | 0.917 | 0.00 | 4,950 |
-
-Robustness, adaptation and faults:
-
-| Test | Result |
-| --- | --- |
-| Policy threshold 6 to 8 weeks | 9/9 affected verdicts flipped, 21/21 unaffected unchanged |
-| Noisy chart | No accuracy drop; citations still 100% valid |
-| Evidence document removed | Gap flagged every time; no guesses on 50 removed criteria |
-| Reworded policy | 20.8-point drop: the stub's keyword rules break on new wording |
-| Unseen third procedure (GLP-1) | 0.0: the stub cannot find criteria in a differently structured policy, so every case escalates safely |
-| Payer down, corrupted model output, empty retrieval | 100% safe failures in all 180 runs |
-
-What this shows with the stub: the loops earn their place (no gap loop costs 17 points of final
-outcome accuracy, no appeal loop loses every denial recovery), retrieval cuts tokens by a third,
-and every fault ends safely. What it cannot show: whether Claude beats the single-prompt baseline
-and stays robust on reworded policies and the unseen procedure. That is what the Claude run is for.
+`results/eval/latest_dev_stub.md` is an older offline pipeline check from the stub model. It is
+not the published accuracy, and the Results page labels those files as stub when you open them.
 
 ## Reproducibility
 
@@ -266,15 +281,9 @@ and stays robust on reworded policies and the unseen procedure. That is what the
 
 ## Limitations
 
-- **The results table is the stub, not Claude.** The stub was written with knowledge of the case
-  templates. Its weak spots (reworded policies, the unseen procedure) are stub limits, not agent
-  results. The sealed split has not been run, and `make eval` has not been run live.
-- **Two demo cases have been run live, then replayed.** `dev/case_040` (biologic) was denied,
-  appealed and approved, matching its label. `dev/case_036` (lumbar MRI) asked the clinic for the
-  missing red-flag note, then escalated: after the addendum, Sonnet still marked red-flag
-  screening unclear, and the safety gate abstains on an unclear criterion. Replay reproduced both
-  outcomes from the cache with no further API calls. The five-minute script uses stub mode, where
-  case 036 reaches the approval button.
+- **No full live evaluation yet.** The published table is two live cases, not the 60-case dev
+  split. The sealed split has not been run. Stub files under `results/eval/` measure the offline
+  pipeline only.
 - **Synthetic data is simpler than real charts.** Templates are finite; real notes are longer,
   messier and contain more conflicting information.
 - **Simulated parts.** The EHR, clinic, payer and fax/email are simulated. The clinic replies at
